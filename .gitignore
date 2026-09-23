@@ -1,0 +1,6 @@
+PROJECT_STATE.md
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
