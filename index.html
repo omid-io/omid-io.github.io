@@ -56,8 +56,12 @@
 </head>
 
 <body>
-  <!-- Ambient Lighting Elements -->
-  <div class="orb-glow orb-hero" aria-hidden="true"></div>
+  <!-- Interactive Neural Mesh Background Canvas -->
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Atmospheric Lighting Elements -->
+  <div class="ambient-glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow-bottom" aria-hidden="true"></div>
 
   <!-- Primary Sticky Header Navigation -->
   <header class="site-header">
@@ -121,6 +125,10 @@
             <div class="clock-pill" id="tehranClock">
               Tehran <bdi class="mono-data">00:00:00</bdi> (UTC+3:30)
             </div>
+            <div class="pulse-telemetry-badge" title="Anti-Leak Non-Sanctioned Probe Latency">
+              <canvas id="pulse-canvas" width="100" height="22"></canvas>
+              <span class="latency-indicator"><bdi id="live-latency-val" class="mono-data">138ms</bdi></span>
+            </div>
           </div>
 
           <h1 class="hero-title">
@@ -173,7 +181,7 @@
         </div>
 
         <!-- Hero Visual Side: Personal Portrait & Social Dock -->
-        <div class="hero-visual-card">
+        <div class="hero-visual-card spotlight-card">
           <div class="avatar-halo-wrapper">
             <div class="avatar-halo-ring"></div>
             <div class="avatar-image-frame">
@@ -230,19 +238,19 @@
     <section class="telemetry-strip" aria-label="Public Engineering Footprint">
       <div class="container">
         <div class="telemetry-grid">
-          <div class="telemetry-card">
+          <div class="telemetry-card spotlight-card">
             <div class="telemetry-number"><bdi class="mono-data">33</bdi><span class="telemetry-plus">+</span></div>
             <div class="telemetry-label" data-i18n="hero.stats.prs">Public PRs Found</div>
           </div>
-          <div class="telemetry-card">
+          <div class="telemetry-card spotlight-card">
             <div class="telemetry-number"><bdi class="mono-data">14</bdi></div>
             <div class="telemetry-label" data-i18n="hero.stats.upstream">Upstream Repos</div>
           </div>
-          <div class="telemetry-card">
+          <div class="telemetry-card spotlight-card">
             <div class="telemetry-number"><bdi class="mono-data">4</bdi></div>
             <div class="telemetry-label" data-i18n="hero.stats.flagships">Flagship Suites</div>
           </div>
-          <div class="telemetry-card">
+          <div class="telemetry-card spotlight-card">
             <div class="telemetry-number"><bdi class="mono-data">620</bdi><span class="telemetry-plus">+</span></div>
             <div class="telemetry-label" data-i18n="hero.stats.downloads">Extension Downloads</div>
           </div>
@@ -276,7 +284,7 @@
         <div class="projects-grid" id="projectsGrid">
           
           <!-- Project 1: Vibe UI Suite -->
-          <article class="project-card" data-category="flagship ai">
+          <article class="project-card spotlight-card" data-category="flagship ai">
             <div class="project-banner-frame">
               <img class="project-banner-img" src="assets/banners/vibe-ui-suite.jpg" alt="Vibe UI Suite Banner" loading="lazy" decoding="async">
               <div class="project-banner-overlay" aria-hidden="true"></div>
@@ -310,7 +318,7 @@
           </article>
 
           <!-- Project 2: AirTun -->
-          <article class="project-card" data-category="flagship network">
+          <article class="project-card spotlight-card" data-category="flagship network">
             <div class="project-banner-frame">
               <img class="project-banner-img" src="assets/banners/airtun.jpg" alt="AirTun Banner" loading="lazy" decoding="async">
               <div class="project-banner-overlay" aria-hidden="true"></div>
@@ -342,7 +350,7 @@
           </article>
 
           <!-- Project 3: Google Flow Suite -->
-          <article class="project-card" data-category="flagship ai">
+          <article class="project-card spotlight-card" data-category="flagship ai">
             <div class="project-banner-frame">
               <img class="project-banner-img" src="assets/banners/google-flow-suite.webp" alt="Google Flow Suite Banner" loading="lazy" decoding="async">
               <div class="project-banner-overlay" aria-hidden="true"></div>
@@ -374,7 +382,7 @@
           </article>
 
           <!-- Project 4: antigravity-pause -->
-          <article class="project-card" data-category="flagship ai">
+          <article class="project-card spotlight-card" data-category="flagship ai">
             <div class="project-banner-frame">
               <img class="project-banner-img" src="assets/banners/antigravity-pause.webp" alt="Antigravity Pause Banner" loading="lazy" decoding="async">
               <div class="project-banner-overlay" aria-hidden="true"></div>
@@ -405,7 +413,7 @@
           </article>
 
           <!-- Project 5: Digikala Pure Search -->
-          <article class="project-card" data-category="extensions">
+          <article class="project-card spotlight-card" data-category="extensions">
             <div class="project-banner-frame">
               <img class="project-banner-img" src="assets/banners/digikala-pure.png" alt="Digikala Pure Search Banner" loading="lazy" decoding="async">
               <div class="project-banner-overlay" aria-hidden="true"></div>
@@ -436,7 +444,7 @@
           </article>
 
           <!-- Project 6: Antigravity RTL & UI Suite -->
-          <article class="project-card" data-category="extensions">
+          <article class="project-card spotlight-card" data-category="extensions">
             <div class="project-banner-frame">
               <img class="project-banner-img" src="assets/banners/antigravity-rtl.png" alt="Antigravity RTL Suite Banner" loading="lazy" decoding="async">
               <div class="project-banner-overlay" aria-hidden="true"></div>
@@ -485,7 +493,7 @@
 
         <div class="upstream-grid">
           <!-- Hermes Agent -->
-          <article class="upstream-card">
+          <article class="upstream-card spotlight-card">
             <div class="upstream-card-top">
               <span class="upstream-org">NousResearch / hermes-agent</span>
               <span class="upstream-badge badge-merged">Merged</span>
@@ -501,7 +509,7 @@
           </article>
 
           <!-- HandyControls -->
-          <article class="upstream-card">
+          <article class="upstream-card spotlight-card">
             <div class="upstream-card-top">
               <span class="upstream-org">ghost1372 / HandyControls</span>
               <span class="upstream-badge badge-merged">Merged (3 PRs)</span>
@@ -517,7 +525,7 @@
           </article>
 
           <!-- fl_chart -->
-          <article class="upstream-card">
+          <article class="upstream-card spotlight-card">
             <div class="upstream-card-top">
               <span class="upstream-org">imaNNeo / fl_chart</span>
               <span class="upstream-badge badge-approved">Approved</span>
@@ -533,7 +541,7 @@
           </article>
 
           <!-- .NET Runtime -->
-          <article class="upstream-card">
+          <article class="upstream-card spotlight-card">
             <div class="upstream-card-top">
               <span class="upstream-org">dotnet / runtime</span>
               <span class="upstream-badge badge-approved">Active Workspace</span>
@@ -572,7 +580,7 @@
 
         <div class="dna-grid">
           <!-- Col 1 -->
-          <div class="dna-card">
+          <div class="dna-card spotlight-card">
             <div class="dna-icon-frame">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
             </div>
@@ -583,7 +591,7 @@
           </div>
 
           <!-- Col 2 -->
-          <div class="dna-card">
+          <div class="dna-card spotlight-card">
             <div class="dna-icon-frame">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 3.36 2.08 6.23 5 7.42V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.58c2.92-1.19 5-4.06 5-7.42a8 8 0 0 0-8-8z"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="10" y1="17" x2="14" y2="17"/></svg>
             </div>
@@ -594,7 +602,7 @@
           </div>
 
           <!-- Col 3 -->
-          <div class="dna-card">
+          <div class="dna-card spotlight-card">
             <div class="dna-icon-frame">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/></svg>
             </div>

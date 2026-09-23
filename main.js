@@ -418,6 +418,178 @@
     currentYearSpan.textContent = new Date().getFullYear();
   }
 
+  // ==========================================================================
+  // 9. Interactive Neural Mesh Background Canvas (Vibe UI Living Physics)
+  // ==========================================================================
+  const neuralCanvas = document.getElementById("neural-canvas");
+  if (neuralCanvas) {
+    const ctx = neuralCanvas.getContext("2d");
+    let width = (neuralCanvas.width = window.innerWidth);
+    let height = (neuralCanvas.height = window.innerHeight);
+    let mouse = { x: null, y: null, radius: 160 };
+
+    window.addEventListener("resize", () => {
+      width = neuralCanvas.width = window.innerWidth;
+      height = neuralCanvas.height = window.innerHeight;
+      initParticles();
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    window.addEventListener("mouseout", () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.75;
+        this.vy = (Math.random() - 0.5) * 0.75;
+        this.radius = Math.random() * 1.8 + 1.2;
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+
+        if (mouse.x !== null && mouse.y !== null) {
+          const dx = mouse.x - this.x;
+          const dy = mouse.y - this.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < mouse.radius) {
+            const angle = Math.atan2(dy, dx);
+            const force = (mouse.radius - dist) / mouse.radius;
+            this.x -= Math.cos(angle) * force * 1.6;
+            this.y -= Math.sin(angle) * force * 1.6;
+          }
+        }
+      }
+
+      draw(isDark) {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = isDark ? "rgba(56, 189, 248, 0.75)" : "rgba(37, 99, 235, 0.65)";
+        if (isDark) {
+          ctx.shadowColor = "rgba(56, 189, 248, 0.5)";
+          ctx.shadowBlur = 8;
+        }
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      }
+    }
+
+    let particles = [];
+    function initParticles() {
+      particles = [];
+      const count = Math.min(Math.floor((width * height) / 13000), 85);
+      for (let i = 0; i < count; i++) {
+        particles.push(new Particle());
+      }
+    }
+    initParticles();
+
+    function animateNeuralMesh() {
+      ctx.clearRect(0, 0, width, height);
+      const isDark = root.getAttribute("data-theme") === "dark";
+
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 130) {
+            const alpha = (1 - dist / 130) * (isDark ? 0.24 : 0.16);
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = isDark ? `rgba(56, 189, 248, ${alpha})` : `rgba(37, 99, 235, ${alpha})`;
+            ctx.lineWidth = 0.9;
+            ctx.stroke();
+          }
+        }
+      }
+
+      particles.forEach((p) => {
+        p.update();
+        p.draw(isDark);
+      });
+
+      requestAnimationFrame(animateNeuralMesh);
+    }
+    animateNeuralMesh();
+  }
+
+  // ==========================================================================
+  // 10. Live Pulse Waveform Canvas (ECG Network Oscilloscope)
+  // ==========================================================================
+  const pulseCanvas = document.getElementById("pulse-canvas");
+  const latencyDisplay = document.getElementById("live-latency-val");
+
+  if (pulseCanvas) {
+    const pCtx = pulseCanvas.getContext("2d");
+    const pWidth = (pulseCanvas.width = 100);
+    const pHeight = (pulseCanvas.height = 22);
+
+    let offset = 0;
+    function drawPulse() {
+      pCtx.clearRect(0, 0, pWidth, pHeight);
+      pCtx.beginPath();
+      pCtx.strokeStyle = "#10b981";
+      pCtx.lineWidth = 1.6;
+      pCtx.shadowColor = "rgba(16, 185, 129, 0.6)";
+      pCtx.shadowBlur = 6;
+
+      const midY = pHeight / 2;
+      pCtx.moveTo(0, midY);
+
+      for (let x = 0; x < pWidth; x++) {
+        const cycle = (x + offset) % 50;
+        let y = midY;
+        if (cycle > 20 && cycle < 23) y -= 3;
+        else if (cycle >= 23 && cycle < 27) y += 9;
+        else if (cycle >= 27 && cycle < 31) y -= 11;
+        else if (cycle >= 31 && cycle < 35) y += 4;
+        pCtx.lineTo(x, y);
+      }
+      pCtx.stroke();
+      pCtx.shadowBlur = 0;
+
+      offset += 1.3;
+      requestAnimationFrame(drawPulse);
+    }
+    drawPulse();
+
+    if (latencyDisplay) {
+      setInterval(() => {
+        const jitter = Math.floor(Math.random() * 11) - 5;
+        const base = 138;
+        latencyDisplay.textContent = `${base + jitter}ms`;
+      }, 2600);
+    }
+  }
+
+  // ==========================================================================
+  // 11. Mouse Spotlight Tracker on Cards (Linear/Vercel Style)
+  // ==========================================================================
+  document.querySelectorAll(".spotlight-card").forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    });
+  });
+
   // Initial Boot
   initTheme();
   applyLanguage(currentLang);
