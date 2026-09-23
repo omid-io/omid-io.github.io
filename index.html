@@ -1,934 +1,738 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Google Search Console Verifications -->
-  <meta name="google-site-verification" content="oIACsvTcmr58F3tODCuHS9Zq_-4gCD4-wMK8NX3KnD4" />
-  <meta name="google-site-verification" content="Lhq_SvwJj1hq1waSqU1BmBQRzCGjdTeM8aDfxTe9VbU" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Omid Zaferi — Software Architect & Systems Engineer. Selected work in AI tooling, developer experience, networking and automation.">
+  <meta name="author" content="Omid Zaferi">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://omid-io.github.io/">
 
-  <title>Omid Zaferi | Software Architect & Systems Engineer</title>
-  <meta name="description" content="Official engineering hub of Omid Zaferi (omid-io). Architecting AirTun (WinUI 3 + Kotlin low-latency tunnel), Vibe UI Suite (Anti AI-Slop design system), Antigravity resilience systems, and autonomous AI agents." />
-  <meta name="keywords" content="Omid Zaferi, omid-io, AirTun, Vibe UI Suite, Software Architect, AI Agents, MCP, Model Context Protocol, Antigravity, WinUI 3, Kotlin, Jetpack Compose, .NET 8, Python, Distributed Systems, Open Source" />
-  <meta name="author" content="Omid Zaferi" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://omid-io.github.io/" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Omid Zaferi — Software Architect & Systems Engineer">
+  <meta property="og:description" content="Selected engineering work across AI tooling, developer experience, networking and automation.">
+  <meta property="og:url" content="https://omid-io.github.io/">
+  <meta property="og:site_name" content="omid.io">
+  <meta property="og:image" content="https://github.com/omid-io/omid-io/raw/main/assets/omid_github_header_slim.jpg">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://omid-io.github.io/" />
-  <meta property="og:title" content="Omid Zaferi | Software Architect & Systems Engineer" />
-  <meta property="og:description" content="Creator of AirTun, Vibe UI Suite, and Antigravity-Pause. Architecting resilient systems, mobile-desktop tunnels, and autonomous AI agents." />
-  <meta property="og:site_name" content="omid.io" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Omid Zaferi — Software Architect & Systems Engineer">
+  <meta name="twitter:description" content="Selected engineering work across AI tooling, developer experience, networking and automation.">
+  <meta name="twitter:image" content="https://github.com/omid-io/omid-io/raw/main/assets/omid_github_header_slim.jpg">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Omid Zaferi | Software Architect & Systems Engineer" />
-  <meta name="twitter:description" content="Creator of AirTun, Vibe UI Suite, and Antigravity-Pause. Architecting resilient systems, mobile-desktop tunnels, and autonomous AI agents." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Omid Zaferi",
-    "alternateName": "omid-io",
-    "url": "https://omid-io.github.io",
-    "jobTitle": "Software Architect & Full-Stack Systems Engineer",
-    "knowsAbout": [
-      "AirTun Low-Latency Tunnels",
-      "Vibe UI Design System",
-      "Autonomous AI Agents",
-      "Model Context Protocol (MCP)",
-      "WinUI 3 & .NET 8/9",
-      "Kotlin Jetpack Compose",
-      "Python AsyncIO",
-      "Network Resilience"
-    ],
-    "sameAs": [
-      "https://github.com/omid-io"
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Omid Zaferi",
+    "alternateName":"omid-io",
+    "url":"https://omid-io.github.io/",
+    "jobTitle":"Software Architect & Systems Engineer",
+    "sameAs":[
+      "https://github.com/omid-io",
+      "https://linkedin.com/in/omid-zaferi",
+      "https://x.com/omid_io"
     ]
   }
   </script>
-<style id="portfolio-redesign">
-:root{
-  --bg-deep:#f7f8fb;--bg-surface:#fff;--bg-card:rgba(255,255,255,.95);--bg-card-hover:#fff;
-  --border-dim:rgba(15,23,42,.09);--border-medium:rgba(15,23,42,.15);--border-cyan:rgba(49,87,213,.30);
-  --text-primary:#111827;--text-secondary:#4b5563;--text-muted:#667085;--text-dim:#98a2b3;
-  --cyan-bright:#3157d5;--cyan-neon:#3157d5;--emerald-bright:#087f5b;--violet-bright:#7457d9;--amber-bright:#b7791f;
-}
-body{background:var(--bg-deep);color:var(--text-primary)}
-#neural-canvas,.blueprint-grid,.ambient-glow-top,.ambient-glow-bottom{opacity:0!important;visibility:hidden}
-.navbar{background:rgba(247,248,251,.90);border-bottom-color:rgba(15,23,42,.08)}
-.hero{padding-top:78px}
-.hero-title{font-size:clamp(3.6rem,7vw,6.2rem);letter-spacing:-.065em}
-.hero-accent{color:#3157d5}
-.hero-bio{max-width:760px;color:#667085}
-.spotlight-card{box-shadow:0 14px 40px rgba(15,23,42,.07)}
-.telemetry-bar{display:none!important}
-.terminal-shell{display:none!important}
-.section-title{letter-spacing:-.045em}
-.card-summary,.feature-bullet,.section-desc,.contrib-body{color:#667085}
-</style></head>
+
+  <style>
+    :root{
+      --bg:#f7f8fc;
+      --surface:#ffffff;
+      --surface-soft:#f0f2f7;
+      --ink:#11141b;
+      --muted:#667085;
+      --subtle:#98a2b3;
+      --line:#e4e7ec;
+      --line-strong:#d0d5dd;
+      --accent:#3157d5;
+      --accent-soft:#eef2ff;
+      --green:#087f5b;
+      --shadow-sm:0 8px 24px rgba(16,24,40,.05);
+      --shadow:0 18px 50px rgba(16,24,40,.08);
+      --radius:20px;
+      --radius-sm:13px;
+      --max:1160px;
+    }
+
+    html[data-theme="dark"]{
+      --bg:#0d1117;
+      --surface:#131922;
+      --surface-soft:#1a212c;
+      --ink:#f5f7fa;
+      --muted:#a6afbd;
+      --subtle:#7c8797;
+      --line:#252d39;
+      --line-strong:#374151;
+      --accent:#8ea2ff;
+      --accent-soft:#1b2440;
+      --green:#52d19d;
+      --shadow-sm:0 8px 24px rgba(0,0,0,.20);
+      --shadow:0 22px 60px rgba(0,0,0,.30);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(700px 340px at 80% -10%, rgba(49,87,213,.10), transparent 70%),
+        var(--bg);
+      color:var(--ink);
+      font-family:"DM Sans",Inter,ui-sans-serif,system-ui,sans-serif;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    body:before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.45;
+      background-image:linear-gradient(rgba(17,24,39,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(17,24,39,.035) 1px,transparent 1px);
+      background-size:44px 44px;
+      mask-image:linear-gradient(to bottom,black,transparent 68%);
+    }
+    html[data-theme="dark"] body:before{opacity:.13}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+
+    .skip{
+      position:absolute;
+      left:16px;
+      top:10px;
+      z-index:1000;
+      padding:9px 12px;
+      border:1px solid var(--line);
+      background:var(--surface);
+      border-radius:10px;
+      transform:translateY(-140%);
+    }
+    .skip:focus{transform:none}
+
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:color-mix(in srgb,var(--bg) 86%,transparent);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      min-height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:26px;
+    }
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.03em}
+    .brand-mark{
+      display:grid;
+      place-items:center;
+      width:31px;
+      height:31px;
+      border-radius:9px;
+      color:#fff;
+      background:linear-gradient(135deg,#3157d5,#7258d8);
+      font:600 12px/1 "JetBrains Mono",monospace;
+      box-shadow:0 8px 18px rgba(49,87,213,.22);
+    }
+    .brand-name{font-size:17px}
+    .brand-name span{color:var(--muted);font-weight:600}
+    .nav-links{display:flex;gap:5px}
+    .nav-links a,.icon-btn{
+      padding:9px 11px;
+      border:0;
+      border-radius:10px;
+      color:var(--muted);
+      background:transparent;
+      font-size:13px;
+      cursor:pointer;
+    }
+    .nav-links a:hover,.icon-btn:hover{background:var(--surface-soft);color:var(--ink)}
+    .nav-right{display:flex;align-items:center;gap:8px}
+    .icon-btn{border:1px solid transparent}
+    .nav-github{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 13px;
+      border:1px solid var(--line-strong);
+      background:var(--surface);
+      border-radius:11px;
+      font-size:13px;
+      font-weight:700;
+    }
+    .nav-github:hover{border-color:var(--accent);transform:translateY(-1px)}
+    .menu-btn{display:none;width:38px;height:38px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px}
+
+    .hero{padding:92px 0 72px}
+    .hero-grid{display:grid;grid-template-columns:1.22fr .78fr;gap:70px;align-items:end}
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border:1px solid var(--line);
+      background:var(--surface);
+      border-radius:999px;
+      color:var(--muted);
+      font:600 11px/1.2 "JetBrains Mono",monospace;
+      letter-spacing:.03em;
+    }
+    .kicker i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px color-mix(in srgb,var(--green) 14%,transparent)}
+    h1{
+      max-width:800px;
+      margin:22px 0 0;
+      font-size:clamp(50px,7vw,92px);
+      line-height:.96;
+      letter-spacing:-.065em;
+      font-weight:700;
+    }
+    .hero-highlight{color:var(--accent)}
+    .lead{
+      max-width:720px;
+      margin:26px 0 0;
+      color:var(--muted);
+      font-size:19px;
+      line-height:1.7;
+    }
+    .lead strong{color:var(--ink)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:31px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:44px;
+      padding:11px 15px;
+      border:1px solid var(--line-strong);
+      border-radius:11px;
+      font-size:13px;
+      font-weight:700;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+    .btn-primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+    .btn-secondary{background:var(--surface)}
+    .hero-card{
+      padding:21px;
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:23px;
+      box-shadow:var(--shadow);
+    }
+    .mini-label{
+      color:var(--subtle);
+      font:600 10px/1.2 "JetBrains Mono",monospace;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+    .hero-card h2{margin:11px 0 0;font-size:21px;letter-spacing:-.035em;line-height:1.2}
+    .hero-card p{margin:8px 0 0;color:var(--muted);font-size:13px}
+    .focus-list{display:grid;gap:8px;margin-top:18px}
+    .focus{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:11px 12px;
+      border:1px solid var(--line);
+      background:var(--surface-soft);
+      border-radius:12px;
+      font-size:13px;
+    }
+    .focus span:last-child{color:var(--subtle);font:600 10px/1.2 "JetBrains Mono",monospace}
+
+    .section{padding:70px 0}
+    .section-head{
+      display:flex;
+      align-items:end;
+      justify-content:space-between;
+      gap:30px;
+      margin-bottom:25px;
+    }
+    .eyebrow{
+      color:var(--accent);
+      font:700 10px/1.2 "JetBrains Mono",monospace;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    h2.section-title{
+      margin:8px 0 0;
+      font-size:clamp(30px,4vw,45px);
+      line-height:1.05;
+      letter-spacing:-.05em;
+    }
+    .section-copy{max-width:540px;color:var(--muted);font-size:14px}
+
+    .work-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:17px}
+    .card{
+      position:relative;
+      overflow:hidden;
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-sm);
+      transition:.25s ease;
+    }
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 30%,var(--line))}
+    .card.feature{grid-row:span 2}
+    .visual{
+      position:relative;
+      min-height:205px;
+      overflow:hidden;
+      background:
+        radial-gradient(320px 140px at 18% 20%,rgba(255,255,255,.20),transparent 60%),
+        linear-gradient(135deg,#1a2951,#5a76d7 58%,#907bd8);
+    }
+    .feature .visual{min-height:330px}
+    .visual.dark{
+      background:
+        radial-gradient(320px 150px at 78% 10%,rgba(255,255,255,.14),transparent 58%),
+        linear-gradient(135deg,#101722,#294062 58%,#705fc4);
+    }
+    .visual.green{
+      background:
+        radial-gradient(320px 150px at 26% 14%,rgba(255,255,255,.13),transparent 58%),
+        linear-gradient(135deg,#182420,#326b55 55%,#8eae9e);
+    }
+    .visual.purple{
+      background:
+        radial-gradient(320px 150px at 78% 8%,rgba(255,255,255,.12),transparent 58%),
+        linear-gradient(135deg,#241b35,#55467d 60%,#ab99df);
+    }
+    .visual img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      opacity:.92;
+    }
+    .visual:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,transparent 38%,rgba(5,10,18,.42));
+      pointer-events:none;
+    }
+    .visual-note{
+      position:absolute;
+      z-index:2;
+      left:16px;
+      bottom:14px;
+      color:#fff;
+      font:600 10px/1.2 "JetBrains Mono",monospace;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+    }
+    .card-body{padding:20px}
+    .meta{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .tag{color:var(--subtle);font:600 10px/1.2 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+    .repo{color:var(--accent);font-size:12px;font-weight:750}
+    .title{margin-top:10px;font-size:27px;line-height:1.08;letter-spacing:-.04em}
+    .desc{margin-top:9px;color:var(--muted);font-size:13px;max-width:64ch}
+    .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
+    .chip{
+      padding:6px 8px;
+      border:1px solid var(--line);
+      background:var(--surface-soft);
+      color:var(--muted);
+      border-radius:8px;
+      font:600 10px/1.15 "JetBrains Mono",monospace;
+    }
+    .insight{
+      margin-top:15px;
+      padding:10px 11px;
+      border-left:2px solid var(--accent);
+      background:color-mix(in srgb,var(--accent) 6%,var(--surface));
+      color:var(--muted);
+      font-size:11px;
+    }
+
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+    .panel{
+      padding:24px;
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-sm);
+    }
+    .panel h3{margin:8px 0 0;font-size:24px;letter-spacing:-.04em;line-height:1.08}
+    .panel > p{color:var(--muted);font-size:13px;margin:9px 0 0}
+    .contribs{display:grid;gap:9px;margin-top:18px}
+    .contrib{
+      display:grid;
+      grid-template-columns:1fr auto;
+      align-items:center;
+      gap:18px;
+      padding:12px 13px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:var(--surface-soft);
+    }
+    .contrib:hover{border-color:var(--accent)}
+    .contrib strong{font-size:13px}
+    .contrib small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+    .contrib a{color:var(--accent);font:700 10px/1.2 "JetBrains Mono",monospace;white-space:nowrap}
+
+    .principles{display:grid;gap:13px;margin-top:18px}
+    .principle{display:grid;grid-template-columns:34px 1fr;gap:11px;padding-top:13px;border-top:1px solid var(--line)}
+    .principle:first-child{padding-top:0;border-top:0}
+    .number{color:var(--accent);font:700 10px/1.4 "JetBrains Mono",monospace}
+    .principle strong{font-size:13px}
+    .principle span{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+
+    .stack-panel{margin-top:17px}
+    .stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}
+    .stack .chip{padding:7px 9px}
+
+    .cta{padding:80px 0 90px}
+    .cta-box{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:30px;
+      padding:29px 31px;
+      border-radius:24px;
+      background:var(--ink);
+      color:var(--bg);
+      box-shadow:var(--shadow);
+    }
+    .cta h2{margin:0;font-size:clamp(29px,4vw,43px);line-height:1.04;letter-spacing:-.05em}
+    .cta p{margin:8px 0 0;color:color-mix(in srgb,currentColor 56%,transparent);font-size:13px;max-width:650px}
+    .cta .btn{background:var(--bg);color:var(--ink);border-color:transparent;white-space:nowrap}
+
+    footer{border-top:1px solid var(--line);padding:23px 0 34px;color:var(--muted);font-size:11px}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .footer-links{display:flex;gap:13px}
+    .footer-links a:hover{color:var(--ink)}
+
+    .reveal{opacity:0;transform:translateY(12px);transition:.55s ease}
+    .reveal.show{opacity:1;transform:none}
+
+    @media (max-width:920px){
+      .hero-grid,.two-col{grid-template-columns:1fr}
+      .hero{padding-top:70px}
+      .hero-card{max-width:720px}
+      .work-grid{grid-template-columns:1fr}
+      .card.feature{grid-row:auto}
+      .feature .visual{min-height:250px}
+      .nav-links{display:none}
+      .menu-btn{display:block}
+      .nav.open .nav-links{
+        display:flex;
+        position:absolute;
+        top:69px;
+        left:20px;
+        right:20px;
+        flex-direction:column;
+        padding:8px;
+        background:var(--surface);
+        border:1px solid var(--line);
+        border-radius:14px;
+        box-shadow:var(--shadow);
+      }
+      .nav.open .nav-links a{padding:12px}
+    }
+
+    @media (max-width:620px){
+      .wrap{width:min(var(--max),calc(100% - 26px))}
+      h1{font-size:clamp(44px,14vw,67px)}
+      .lead{font-size:17px}
+      .hero-actions{flex-direction:column}
+      .hero-actions .btn{width:100%}
+      .section{padding:52px 0}
+      .section-head{display:block}
+      .section-copy{margin-top:10px}
+      .card-body,.panel{padding:18px}
+      .title{font-size:24px}
+      .visual,.feature .visual{min-height:190px}
+      .cta{padding:58px 0 65px}
+      .cta-box{display:block;padding:25px}
+      .cta .btn{width:100%;margin-top:17px}
+      .footer-inner{display:block}
+      .footer-links{margin-top:8px}
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .reveal{opacity:1;transform:none;transition:none}
+      .card,.btn{transition:none}
+    }
+  </style>
+</head>
+
 <body>
-  <!-- Living Interactive Neural Canvas -->
-  <canvas id="neural-canvas"></canvas>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Blueprint Background & Ambient Glows -->
-  <div class="blueprint-grid"></div>
-  <div class="ambient-glow-top"></div>
-  <div class="ambient-glow-bottom"></div>
-
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="#" class="brand">
-        <div class="brand-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
-          </svg>
-        </div>
-        <div class="brand-title">omid<span>.io</span></div>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Omid Zaferi home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-name">omid<span>.io</span></span>
       </a>
-      
-      <nav class="nav-menu">
-        <a href="#featured" class="nav-item">Selected Work</a>
-        <a href="#catalog" class="nav-item">Projects</a>
-        <a href="#contributions" class="nav-item">Open Source</a>
-        <a href="#architecture" class="nav-item">Approach</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#opensource">Open source</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <div class="nav-actions">
-        <div class="nav-status">
-          <span class="pulse-dot"></span>
-          <span>Online</span>
-        </div>
-        <a href="https://github.com/omid-io" target="_blank" rel="noopener noreferrer" class="btn-github-nav">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-          </svg>
-          <span>GitHub</span>
-        </a>
+      <div class="nav-right">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+        <a class="nav-github" href="https://github.com/omid-io" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Hero Section -->
+  <main id="main">
     <section class="hero">
-      <div class="hero-pill">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-        </svg>
-        <span>Software Architect &amp; Systems Engineer</span>
-      </div>
-
-      <!-- Dynamic Typewriter Title -->
-      <h1 class="hero-title">
-        I build software where <br />
-        <span class="typewriter-wrapper">
-          <span id="typewriter-text" class="typewriter-text hero-accent">the details matter.</span>
-          <span class="cursor-blink"></span>
-        </span>
-      </h1>
-
-      <p class="hero-bio">
-        I’m <strong>Omid Zaferi</strong> (omid-io). I build developer tools, AI infrastructure, networking systems, and automation software — with an emphasis on clear contracts, useful abstractions, and engineering that can be inspected.
-      </p>
-
-      <div class="hero-cta">
-        <a href="#featured" class="btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-            <polyline points="2 17 12 22 22 17"></polyline>
-            <polyline points="2 12 12 17 22 12"></polyline>
-          </svg>
-          <span>Explore Selected Work</span>
-        </a>
-        <a href="#catalog" class="btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="7" height="7"></rect>
-            <rect x="14" y="3" width="7" height="7"></rect>
-            <rect x="14" y="14" width="7" height="7"></rect>
-            <rect x="3" y="14" width="7" height="7"></rect>
-          </svg>
-          <span>View All Projects</span>
-        </a>
-      </div>
-
-      <!-- Live Heartbeat & Telemetry Ribbon -->
-      <div id="telemetry" class="telemetry-bar">
-        <div class="telemetry-signal">
-          <div class="signal-canvas-wrap">
-            <canvas id="pulse-canvas"></canvas>
-          </div>
-          <div class="signal-info">
-            <span class="signal-title">Network Probe Heartbeat</span>
-            <span class="signal-val" id="live-latency-val">138ms</span>
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <div class="kicker"><i></i> Software Architect · Systems Engineer</div>
+          <h1>I build software where <span class="hero-highlight">the details matter.</span></h1>
+          <p class="lead">
+            I’m <strong>Omid Zaferi</strong> (omid-io). I work across AI tooling, developer experience, networking and automation — turning awkward technical problems into systems with clear boundaries and useful behavior.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">Explore selected work ↓</a>
+            <a class="btn btn-secondary" href="mailto:omidzaferi@gmail.com">Get in touch</a>
           </div>
         </div>
 
-        <div class="telemetry-stats">
-          <div class="telem-stat">
-            <span class="telem-num c-cyan">&lt;10ms</span>
-            <span class="telem-label">AirTun tunnel latency</span>
+        <aside class="hero-card reveal">
+          <div class="mini-label">What I’m building around</div>
+          <h2>Useful systems, not technology theatre.</h2>
+          <p>A compact view of the themes behind the public work.</p>
+          <div class="focus-list">
+            <div class="focus"><span>AI & agent tooling</span><span>MCP · Agents</span></div>
+            <div class="focus"><span>Systems & networking</span><span>.NET · Kotlin</span></div>
+            <div class="focus"><span>Developer experience</span><span>UI · Tooling</span></div>
+            <div class="focus"><span>Automation</span><span>Python · Playwright</span></div>
           </div>
-          <div class="telem-stat">
-            <span class="telem-num" style="color: var(--emerald-bright);">WCAG AAA</span>
-            <span class="telem-label">Vibe UI compliance</span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">01 · Selected work</div>
+            <h2 class="section-title">Four projects. One clearer story.</h2>
           </div>
-          <div class="telem-stat">
-            <span class="telem-num c-violet">20+</span>
-            <span class="telem-label">Tracked repositories</span>
-          </div>
+          <p class="section-copy">The strongest original projects stay here. Forks, experiments and upstream work live elsewhere so the first impression stays focused.</p>
+        </div>
+
+        <div class="work-grid">
+          <article class="card feature reveal">
+            <div class="visual">
+              <img src="https://raw.githubusercontent.com/omid-io/vibe-ui-suite/main/assets/vibe_ui_suite_cover.jpg" alt="Vibe UI Suite interface preview" loading="lazy">
+              <div class="visual-note">AI tooling · design systems</div>
+            </div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="tag">Original project</span>
+                <a class="repo" href="https://github.com/omid-io/vibe-ui-suite" target="_blank" rel="noreferrer">Repository ↗</a>
+              </div>
+              <div class="title">Vibe UI Suite</div>
+              <p class="desc">A design-system workflow for AI coding agents: design contracts, tokenized styles, component recipes, accessibility checks and RTL-aware implementation patterns.</p>
+              <div class="chips">
+                <span class="chip">TypeScript</span><span class="chip">Next.js</span><span class="chip">Tailwind</span><span class="chip">OKLCH</span><span class="chip">Accessibility</span>
+              </div>
+              <div class="insight">The core idea is simple: make visual decisions explicit enough that both people and coding agents can follow the same rules.</div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="visual dark">
+              <img src="https://raw.githubusercontent.com/omid-io/AirTun/master/branding/github_banner.png" alt="AirTun project banner" loading="lazy">
+              <div class="visual-note">Networking · desktop + mobile</div>
+            </div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="tag">Original project</span>
+                <a class="repo" href="https://github.com/omid-io/AirTun" target="_blank" rel="noreferrer">Repository ↗</a>
+              </div>
+              <div class="title">AirTun</div>
+              <p class="desc">Mobile-to-Windows tunnel sharing built around Kotlin, WinUI 3, .NET and Wintun, with a no-root Android client and local transport between devices.</p>
+              <div class="chips">
+                <span class="chip">C#</span><span class="chip">.NET 8</span><span class="chip">Kotlin</span><span class="chip">WinUI 3</span><span class="chip">Wintun</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="visual green"><div class="visual-note">Automation · generative workflows</div></div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="tag">Original project</span>
+                <a class="repo" href="https://github.com/omid-io/google-flow-suite" target="_blank" rel="noreferrer">Repository ↗</a>
+              </div>
+              <div class="title">Google Flow Suite</div>
+              <p class="desc">An automation suite combining browser control, CDP, FastMCP, asynchronous jobs and persistent state for generative workflows.</p>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Playwright</span><span class="chip">SQLite</span><span class="chip">AsyncIO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="visual purple"><div class="visual-note">Resilience · developer tooling</div></div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="tag">Original project</span>
+                <a class="repo" href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noreferrer">Repository ↗</a>
+              </div>
+              <div class="title">antigravity-pause</div>
+              <p class="desc">Pause, hibernation and pre-flight protection for Google Antigravity, with lifecycle handling designed around safe session transitions.</p>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">CLI</span><span class="chip">Git</span><span class="chip">Resilience</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 1: Featured Flagship Systems (With Real Images & Banners) -->
-    <section id="featured" class="section">
-      <div class="section-header">
-        <span class="section-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-          </svg>
-          <span>Flagship Showcase</span>
-        </span>
-        <h2 class="section-title">Core Systems &amp; Original Architectures</h2>
-        <p class="section-desc">Flagship open-source projects with production-grade engineering, rich media, and proven performance.</p>
-      </div>
+    <section class="section" id="opensource">
+      <div class="wrap two-col">
+        <article class="panel reveal">
+          <div class="eyebrow">02 · Open source</div>
+          <h3>Upstream fixes that made it back.</h3>
+          <p>Contribution is shown separately from personal projects, with direct links to the merged work.</p>
 
-      <div class="projects-container">
-        <!-- Flagship 1: AirTun -->
-        <article class="spotlight-card showcase-card">
-          <div class="showcase-banner-wrap">
-            <img 
-              src="https://raw.githubusercontent.com/omid-io/AirTun/master/branding/github_banner.png" 
-              alt="AirTun Banner" 
-              class="showcase-banner-img" 
-              onerror="this.src='https://raw.githubusercontent.com/omid-io/AirTun/master/docs/screenshots/airtun_showcase.png'"
-            />
-            <div class="showcase-banner-overlay"></div>
-            <div class="banner-badge-float">
-              <span>⚡ Starred Flagship &bull; WinUI 3 (.NET 8) + Kotlin</span>
-            </div>
-          </div>
-
-          <div class="card-topbar">
-            <div class="card-title-group">
-              <div class="card-title-row">
-                <a href="https://github.com/omid-io/AirTun" target="_blank" rel="noopener noreferrer" class="card-title">
-                  AirTun
-                </a>
-                <span class="tag-version">Production</span>
-              </div>
-              <p class="card-summary">
-                Ultra-fast, low-latency mobile internet &amp; VPN tunnel sharing for Windows 10/11. Routes and synchronizes encrypted mobile tunnel traffic to desktop with zero root requirement via custom Kotlin Jetpack Compose and native WinUI 3 .NET 8 runtimes.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/omid-io/AirTun" target="_blank" rel="noopener noreferrer" class="btn-repo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-                </svg>
-                <span>GitHub Repo</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="card-content-area">
-            <div class="tabs-nav">
-              <button class="tab-btn active" data-tab="features">Architecture &amp; Benchmarks</button>
-              <button class="tab-btn" data-tab="code">Core Components</button>
-            </div>
-
-            <div class="tab-pane active" data-pane="features">
-              <div class="features-list">
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Sub-10ms Tunneling Latency:</strong> High-throughput local socket pipeline maximizing bandwidth for competitive gaming and streaming.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>No-Root Android Engine:</strong> Kotlin Jetpack Compose client utilizing modern VpnService &amp; Wi-Fi Direct protocols.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Native Windows 11 Desktop UI:</strong> Elegant WinUI 3 app written in modern C# .NET 8 with fluent acrylic glassmorphism.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Dual-Channel Auto-Failover:</strong> Seamless switching between USB Tethering, Wi-Fi Direct, and Local Hotspot.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-pane" data-pane="code">
-              <pre class="code-box"><code><span class="code-comment">// AirTun High-Performance Architecture Stack:</span>
-windows/ ──► WinUI 3 Desktop App (.NET 8 C#) + Win32 Native Interop
-android/ ──► Kotlin Jetpack Compose + Coroutines + Android VpnService
-protocol/──► Custom binary packet framing over high-speed local TCP/UDP</code></pre>
-            </div>
-          </div>
-
-          <div class="card-bottom">
-            <div class="tech-pills">
-              <span class="pill">C# .NET 8</span>
-              <span class="pill">WinUI 3</span>
-              <span class="pill">Kotlin</span>
-              <span class="pill">Jetpack Compose</span>
-              <span class="pill">Tunneling</span>
-              <span class="pill">Low Latency</span>
-            </div>
-            <button class="quick-clone-btn" data-copy="git clone https://github.com/omid-io/AirTun.git">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span>Copy Clone Command</span>
-            </button>
+          <div class="contribs">
+            <a class="contrib" href="https://github.com/ghost1372/HandyControls/pull/248" target="_blank" rel="noreferrer">
+              <div><strong>HandyControls · window restore</strong><small>Restored resize behavior after a WPF window returns from maximized state.</small></div>
+              <span>PR #248 ↗</span>
+            </a>
+            <a class="contrib" href="https://github.com/ghost1372/HandyControls/pull/249" target="_blank" rel="noreferrer">
+              <div><strong>HandyControls · null safety</strong><small>Guarded an AdornerElement path against a null dependency-property value.</small></div>
+              <span>PR #249 ↗</span>
+            </a>
+            <a class="contrib" href="https://github.com/ghost1372/HandyControls/pull/251" target="_blank" rel="noreferrer">
+              <div><strong>HandyControls · collections</strong><small>Moved collection types into a cleaner namespace boundary for MVVM usage.</small></div>
+              <span>PR #251 ↗</span>
+            </a>
           </div>
         </article>
 
-        <!-- Flagship 2: vibe-ui-suite -->
-        <article class="spotlight-card showcase-card">
-          <div class="showcase-banner-wrap">
-            <img 
-              src="https://raw.githubusercontent.com/omid-io/vibe-ui-suite/main/assets/vibe_ui_suite_cover.jpg" 
-              alt="Vibe UI Suite Cover" 
-              class="showcase-banner-img" 
-              onerror="this.src='https://raw.githubusercontent.com/omid-io/vibe-ui-suite/main/assets/vibe_ui_showcase_1080p.jpg'"
-            />
-            <div class="showcase-banner-overlay"></div>
-            <div class="banner-badge-float">
-              <span>🎨 Design System &bull; WCAG AAA &bull; Live Demo</span>
-            </div>
-          </div>
+        <article class="panel reveal" id="approach">
+          <div class="eyebrow">03 · Approach</div>
+          <h3>Less noise. More signal.</h3>
+          <p>The recurring pattern across the work is how problems get decomposed.</p>
 
-          <div class="card-topbar">
-            <div class="card-title-group">
-              <div class="card-title-row">
-                <a href="https://github.com/omid-io/vibe-ui-suite" target="_blank" rel="noopener noreferrer" class="card-title">
-                  vibe-ui-suite
-                </a>
-                <span class="tag-version">Design Engine</span>
-              </div>
-              <p class="card-summary">
-                Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity). Eliminates generic AI slop by strictly enforcing OKLCH color math, native RTL bidirectional isolation, and tokenized CSS.
-              </p>
+          <div class="principles">
+            <div class="principle">
+              <div class="number">01</div>
+              <div><strong>Start from the failure mode.</strong><span>What can break, drift, leak, race or become ambiguous?</span></div>
             </div>
-            <div class="card-actions">
-              <a href="https://omid-io.github.io/vibe-ui-suite/" target="_blank" rel="noopener noreferrer" class="btn-demo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-                <span>Live Interactive Demo</span>
-              </a>
-              <a href="https://github.com/omid-io/vibe-ui-suite" target="_blank" rel="noopener noreferrer" class="btn-repo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-                </svg>
-                <span>GitHub Repo</span>
-              </a>
+            <div class="principle">
+              <div class="number">02</div>
+              <div><strong>Make the contract visible.</strong><span>Boundaries, tokens, protocol rules and lifecycle behavior should explain themselves.</span></div>
             </div>
-          </div>
-
-          <div class="card-content-area">
-            <div class="tabs-nav">
-              <button class="tab-btn active" data-tab="features">Standards &amp; Principles</button>
-              <button class="tab-btn" data-tab="code">CLI Usage</button>
+            <div class="principle">
+              <div class="number">03</div>
+              <div><strong>Ship the smallest convincing system.</strong><span>Useful scope beats an impressive feature list that nobody can verify.</span></div>
             </div>
-
-            <div class="tab-pane active" data-pane="features">
-              <div class="features-list">
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Anti AI-Slop Enforcement:</strong> Rejects uncalibrated gradients, low-contrast text, and raw emoji icons in production UI.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>OKLCH Color Science:</strong> Perceptually uniform color spaces guaranteeing WCAG AAA accessible contrast.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Native Persian / RTL Support:</strong> Automatic bidirectional text isolation with &lt;bdi&gt; and logical properties.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Agent Evaluation Gates:</strong> Automated CI test suite ensuring generated frontend code passes design audits.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-pane" data-pane="code">
-              <pre class="code-box"><code><span class="code-comment"># Audit frontend code against Anti AI-Slop standards:</span>
-python vibe_cli.py audit ./src --standards wcag-aaa,oklch,rtl
-
-<span class="code-comment"># Generate deterministic design token palette:</span>
-python vibe_cli.py tokens --theme cybernetic-slate --format css</code></pre>
-            </div>
-          </div>
-
-          <div class="card-bottom">
-            <div class="tech-pills">
-              <span class="pill">Design Systems</span>
-              <span class="pill">WCAG AAA</span>
-              <span class="pill">OKLCH</span>
-              <span class="pill">RTL Engine</span>
-              <span class="pill">CLI Auditing</span>
-              <span class="pill">AI Agent Skills</span>
-            </div>
-            <button class="quick-clone-btn" data-copy="git clone https://github.com/omid-io/vibe-ui-suite.git">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span>Copy Clone Command</span>
-            </button>
-          </div>
-        </article>
-
-        <!-- Flagship 3: antigravity-pause -->
-        <article class="spotlight-card showcase-card">
-          <div class="card-topbar">
-            <div class="card-title-group">
-              <div class="card-title-row">
-                <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="card-title">
-                  antigravity-pause
-                </a>
-                <span class="tag-version">v0.1.0-stable</span>
-              </div>
-              <p class="card-summary">
-                Graceful Pause, Deep Hibernation &amp; Pre-Flight Leak Protection for Google Antigravity (2.0 Desktop, IDE, and CLI). Shields sessions against 403 Forbidden geoblocks, ECONNRESET socket drops, and stuck Git index locks.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="btn-repo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-                </svg>
-                <span>GitHub Repo</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="card-content-area">
-            <div class="tabs-nav">
-              <button class="tab-btn active" data-tab="features">Highlights</button>
-              <button class="tab-btn" data-tab="code">CLI &amp; Slash Commands</button>
-            </div>
-
-            <div class="tab-pane active" data-pane="features">
-              <div class="features-list">
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>&lt;200ms Pre-Flight Leak Probe:</strong> Blocks requests before an IP leak causes API gateway session bans.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Zero-Kill Hot Standby (/pause):</strong> Suspends subagent trees into radio silence without killing process memory.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Atomic Checkpointing (/hibernate):</strong> Safely dumps multi-turn context and subagent tasks to disk snapshots.</span>
-                </div>
-                <div class="feature-bullet">
-                  <span class="bullet-icon">✓</span>
-                  <span><strong>Git Lock Sanitizer:</strong> Automatically detects and removes orphaned <code>.git/index.lock</code> files.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-pane" data-pane="code">
-              <pre class="code-box"><code><span class="code-comment"># 1. Hot Standby during VPN switches</span>
-/pause      <span class="code-comment"># Enters radio silence; holds HTTP/2 sockets safely</span>
-/play       <span class="code-comment"># Validates non-sanctioned exit node in &lt;140ms &amp; resumes</span>
-
-<span class="code-comment"># 2. Deep Hibernation for system reboot / shutdowns</span>
-/hibernate  <span class="code-comment"># Atomic state snapshot dumped to .checkpoints/</span>
-/continue   <span class="code-comment"># Rehydrates state and continues next task step</span></code></pre>
-            </div>
-          </div>
-
-          <div class="card-bottom">
-            <div class="tech-pills">
-              <span class="pill">Python 3.10+</span>
-              <span class="pill">Antigravity 2.0</span>
-              <span class="pill">AsyncIO</span>
-              <span class="pill">Anti-Leak</span>
-              <span class="pill">MIT License</span>
-            </div>
-            <button class="quick-clone-btn" data-copy="git clone https://github.com/omid-io/antigravity-pause.git">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span>Copy Clone Command</span>
-            </button>
-          </div>
-        </article>
-
-        <!-- Flagship 4: Android-Todo-App -->
-        <article class="spotlight-card showcase-card">
-          <div class="showcase-banner-wrap">
-            <img 
-              src="https://raw.githubusercontent.com/omid-io/Android-Todo-App/main/screenshots/darkmode.png" 
-              alt="Android Todo App Screenshot" 
-              class="showcase-banner-img" 
-              style="object-position: top center;"
-              onerror="this.src='https://raw.githubusercontent.com/omid-io/Android-Todo-App/main/screenshots/mainscreen.png'"
-            />
-            <div class="showcase-banner-overlay"></div>
-            <div class="banner-badge-float">
-              <span>📱 Mobile &bull; 100% Jetpack Compose &bull; Room Flow</span>
-            </div>
-          </div>
-
-          <div class="card-topbar">
-            <div class="card-title-group">
-              <div class="card-title-row">
-                <a href="https://github.com/omid-io/Android-Todo-App" target="_blank" rel="noopener noreferrer" class="card-title">
-                  Android-Todo-App
-                </a>
-                <span class="tag-version">Mobile App</span>
-              </div>
-              <p class="card-summary">
-                Ultra-Modern Glassmorphism Task Manager built natively for Android with 100% Jetpack Compose, Room Flow reactive database architecture, dual Shamsi/Gregorian calendar integration, and automated CI/CD release pipelines.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/omid-io/Android-Todo-App" target="_blank" rel="noopener noreferrer" class="btn-repo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-                </svg>
-                <span>GitHub Repo</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="card-bottom">
-            <div class="tech-pills">
-              <span class="pill">Kotlin</span>
-              <span class="pill">Jetpack Compose</span>
-              <span class="pill">Room Flow</span>
-              <span class="pill">Glassmorphism</span>
-              <span class="pill">Dual Calendar</span>
-            </div>
-            <button class="quick-clone-btn" data-copy="git clone https://github.com/omid-io/Android-Todo-App.git">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span>Copy Clone Command</span>
-            </button>
           </div>
         </article>
       </div>
-    </section>
 
-    <!-- SECTION 2: Complete Catalog Directory (With Filter Tabs) -->
-    <section id="catalog" class="section">
-      <div class="section-header">
-        <span class="section-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="7" height="7"></rect>
-            <rect x="14" y="3" width="7" height="7"></rect>
-            <rect x="14" y="14" width="7" height="7"></rect>
-            <rect x="3" y="14" width="7" height="7"></rect>
-          </svg>
-          <span>Complete Portfolio</span>
-        </span>
-        <h2 class="section-title">Full Repository Catalog</h2>
-        <p class="section-desc">Searchable directory of 20+ specialized modules, automation tools, browser scripts, and extensions.</p>
-      </div>
-
-      <!-- Filter Controls -->
-      <div class="catalog-controls">
-        <div class="filter-btn-group">
-          <button class="filter-btn active" data-filter="all">All Repositories</button>
-          <button class="filter-btn" data-filter="ai-systems">AI &amp; Systems</button>
-          <button class="filter-btn" data-filter="desktop-mobile">Mobile &amp; Desktop</button>
-          <button class="filter-btn" data-filter="tools">Tools &amp; Utilities</button>
-        </div>
-      </div>
-
-      <!-- Catalog Cards Grid -->
-      <div class="catalog-grid">
-        <!-- Item 1: google-flow-suite -->
-        <div class="spotlight-card catalog-card" data-category="ai-systems">
-          <div class="catalog-top">
-            <div class="catalog-title-row">
-              <a href="https://github.com/omid-io/google-flow-suite" target="_blank" rel="noopener noreferrer" class="catalog-title">google-flow-suite</a>
-              <span class="tag-version">Automation</span>
-            </div>
-            <p class="catalog-desc">
-              Production-grade Google Flow automation suite (Nano Banana 2 &amp; Omni Flash / Veo 3.1) with Chrome MV3 Bridge, Playwright CDP, FastMCP &amp; CLI.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>Playwright CDP &bull; FastMCP</span>
-            <a href="https://github.com/omid-io/google-flow-suite" target="_blank" rel="noopener noreferrer" class="catalog-link">View Repo &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Item 2: telegram-mcp -->
-        <div class="spotlight-card catalog-card" data-category="ai-systems">
-          <div class="catalog-top">
-            <div class="catalog-title-row">
-              <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer" class="catalog-title">telegram-mcp</a>
-              <span class="tag-version">MCP Server</span>
-            </div>
-            <p class="catalog-desc">
-              High-throughput Telegram MCP server powered by Telethon. Bridges autonomous agents with chats, channels, media streaming, and notifications.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>Python &bull; Telethon &bull; MCP</span>
-            <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer" class="catalog-link">View Repo &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Item 3: antigravity-rtl -->
-        <div class="spotlight-card catalog-card" data-category="tools">
-          <div class="catalog-top">
-            <div class="catalog-title-row">
-              <a href="https://github.com/omid-io/antigravity-rtl" target="_blank" rel="noopener noreferrer" class="catalog-title">antigravity-rtl</a>
-              <span class="tag-version">UI Patcher</span>
-            </div>
-            <p class="catalog-desc">
-              Smart RTL (Right-to-Left) UI patcher for Google Antigravity 2.0, introducing native Persian, Arabic, and Hebrew support with custom typography.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>TypeScript &bull; CSS &bull; Antigravity</span>
-            <a href="https://github.com/omid-io/antigravity-rtl" target="_blank" rel="noopener noreferrer" class="catalog-link">View Repo &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Item 4: digikala-pure-search -->
-        <div class="spotlight-card catalog-card" data-category="tools">
-          <div class="catalog-top">
-            <div class="catalog-title-row">
-              <a href="https://github.com/omid-io/digikala-pure-search" target="_blank" rel="noopener noreferrer" class="catalog-title">digikala-pure-search</a>
-              <span class="tag-version">Userscript</span>
-            </div>
-            <p class="catalog-desc">
-              Smart ad, sponsored product, and artificial recommendation remover for Digikala, delivering 100% organic, genuine search results.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>JavaScript &bull; DOM Filtering</span>
-            <a href="https://github.com/omid-io/digikala-pure-search" target="_blank" rel="noopener noreferrer" class="catalog-link">View Repo &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Item 5: arena.ai-chat-downloader -->
-        <div class="spotlight-card catalog-card" data-category="tools">
-          <div class="catalog-top">
-            <div class="catalog-title-row">
-              <a href="https://github.com/omid-io/arena.ai-chat-downloader" target="_blank" rel="noopener noreferrer" class="catalog-title">arena.ai-chat-downloader</a>
-              <span class="tag-version">Exporter</span>
-            </div>
-            <p class="catalog-desc">
-              Tampermonkey script to export full multi-turn conversations from LMSYS Chatbot Arena into clean Markdown with cherry-pick selection.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>JavaScript &bull; Markdown Export</span>
-            <a href="https://github.com/omid-io/arena.ai-chat-downloader" target="_blank" rel="noopener noreferrer" class="catalog-link">View Repo &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Item 6: FontWoW-2.0 -->
-        <div class="spotlight-card catalog-card" data-category="tools">
-          <div class="catalog-top">
-            <div class="catalog-title-row">
-              <a href="https://github.com/omid-io/FontWoW-2.0" target="_blank" rel="noopener noreferrer" class="catalog-title">FontWoW-2.0</a>
-              <span class="tag-version">Web App</span>
-            </div>
-            <p class="catalog-desc">
-              Modern web font exploration engine allowing real-time typographic comparison, variable font axis testing, and font subset evaluation.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>JavaScript &bull; Typography</span>
-            <a href="https://github.com/omid-io/FontWoW-2.0" target="_blank" rel="noopener noreferrer" class="catalog-link">View Repo &rarr;</a>
-          </div>
+      <div class="wrap panel stack-panel reveal">
+        <div class="eyebrow">Core stack</div>
+        <h3>Technologies that show up in the work</h3>
+        <div class="stack">
+          <span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">C#</span><span class="chip">Kotlin</span>
+          <span class="chip">.NET 8</span><span class="chip">WinUI 3</span><span class="chip">Next.js</span><span class="chip">FastAPI</span>
+          <span class="chip">Playwright</span><span class="chip">SQLite</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span>
+          <span class="chip">MCP</span><span class="chip">Jetpack Compose</span><span class="chip">GitHub Actions</span><span class="chip">Linux</span>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 3: Open-Source Contributions & Upstream Work -->
-    <section id="contributions" class="section">
-      <div class="section-header">
-        <span class="section-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="18" cy="18" r="3"></circle>
-            <circle cx="6" cy="6" r="3"></circle>
-            <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
-            <line x1="6" y1="9" x2="6" y2="21"></line>
-          </svg>
-          <span>Ecosystem Impact</span>
-        </span>
-        <h2 class="section-title">Upstream &amp; Open-Source Contributions</h2>
-        <p class="section-desc">Active engagement, architectural research, and contributions to leading software runtimes and AI platforms.</p>
-      </div>
-
-      <div class="contributions-grid">
-        <!-- Upstream 1: dotnet/runtime -->
-        <div class="spotlight-card contribution-card">
+    <section class="cta" id="contact">
+      <div class="wrap">
+        <div class="cta-box reveal">
           <div>
-            <div class="contrib-header">
-              <span class="contrib-badge">Systems &bull; High Scale</span>
-            </div>
-            <h3 class="contrib-title">Microsoft .NET Runtime</h3>
-            <div class="contrib-org">dotnet / runtime</div>
-            <p class="contrib-body">
-              The cross-platform runtime engine for cloud, desktop, and IoT workloads. Deep expertise in high-concurrency threading, zero-allocation memory pipelines, and WinUI 3 interop.
-            </p>
+            <h2>Have a hard technical problem?</h2>
+            <p>Start with the actual constraint. GitHub is the place to inspect the work; email is the easiest way to start a conversation.</p>
           </div>
-          <div class="catalog-meta">
-            <span>C# &bull; C++ &bull; Runtime</span>
-            <a href="https://github.com/dotnet/runtime" target="_blank" rel="noopener noreferrer" class="catalog-link">Upstream &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Upstream 2: llama_index -->
-        <div class="spotlight-card contribution-card">
-          <div>
-            <div class="contrib-header">
-              <span class="contrib-badge">AI Platform</span>
-            </div>
-            <h3 class="contrib-title">LlamaIndex</h3>
-            <div class="contrib-org">run-llama / llama_index</div>
-            <p class="contrib-body">
-              The premier data framework for LLMs and autonomous agents. Researching context synthesis, document ingestion, and external tool routing architectures.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>Python &bull; RAG &bull; Agents</span>
-            <a href="https://github.com/run-llama/llama_index" target="_blank" rel="noopener noreferrer" class="catalog-link">Upstream &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Upstream 3: astral-sh/uv -->
-        <div class="spotlight-card contribution-card">
-          <div>
-            <div class="contrib-header">
-              <span class="contrib-badge">Rust Toolchain</span>
-            </div>
-            <h3 class="contrib-title">Astral uv</h3>
-            <div class="contrib-org">astral-sh / uv</div>
-            <p class="contrib-body">
-              Ultra-fast Python package and project manager written in Rust. Following high-performance dependency resolution and isolated execution workflows.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>Rust &bull; Python Ecosystem</span>
-            <a href="https://github.com/astral-sh/uv" target="_blank" rel="noopener noreferrer" class="catalog-link">Upstream &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Upstream 4: sst/opencode -->
-        <div class="spotlight-card contribution-card">
-          <div>
-            <div class="contrib-header">
-              <span class="contrib-badge">Coding Agent</span>
-            </div>
-            <h3 class="contrib-title">OpenCode</h3>
-            <div class="contrib-org">sst / opencode</div>
-            <p class="contrib-body">
-              The open-source terminal coding agent. Working with autonomous file diffing, command verification, and multi-model execution loops.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>TypeScript &bull; LLM Runtimes</span>
-            <a href="https://github.com/sst/opencode" target="_blank" rel="noopener noreferrer" class="catalog-link">Upstream &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Upstream 5: imaNNeo/fl_chart -->
-        <div class="spotlight-card contribution-card">
-          <div>
-            <div class="contrib-header">
-              <span class="contrib-badge">Mobile Visualization</span>
-            </div>
-            <h3 class="contrib-title">FL Chart</h3>
-            <div class="contrib-org">imaNNeo / fl_chart</div>
-            <p class="contrib-body">
-              The standard Flutter chart library supporting Line, Bar, Pie, Scatter, and Radar charting with high-performance 60fps canvas rendering.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>Dart &bull; Flutter &bull; Canvas</span>
-            <a href="https://github.com/imaNNeo/fl_chart" target="_blank" rel="noopener noreferrer" class="catalog-link">Upstream &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Upstream 6: NousResearch/hermes-agent -->
-        <div class="spotlight-card contribution-card">
-          <div>
-            <div class="contrib-header">
-              <span class="contrib-badge">Reasoning Agents</span>
-            </div>
-            <h3 class="contrib-title">Hermes Agent</h3>
-            <div class="contrib-org">NousResearch / hermes-agent</div>
-            <p class="contrib-body">
-              Open-weights agent reasoning platform built to grow continuously with user telemetry and reinforcement learning from human feedback.
-            </p>
-          </div>
-          <div class="catalog-meta">
-            <span>Python &bull; Reasoning Loops</span>
-            <a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer" class="catalog-link">Upstream &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: Architecture Topology -->
-    <section id="architecture" class="section">
-      <div class="section-header">
-        <span class="section-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="6" y1="3" x2="6" y2="15"></line>
-            <circle cx="18" cy="6" r="3"></circle>
-            <circle cx="6" cy="18" r="3"></circle>
-            <path d="M18 9a9 9 0 0 1-9 9"></path>
-          </svg>
-          <span>System Topology</span>
-        </span>
-        <h2 class="section-title">Resilient Agent Architecture</h2>
-        <p class="section-desc">Live simulation of autonomous coding agents, pre-flight network guards, and context servers interacting.</p>
-      </div>
-
-      <div class="spotlight-card arch-diagram-wrapper">
-        <div class="arch-canvas">
-          <div class="arch-node">
-            <div class="arch-node-header">
-              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-              <div class="arch-node-title">Coding Agent Runtimes</div>
-            </div>
-            <div class="arch-node-desc">Google Antigravity 2.0 / Claude Code / Subagents managing continuous task workflows.</div>
-          </div>
-
-          <div class="arch-connector">
-            <div class="beam-track">
-              <div class="beam-packet"></div>
-            </div>
-          </div>
-
-          <div class="arch-node">
-            <div class="arch-node-header">
-              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              <div class="arch-node-title">antigravity-pause</div>
-            </div>
-            <div class="arch-node-desc">Atomic checkpoint engine, 200ms pre-flight leak probe, and git lock sanitization.</div>
-          </div>
-
-          <div class="arch-connector">
-            <div class="beam-track">
-              <div class="beam-packet delay"></div>
-            </div>
-          </div>
-
-          <div class="arch-node">
-            <div class="arch-node-header">
-              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-              </svg>
-              <div class="arch-node-title">telegram-mcp &amp; Tools</div>
-            </div>
-            <div class="arch-node-desc">Context protocol bridges driving chats, headless browsers, and OS tasks.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5: Interactive Terminal Playground -->
-    <section id="terminal" class="section">
-      <div class="section-header">
-        <span class="section-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="4 17 10 11 4 5"></polyline>
-            <line x1="12" y1="19" x2="20" y2="19"></line>
-          </svg>
-          <span>Live Console</span>
-        </span>
-        <h2 class="section-title">Interactive Terminal Playground</h2>
-        <p class="section-desc">Type commands below to query system status, explore all 20+ repos, or benchmark the network probe.</p>
-      </div>
-
-      <div class="terminal-shell">
-        <div class="term-topbar">
-          <div class="term-traffic-lights">
-            <span class="traffic-circle c-red"></span>
-            <span class="traffic-circle c-yellow"></span>
-            <span class="traffic-circle c-green"></span>
-          </div>
-          <span class="term-title-text">omid@workstation: ~/cluster-control</span>
-          <span class="term-hint">Try: help, projects, catalog, upstream, probe</span>
-        </div>
-
-        <div class="term-screen" id="terminal-screen">
-          <div class="log-entry">
-            <div><span class="log-prompt">omid@hub:~$</span> <span class="log-cmd">antigravity-pause --probe</span></div>
-            <div class="log-response">[+] Pre-flight leak probe initialized...
-[+] Handshake latency: 138ms | Exit IP: Verified Safe (Non-Sanctioned)
-[✓] Safe to proceed without 403 geoblock penalties.</div>
-          </div>
-          <div class="log-entry">
-            <div><span class="log-prompt">omid@hub:~$</span> <span class="log-cmd">help</span></div>
-            <div class="log-response">Available commands: projects, catalog, upstream, status, probe, whoami, clear</div>
-          </div>
-        </div>
-
-        <div class="term-input-row">
-          <span class="log-prompt">omid@hub:~$</span>
-          <input type="text" id="terminal-input" class="term-input" placeholder="Type a command (e.g. 'projects', 'catalog', 'upstream', 'probe') and press Enter..." autocomplete="off" />
+          <a class="btn" href="mailto:omidzaferi@gmail.com">Email Omid ↗</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">omid<span>.io</span></div>
-        <div class="footer-links-grid">
-          <a href="https://github.com/omid-io" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a>
-          <a href="https://github.com/omid-io/AirTun" target="_blank" rel="noopener noreferrer" class="footer-link">AirTun</a>
-          <a href="https://github.com/omid-io/vibe-ui-suite" target="_blank" rel="noopener noreferrer" class="footer-link">vibe-ui-suite</a>
-          <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="footer-link">antigravity-pause</a>
-          <a href="https://github.com/omid-io/Android-Todo-App" target="_blank" rel="noopener noreferrer" class="footer-link">Android-Todo-App</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div>&copy; <span id="year-display">2026</span> Omid Zaferi. Architected for resilience. Released under MIT.</div>
-        <div style="color: var(--text-dim);">Automated Sync via GitHub Actions &bull; Verified on Google Search Console</div>
+  <footer>
+    <div class="wrap footer-inner">
+      <div>© <span id="year"></span> Omid Zaferi · omid-io</div>
+      <div class="footer-links">
+        <a href="https://github.com/omid-io" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/omid-zaferi" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://x.com/omid_io" target="_blank" rel="noreferrer">X</a>
+        <a href="mailto:omidzaferi@gmail.com">Email</a>
       </div>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script>
+    (function(){
+      var root=document.documentElement;
+      var theme=document.getElementById('themeToggle');
+      var menu=document.getElementById('menuToggle');
+      var nav=document.querySelector('.nav');
+      var saved=localStorage.getItem('omid-theme');
+      if(saved==='dark') root.setAttribute('data-theme','dark');
+
+      theme.addEventListener('click',function(){
+        var dark=root.getAttribute('data-theme')==='dark';
+        if(dark){
+          root.removeAttribute('data-theme');
+          localStorage.setItem('omid-theme','light');
+        }else{
+          root.setAttribute('data-theme','dark');
+          localStorage.setItem('omid-theme','dark');
+        }
+      });
+
+      menu.addEventListener('click',function(){nav.classList.toggle('open')});
+      document.querySelectorAll('.nav-links a').forEach(function(a){
+        a.addEventListener('click',function(){nav.classList.remove('open')});
+      });
+
+      document.getElementById('year').textContent=new Date().getFullYear();
+
+      var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var items=document.querySelectorAll('.reveal');
+
+      if(reduce || !('IntersectionObserver' in window)){
+        items.forEach(function(item){item.classList.add('show')});
+      }else{
+        var observer=new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            if(entry.isIntersecting){
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target);
+            }
+          });
+        },{threshold:.12});
+        items.forEach(function(item){observer.observe(item)});
+      }
+    })();
+  </script>
 </body>
 </html>
