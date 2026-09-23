@@ -16,6 +16,10 @@
   // Inlined Bilingual Dictionary for Zero-Latency & Offline/File Protocol Support
   const translations = {
     en: {
+      meta: {
+        title: "Omid Zaferi (omid-io) — Software Architect & Systems Engineer",
+        desc: "Omid Zaferi (omid-io) — Systems Architect & Autonomous Agent Specialist. Engineering high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers."
+      },
       nav: {
         work: "Work",
         flagships: "Flagships",
@@ -125,6 +129,10 @@
       }
     },
     fa: {
+      meta: {
+        title: "امید زعفری (omid-io) — معمار نرم افزار و مهندس سیستم ها",
+        desc: "امید زعفری (omid-io) — معمار سیستم ها و متخصص عامل های هوشمند خودکار (AI Agents). طراحی شبکه های سطح کرنل، پروتکل های توزیع شده چند ایجنتی و کامپایلرهای دقیق طراحی سیستم."
+      },
       nav: {
         work: "پروژه ها",
         flagships: "سیستم های اصلی",
@@ -318,6 +326,20 @@
         el.textContent = val;
       }
     });
+
+    if (dict && dict.meta) {
+      document.title = dict.meta.title;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute("content", dict.meta.desc);
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", dict.meta.title);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", dict.meta.desc);
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute("content", dict.meta.title);
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute("content", dict.meta.desc);
+    }
 
     updateThemeIcon();
     updateTehranClock();

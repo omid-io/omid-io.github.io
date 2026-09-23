@@ -120,10 +120,171 @@ body {
   transition: background-color 0.25s var(--ease-smooth), color 0.25s var(--ease-smooth);
 }
 
-/* Persian Language Font & Directional Calibration */
+/* Accessibility Skip Link */
+.skip-link {
+  position: absolute;
+  top: -120px;
+  inset-inline-start: 24px;
+  background-color: var(--text-primary);
+  color: var(--bg);
+  padding: 8px 16px;
+  border-radius: var(--radius-xs);
+  z-index: 9999;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  transition: top 0.2s var(--ease-spring);
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Persian Language Font & Fine-Tuned Typography Calibration */
+html[lang="fa"] {
+  font-size: 14.5px; /* Fine-tuned root scale for harmonious Persian proportions */
+}
+
 html[lang="fa"] body {
   font-family: var(--font-fa);
-  line-height: 1.8;
+  line-height: 1.75;
+}
+
+html[lang="fa"] h1, 
+html[lang="fa"] h2, 
+html[lang="fa"] h3, 
+html[lang="fa"] h4,
+html[lang="fa"] h5,
+html[lang="fa"] h6 {
+  letter-spacing: normal;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+html[lang="fa"] .hero-title {
+  font-size: clamp(1.75rem, 3.4vw, 2.5rem);
+  line-height: 1.35;
+  letter-spacing: normal;
+  font-weight: 750;
+}
+
+html[lang="fa"] .hero-description {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  max-width: 640px;
+}
+
+html[lang="fa"] .section-title {
+  font-size: clamp(1.35rem, 2.3vw, 1.95rem);
+  line-height: 1.38;
+  letter-spacing: normal;
+  font-weight: 750;
+}
+
+html[lang="fa"] .section-subtitle {
+  font-size: 0.925rem;
+  line-height: 1.75;
+}
+
+html[lang="fa"] .project-card-title {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  letter-spacing: normal;
+  font-weight: 700;
+}
+
+html[lang="fa"] .project-card-desc {
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+
+html[lang="fa"] .project-proof-callout {
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+html[lang="fa"] .project-tag {
+  font-size: 0.725rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+html[lang="fa"] .upstream-title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+html[lang="fa"] .upstream-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+html[lang="fa"] .dna-title {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  letter-spacing: normal;
+  font-weight: 700;
+}
+
+html[lang="fa"] .dna-desc {
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+
+html[lang="fa"] .cta-title {
+  font-size: clamp(1.45rem, 2.6vw, 2.1rem);
+  line-height: 1.4;
+  letter-spacing: normal;
+  font-weight: 750;
+}
+
+html[lang="fa"] .cta-desc {
+  font-size: 0.925rem;
+  line-height: 1.75;
+}
+
+html[lang="fa"] .profile-card-name {
+  font-size: 1.25rem;
+  letter-spacing: normal;
+}
+
+html[lang="fa"] .profile-card-role {
+  font-size: 0.825rem;
+  line-height: 1.5;
+}
+
+html[lang="fa"] .status-pill,
+html[lang="fa"] .clock-pill,
+html[lang="fa"] .spec-tag {
+  font-size: 0.775rem;
+}
+
+html[lang="fa"] .nav-item {
+  font-size: 0.875rem;
+}
+
+html[lang="fa"] .filter-btn {
+  font-size: 0.825rem;
+}
+
+html[lang="fa"] .btn-primary,
+html[lang="fa"] .btn-secondary,
+html[lang="fa"] .copy-email-btn {
+  font-size: 0.875rem;
+}
+
+html[lang="fa"] .footer-inner {
+  font-size: 0.825rem;
+  line-height: 1.7;
+}
+
+html[lang="fa"] .eyebrow {
+  letter-spacing: normal;
+  font-size: 0.775rem;
 }
 
 /* Semantic LTR Isolation for Numbers and Code */
@@ -312,13 +473,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
 }
 
-html[lang="fa"] h1, 
-html[lang="fa"] h2, 
-html[lang="fa"] h3, 
-html[lang="fa"] h4 {
-  letter-spacing: normal;
-  font-weight: 800;
-}
 
 p {
   color: var(--text-secondary);
@@ -775,14 +929,14 @@ html[dir="rtl"] .btn-secondary:hover .arrow-icon {
   inset: -6px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--purple), var(--emerald));
-  opacity: 0.75;
-  filter: blur(8px);
-  transition: opacity 0.3s ease;
+  opacity: 0.35;
+  filter: blur(14px);
+  transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
 .hero-visual-card:hover .avatar-halo-ring {
-  opacity: 1;
-  filter: blur(12px);
+  opacity: 0.6;
+  filter: blur(18px);
 }
 
 .avatar-image-frame {
@@ -1078,20 +1232,20 @@ html[lang="fa"] .eyebrow {
 
 .project-banner-badge {
   position: absolute;
-  bottom: 14px;
-  inset-inline-start: 16px;
+  bottom: 12px;
+  inset-inline-start: 14px;
   z-index: 2;
-  padding: 5px 12px;
-  border-radius: var(--radius-xs);
-  background-color: oklch(0 0 0 / 0.72);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background-color: oklch(0 0 0 / 0.70);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: #ffffff;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  border: 1px solid oklch(1 0 0 / 0.15);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: 1px solid oklch(1 0 0 / 0.12);
 }
 
 /* Card Body Content */
@@ -1136,20 +1290,23 @@ html[lang="fa"] .project-tag {
   font-size: 0.925rem;
   line-height: 1.68;
   color: var(--text-secondary);
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   flex-grow: 1;
 }
 
 /* Architectural Proof Block */
 .project-proof-callout {
-  padding: 12px 14px;
-  border-radius: var(--radius-sm);
-  background-color: var(--accent-soft);
-  border-inline-start: 3px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: var(--radius-xs);
+  background-color: var(--surface-subtle);
+  border-inline-start: 2px solid var(--accent);
   font-size: 0.8125rem;
   color: var(--text-secondary);
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   line-height: 1.55;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-inline-end: 1px solid var(--border);
 }
 
 /* Stack Chips */

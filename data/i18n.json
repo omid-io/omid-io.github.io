@@ -1,5 +1,9 @@
 {
   "en": {
+    "meta": {
+      "title": "Omid Zaferi (omid-io) — Software Architect & Systems Engineer",
+      "desc": "Omid Zaferi (omid-io) — Systems Architect & Autonomous Agent Specialist. Engineering high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers."
+    },
     "nav": {
       "work": "Work",
       "flagships": "Flagships",
@@ -108,6 +112,10 @@
     }
   },
   "fa": {
+    "meta": {
+      "title": "امید زعفری (omid-io) — معمار نرم افزار و مهندس سیستم ها",
+      "desc": "امید زعفری (omid-io) — معمار سیستم ها و متخصص عامل های هوشمند خودکار (AI Agents). طراحی شبکه های سطح کرنل، پروتکل های توزیع شده چند ایجنتی و کامپایلرهای دقیق طراحی سیستم."
+    },
     "nav": {
       "work": "پروژه ها",
       "flagships": "سیستم های اصلی",
