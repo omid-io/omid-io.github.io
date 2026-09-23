@@ -133,6 +133,62 @@ bdi, .bdi, code, pre, .mono-data, .metric-number, .stat-value {
   font-family: var(--font-mono) !important;
 }
 
+/* ==========================================================================
+   Vibe UI Suite: Semantic RTL & Macro Layout Preservation
+   Rule: Macro layout coordinates, grid tracks, and navbars remain locked in LTR.
+   RTL applies strictly to textual semantics, headings, prose, and list content.
+   ========================================================================== */
+
+html[dir="rtl"] .nav-container,
+html[dir="rtl"] .hero-layout,
+html[dir="rtl"] .telemetry-grid,
+html[dir="rtl"] .projects-grid,
+html[dir="rtl"] .upstream-grid,
+html[dir="rtl"] .dna-grid,
+html[dir="rtl"] .cta-banner,
+html[dir="rtl"] .footer-inner,
+html[dir="rtl"] .social-dock,
+html[dir="rtl"] .nav-actions,
+html[dir="rtl"] .specialization-tags,
+html[dir="rtl"] .stack-chips-group,
+html[dir="rtl"] .filter-tabs {
+  direction: ltr; /* Keeps macro coordinate system and columns physically locked */
+}
+
+/* Explicit textual RTL for content containers */
+html[dir="rtl"] .hero-info-col,
+html[dir="rtl"] .hero-visual-card,
+html[dir="rtl"] .project-card-body,
+html[dir="rtl"] .upstream-card,
+html[dir="rtl"] .dna-card,
+html[dir="rtl"] .section-head,
+html[dir="rtl"] .cta-banner > div,
+html[dir="rtl"] .telemetry-card,
+html[dir="rtl"] .nav-item {
+  direction: rtl;
+  text-align: start;
+}
+
+html[dir="rtl"] .hero-cta-group {
+  direction: rtl;
+}
+
+html[dir="rtl"] .status-pill-group {
+  direction: rtl;
+}
+
+html[dir="rtl"] .project-card-actions {
+  direction: rtl;
+}
+
+html[dir="rtl"] .upstream-footer {
+  direction: rtl;
+}
+
+html[dir="rtl"] .terminal-box {
+  direction: ltr;
+}
+
 /* Background Architectural Ambient Grid */
 body::before {
   content: "";
