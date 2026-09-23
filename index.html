@@ -1,631 +1,662 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8fc">
-  <meta name="description" content="Omid Zaferi — Software Architect & Systems Engineer. Building AI tooling, developer products, networking systems, automation and open-source contributions.">
+  <title>Omid Zaferi — Software Architect & Systems Engineer</title>
+  
+  <meta name="description" content="Omid Zaferi (omid-io) — Systems Architect & Autonomous Agent Specialist. Engineering high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers.">
   <meta name="author" content="Omid Zaferi">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://omid-io.github.io/">
 
+  <!-- OpenGraph Metadata -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="omid.io">
   <meta property="og:url" content="https://omid-io.github.io/">
   <meta property="og:title" content="Omid Zaferi — Software Architect & Systems Engineer">
-  <meta property="og:description" content="Selected engineering work across AI tooling, developer experience, networking, automation and open source.">
+  <meta property="og:description" content="Engineering high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers.">
   <meta property="og:image" content="https://github.com/omid-io/omid-io/raw/main/assets/omid_github_header_slim.jpg">
 
+  <!-- Twitter Metadata -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Omid Zaferi — Software Architect & Systems Engineer">
-  <meta name="twitter:description" content="Selected engineering work across AI tooling, developer experience, networking, automation and open source.">
+  <meta name="twitter:description" content="Engineering high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers.">
   <meta name="twitter:image" content="https://github.com/omid-io/omid-io/raw/main/assets/omid_github_header_slim.jpg">
 
+  <!-- Favicon & Touch Icon -->
+  <link rel="icon" href="assets/omid-portrait.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/omid-portrait.png">
+
+  <!-- Preconnect & External CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Omid Zaferi",
-    "alternateName":"omid-io",
-    "url":"https://omid-io.github.io/",
-    "jobTitle":"Software Architect & Systems Engineer",
-    "sameAs":[
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Omid Zaferi",
+    "alternateName": "omid-io",
+    "url": "https://omid-io.github.io/",
+    "image": "https://omid-io.github.io/assets/omid-portrait.png",
+    "jobTitle": "Software Architect & Systems Engineer",
+    "sameAs": [
       "https://github.com/omid-io",
       "https://linkedin.com/in/omid-zaferi",
-      "https://x.com/omid_io"
+      "https://x.com/omid_io",
+      "https://instagram.com/omid.zaferi",
+      "https://www.reddit.com/user/omid-io/",
+      "https://virgool.io/@omid.zaferi"
     ]
   }
   </script>
-
-  <style>
-    :root{
-      --bg:#f7f8fc;
-      --surface:#ffffff;
-      --surface-2:#f0f2f6;
-      --surface-3:#e9edf4;
-      --ink:#11151d;
-      --muted:#667085;
-      --subtle:#98a2b3;
-      --line:#e4e7ec;
-      --line-strong:#cfd5df;
-      --accent:#3157d5;
-      --accent-2:#7158d6;
-      --accent-soft:#edf1ff;
-      --green:#087f5b;
-      --orange:#ad6b15;
-      --shadow-sm:0 10px 26px rgba(16,24,40,.055);
-      --shadow:0 22px 60px rgba(16,24,40,.09);
-      --radius:20px;
-      --radius-sm:13px;
-      --max:1160px;
-    }
-
-    html[data-theme="dark"]{
-      --bg:#0c1016;
-      --surface:#131922;
-      --surface-2:#1a212b;
-      --surface-3:#222a36;
-      --ink:#f5f7fa;
-      --muted:#a6afbc;
-      --subtle:#7b8798;
-      --line:#252d39;
-      --line-strong:#3a4452;
-      --accent:#8da1ff;
-      --accent-2:#aa92f0;
-      --accent-soft:#1b2440;
-      --green:#55d09f;
-      --orange:#d8a35e;
-      --shadow-sm:0 10px 28px rgba(0,0,0,.18);
-      --shadow:0 24px 70px rgba(0,0,0,.30);
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      min-height:100vh;
-      color:var(--ink);
-      background:
-        radial-gradient(700px 300px at 84% -6%,color-mix(in srgb,var(--accent) 10%,transparent),transparent 72%),
-        var(--bg);
-      font-family:"DM Sans",Inter,ui-sans-serif,system-ui,sans-serif;
-      line-height:1.65;
-      -webkit-font-smoothing:antialiased;
-    }
-    body:before{
-      content:"";
-      position:fixed;
-      inset:0;
-      pointer-events:none;
-      opacity:.45;
-      background-image:linear-gradient(rgba(17,24,39,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(17,24,39,.035) 1px,transparent 1px);
-      background-size:44px 44px;
-      mask-image:linear-gradient(to bottom,black,transparent 72%);
-    }
-    html[data-theme="dark"] body:before{opacity:.12}
-    a{color:inherit;text-decoration:none}
-    button{font:inherit}
-    img{max-width:100%}
-    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
-    .skip{position:absolute;left:15px;top:10px;z-index:999;padding:9px 12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;transform:translateY(-140%)}
-    .skip:focus{transform:none}
-
-    .nav{
-      position:sticky;
-      top:0;
-      z-index:200;
-      background:color-mix(in srgb,var(--bg) 86%,transparent);
-      backdrop-filter:blur(18px);
-      border-bottom:1px solid var(--line);
-    }
-    .nav-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.03em}
-    .brand-mark{
-      width:31px;height:31px;display:grid;place-items:center;border-radius:9px;color:#fff;
-      background:linear-gradient(135deg,var(--accent),var(--accent-2));
-      font:600 12px/1 "JetBrains Mono",monospace;
-      box-shadow:0 8px 18px color-mix(in srgb,var(--accent) 24%,transparent);
-    }
-    .brand-name{font-size:17px}.brand-name span{color:var(--muted);font-weight:600}
-    .nav-links{display:flex;gap:4px}
-    .nav-links a,.theme-btn{
-      border:0;background:transparent;color:var(--muted);padding:9px 10px;border-radius:10px;font-size:13px;cursor:pointer
-    }
-    .nav-links a:hover,.theme-btn:hover{background:var(--surface-2);color:var(--ink)}
-    .nav-right{display:flex;align-items:center;gap:8px}
-    .github-link{
-      display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border:1px solid var(--line-strong);
-      background:var(--surface);border-radius:11px;font-size:13px;font-weight:700;transition:.2s ease
-    }
-    .github-link:hover{border-color:var(--accent);transform:translateY(-1px);box-shadow:var(--shadow-sm)}
-    .menu-btn{display:none;width:38px;height:38px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px}
-
-    .hero{padding:88px 0 65px}
-    .hero-grid{display:grid;grid-template-columns:1.16fr .84fr;gap:68px;align-items:end}
-    .kicker{
-      display:inline-flex;align-items:center;gap:8px;padding:7px 10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;
-      color:var(--muted);font:600 10px/1.2 "JetBrains Mono",monospace;letter-spacing:.05em
-    }
-    .kicker i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px color-mix(in srgb,var(--green) 13%,transparent)}
-    h1{margin:21px 0 0;max-width:820px;font-size:clamp(50px,7vw,92px);line-height:.95;letter-spacing:-.068em}
-    h1 .accent{color:var(--accent)}
-    .hero-copy{max-width:735px;margin:25px 0 0;color:var(--muted);font-size:19px;line-height:1.72}
-    .hero-copy strong{color:var(--ink)}
-    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:31px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 15px;
-      border:1px solid var(--line-strong);border-radius:11px;font-size:13px;font-weight:700;transition:.2s ease
-    }
-    .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
-    .btn-primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-    .btn-secondary{background:var(--surface)}
-    .hero-note{
-      margin-top:16px;color:var(--subtle);font-size:11px;font-family:"JetBrains Mono",monospace
-    }
-
-    .proof-card{
-      padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:23px;box-shadow:var(--shadow)
-    }
-    .label{color:var(--subtle);font:600 10px/1.2 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.13em}
-    .proof-title{margin-top:10px;font-size:21px;font-weight:700;letter-spacing:-.035em;line-height:1.18}
-    .proof-copy{margin-top:8px;color:var(--muted);font-size:13px}
-    .metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:18px}
-    .metric{padding:13px;border:1px solid var(--line);background:var(--surface-2);border-radius:12px}
-    .metric strong{display:block;font-size:23px;line-height:1}
-    .metric span{display:block;margin-top:6px;color:var(--muted);font:600 9px/1.3 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
-    .proof-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .proof-links a{padding:7px 9px;background:var(--accent-soft);color:var(--accent);border-radius:8px;font-size:11px;font-weight:700}
-
-    .section{padding:66px 0}
-    .section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:24px}
-    .eyebrow{color:var(--accent);font:700 10px/1.2 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase}
-    h2{margin:8px 0 0;font-size:clamp(30px,4vw,45px);line-height:1.04;letter-spacing:-.05em}
-    .section-copy{max-width:550px;color:var(--muted);font-size:13px}
-
-    .projects{display:grid;grid-template-columns:1.08fr .92fr;gap:17px}
-    .project{
-      overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);transition:.25s ease
-    }
-    .project:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 32%,var(--line));box-shadow:var(--shadow)}
-    .project.feature{grid-row:span 2}
-    .project-visual{
-      position:relative;min-height:190px;overflow:hidden;background:
-        radial-gradient(340px 170px at 20% 10%,rgba(255,255,255,.18),transparent 60%),
-        linear-gradient(135deg,#17264e,#5573d2 57%,#927fd8)
-    }
-    .project.feature .project-visual{min-height:315px}
-    .project-visual.dark{background:radial-gradient(340px 150px at 80% 8%,rgba(255,255,255,.14),transparent 60%),linear-gradient(135deg,#0f1722,#2c4468 58%,#705ec2)}
-    .project-visual.green{background:radial-gradient(340px 150px at 28% 10%,rgba(255,255,255,.12),transparent 58%),linear-gradient(135deg,#18241f,#2f684f 55%,#8dae9c)}
-    .project-visual.purple{background:radial-gradient(340px 150px at 80% 10%,rgba(255,255,255,.12),transparent 58%),linear-gradient(135deg,#241a35,#59487f 60%,#ad9ce0)}
-    .project-visual.orange{background:radial-gradient(340px 150px at 20% 12%,rgba(255,255,255,.11),transparent 58%),linear-gradient(135deg,#37231a,#8e5837 58%,#d4a36f)}
-    .project-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
-    .project-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(5,10,18,.46))}
-    .project-visual span{position:absolute;z-index:2;left:16px;bottom:14px;color:#fff;font:600 10px/1.2 "JetBrains Mono",monospace;letter-spacing:.10em;text-transform:uppercase}
-    .project-body{padding:20px}
-    .meta{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .tag{color:var(--subtle);font:600 9px/1.2 "JetBrains Mono",monospace;letter-spacing:.09em;text-transform:uppercase}
-    .repo{color:var(--accent);font-size:12px;font-weight:750}
-    .project-title{margin-top:10px;font-size:27px;line-height:1.08;letter-spacing:-.04em}
-    .project-desc{margin-top:9px;color:var(--muted);font-size:13px}
-    .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
-    .chip{padding:6px 8px;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;color:var(--muted);font:600 10px/1.15 "JetBrains Mono",monospace}
-    .proof{
-      margin-top:15px;padding:10px 11px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 6%,var(--surface));color:var(--muted);font-size:11px
-    }
-
-    .extensions{display:grid;grid-template-columns:1fr 1fr;gap:17px}
-    .extension{
-      padding:21px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);transition:.22s ease
-    }
-    .extension:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 32%,var(--line))}
-    .extension h3{margin:8px 0 0;font-size:23px;letter-spacing:-.04em}
-    .extension p{margin:8px 0 0;color:var(--muted);font-size:12px}
-    .extension-top{display:flex;align-items:center;justify-content:space-between;gap:14px}
-    .extension-badge{padding:6px 8px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font:700 9px/1 "JetBrains Mono",monospace;text-transform:uppercase}
-    .extension-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-    .extension-links a{font-size:11px;color:var(--accent);font-weight:750}
-
-    .opensource{display:grid;grid-template-columns:1.05fr .95fr;gap:17px}
-    .panel{padding:23px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
-    .panel h3{margin:8px 0 0;font-size:23px;letter-spacing:-.04em;line-height:1.08}
-    .panel > p{margin:8px 0 0;color:var(--muted);font-size:12px}
-    .contribs{display:grid;gap:8px;margin-top:17px}
-    .contrib{
-      display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:12px 13px;
-      background:var(--surface-2);border:1px solid var(--line);border-radius:12px;transition:.18s ease
-    }
-    .contrib:hover{border-color:var(--accent);transform:translateX(2px)}
-    .contrib strong{font-size:12px}.contrib small{display:block;margin-top:3px;color:var(--muted);font-size:10px}
-    .contrib .status{color:var(--green);font:700 9px/1.2 "JetBrains Mono",monospace;white-space:nowrap;text-transform:uppercase}
-    .contrib .status.open{color:var(--orange)}
-    .view-all{display:inline-flex;margin-top:14px;color:var(--accent);font-size:11px;font-weight:750}
-
-    .taxonomy{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:17px}
-    .tax{padding:13px;border-top:2px solid var(--line);background:var(--surface-2);border-radius:0 0 12px 12px}
-    .tax strong{font-size:13px}.tax p{margin:4px 0 0;color:var(--muted);font-size:10px}
-    .stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}.stack .chip{padding:7px 9px}
-
-    .note{
-      margin-top:17px;padding:12px 13px;border:1px dashed var(--line-strong);border-radius:12px;color:var(--muted);font-size:10px
-    }
-
-    .cta{padding:75px 0 88px}
-    .cta-box{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:30px 32px;border-radius:24px;background:var(--ink);color:var(--bg);box-shadow:var(--shadow)}
-    .cta h2{margin:0;max-width:760px;font-size:clamp(29px,4vw,43px)}
-    .cta p{margin:8px 0 0;color:color-mix(in srgb,currentColor 58%,transparent);font-size:12px}
-    .cta .btn{background:var(--bg);color:var(--ink);border-color:transparent;white-space:nowrap}
-
-    footer{padding:23px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:10px}
-    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .footer-links{display:flex;gap:13px}
-    .footer-links a:hover{color:var(--ink)}
-
-    .reveal{opacity:0;transform:translateY(12px);transition:.55s ease}
-    .reveal.show{opacity:1;transform:none}
-
-    @media (max-width:920px){
-      .hero-grid,.opensource{grid-template-columns:1fr}
-      .proof-card{max-width:720px}
-      .projects{grid-template-columns:1fr}.project.feature{grid-row:auto}
-      .project.feature .project-visual{min-height:255px}
-      .extensions{grid-template-columns:1fr}
-      .nav-links{display:none}.menu-btn{display:block}
-      .nav.open .nav-links{
-        display:flex;position:absolute;top:69px;left:20px;right:20px;flex-direction:column;align-items:stretch;
-        padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)
-      }
-      .nav.open .nav-links a{padding:12px}
-      .section-head{display:block}.section-copy{margin-top:10px}
-    }
-
-    @media (max-width:620px){
-      .wrap{width:min(var(--max),calc(100% - 26px))}
-      .hero{padding-top:68px}
-      h1{font-size:clamp(43px,14vw,66px)}
-      .hero-copy{font-size:17px}
-      .actions{flex-direction:column}.actions .btn{width:100%}
-      .metrics{grid-template-columns:repeat(2,1fr)}
-      .section{padding:51px 0}
-      .project-body,.panel,.extension{padding:18px}
-      .project-title{font-size:24px}
-      .project-visual,.project.feature .project-visual{min-height:190px}
-      .taxonomy{grid-template-columns:1fr}
-      .cta{padding:56px 0 65px}
-      .cta-box{display:block;padding:25px}.cta .btn{width:100%;margin-top:17px}
-      .footer-inner{display:block}.footer-links{margin-top:8px}
-      .contrib{grid-template-columns:1fr;gap:8px}
-    }
-    @media (prefers-reduced-motion:reduce){
-      html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.card,.btn,.extension,.contrib{transition:none}
-    }
-  </style>
 </head>
 
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <!-- Ambient Lighting Elements -->
+  <div class="orb-glow orb-hero" aria-hidden="true"></div>
 
-  <header class="nav" id="top">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#top" aria-label="Omid Zaferi home">
-        <span class="brand-mark">&lt;/&gt;</span>
+  <!-- Primary Sticky Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand-link" href="#hero" aria-label="Omid Zaferi Home">
+        <div class="brand-logo-frame">&lt;/&gt;</div>
         <span class="brand-name">omid<span>.io</span></span>
       </a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#extensions">Extensions</a>
-        <a href="#opensource">Open source</a>
-        <a href="#approach">Approach</a>
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="#work" class="nav-item" data-i18n="nav.work">Work</a>
+        <a href="#flagships" class="nav-item" data-i18n="nav.flagships">Flagships</a>
+        <a href="#opensource" class="nav-item" data-i18n="nav.opensource">Open Source</a>
+        <a href="#dna" class="nav-item" data-i18n="nav.dna">Engineering DNA</a>
+        <a href="#contact" class="nav-item" data-i18n="nav.contact">Contact</a>
       </nav>
 
-      <div class="nav-right">
-        <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">◐</button>
-        <a class="github-link" href="https://github.com/omid-io" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <button class="menu-btn" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button id="langSwitchBtn" class="lang-switch-btn" type="button" aria-label="Switch language">فارسی</button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="icon-btn" type="button" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+        </button>
+
+        <!-- GitHub Profile Direct Link -->
+        <a class="github-cta-btn" href="https://github.com/omid-io" target="_blank" rel="noreferrer" aria-label="GitHub Profile">
+          <span>GitHub</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
+          </svg>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="menuToggleBtn" class="icon-btn menu-toggle-btn" type="button" aria-label="Open mobile navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="reveal">
-          <div class="kicker"><i></i> Software Architect · Systems Engineer</div>
-          <h1>I build software where <span class="accent">the details matter.</span></h1>
-          <p class="hero-copy">
-            I’m <strong>Omid Zaferi</strong> (omid-io). I build AI tooling, developer products, networking systems and automation software — usually starting from an awkward constraint and working outward until the system has a clean boundary.
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        <!-- Hero Information Column -->
+        <div class="hero-info-col">
+          <div class="status-pill-group">
+            <div class="status-pill">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.status">Available for High-Impact Architecture</span>
+            </div>
+            <div class="clock-pill" id="tehranClock">
+              Tehran <bdi class="mono-data">00:00:00</bdi> (UTC+3:30)
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero.greeting">I build resilient software where</span>
+            <span class="accent-gradient" data-i18n="hero.greetingAccent">the details matter.</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="hero.bio">
+            I am Omid Zaferi (omid-io) — Systems Architect &amp; Autonomous Agent Specialist. I engineer high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers from awkward constraints to robust production boundaries.
           </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#work">See the work ↓</a>
-            <a class="btn btn-secondary" href="mailto:omidzaferi@gmail.com">Start a conversation</a>
+
+          <div class="specialization-tags">
+            <div class="spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+              <span>Autonomous AI &amp; MCP</span>
+            </div>
+            <div class="spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Kernel &amp; Wintun Tunneling</span>
+            </div>
+            <div class="spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              <span>High-Concurrency Databases</span>
+            </div>
+            <div class="spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <span>OKLCH Design Systems</span>
+            </div>
           </div>
-          <div class="hero-note">Original systems · engineered extensions · upstream contributions</div>
+
+          <div class="hero-cta-group">
+            <a href="#work" class="btn-primary">
+              <span data-i18n="hero.ctaWork">Explore Flagship Work</span>
+              <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn-secondary" data-i18n="hero.ctaContact">Start a Conversation</a>
+
+            <button id="copyEmailBtn" class="copy-email-btn" type="button" aria-label="Copy email address">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span data-i18n="hero.copyEmail">Copy Email</span>
+              <span id="copyTooltip" class="copy-tooltip" data-i18n="hero.emailCopied">Email Copied!</span>
+            </button>
+          </div>
         </div>
 
-        <aside class="proof-card reveal">
-          <div class="label">Public engineering footprint</div>
-          <div class="proof-title">The code is the proof.</div>
-          <p class="proof-copy">Current public GitHub activity spans original products, engineered forks and upstream contributions across AI, systems and developer tooling.</p>
-
-          <div class="metrics">
-            <div class="metric"><strong>33</strong><span>Public PRs found</span></div>
-            <div class="metric"><strong>14</strong><span>Upstream repos</span></div>
-            <div class="metric"><strong>6</strong><span>Merged PRs</span></div>
-            <div class="metric"><strong>15</strong><span>Open PRs</span></div>
+        <!-- Hero Visual Side: Personal Portrait & Social Dock -->
+        <div class="hero-visual-card">
+          <div class="avatar-halo-wrapper">
+            <div class="avatar-halo-ring"></div>
+            <div class="avatar-image-frame">
+              <img src="assets/omid-portrait.png" alt="Omid Zaferi Portrait" width="172" height="172" loading="eager" decoding="async">
+            </div>
+            <div class="avatar-badge-online" title="Online & Operational"></div>
           </div>
 
-          <div class="proof-links">
-            <a href="https://github.com/omid-io?tab=repositories" target="_blank" rel="noreferrer">All repositories ↗</a>
-            <a href="https://github.com/omid-io?tab=activity" target="_blank" rel="noreferrer">Activity ↗</a>
+          <h2 class="profile-card-name">Omid Zaferi</h2>
+          <p class="profile-card-role" data-i18n="hero.role">Systems Architect &amp; Lead Engineer</p>
+
+          <!-- Social Media Dock -->
+          <div class="social-dock" aria-label="Social Media Profiles">
+            <!-- GitHub -->
+            <a href="https://github.com/omid-io" target="_blank" rel="noreferrer" class="social-dock-link" aria-label="GitHub Profile" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/omid-zaferi" target="_blank" rel="noreferrer" class="social-dock-link" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+
+            <!-- X / Twitter -->
+            <a href="https://x.com/omid_io" target="_blank" rel="noreferrer" class="social-dock-link" aria-label="X Profile" title="X (Twitter)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/omid.zaferi" target="_blank" rel="noreferrer" class="social-dock-link" aria-label="Instagram Profile" title="Instagram (@omid.zaferi)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+
+            <!-- Reddit -->
+            <a href="https://www.reddit.com/user/omid-io/" target="_blank" rel="noreferrer" class="social-dock-link" aria-label="Reddit Profile" title="Reddit (u/omid-io)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+            </a>
+
+            <!-- Virgool -->
+            <a href="https://virgool.io/@omid.zaferi" target="_blank" rel="noreferrer" class="social-dock-link" aria-label="Virgool Profile" title="Virgool (ویرگول)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5V11c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5.5zm-1.5-8.5c-.83 0-1.5-.67-1.5-1.5S10.67 5 11.5 5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            </a>
+
+            <!-- Direct Email -->
+            <a href="mailto:omidzaferi@gmail.com" class="social-dock-link" aria-label="Email Omid" title="Direct Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
           </div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="work">
-      <div class="wrap">
-        <div class="section-head reveal">
+    <!-- Telemetry Bento Strip -->
+    <section class="telemetry-strip" aria-label="Public Engineering Footprint">
+      <div class="container">
+        <div class="telemetry-grid">
+          <div class="telemetry-card">
+            <div class="telemetry-number"><bdi class="mono-data">33</bdi><span class="telemetry-plus">+</span></div>
+            <div class="telemetry-label" data-i18n="hero.stats.prs">Public PRs Found</div>
+          </div>
+          <div class="telemetry-card">
+            <div class="telemetry-number"><bdi class="mono-data">14</bdi></div>
+            <div class="telemetry-label" data-i18n="hero.stats.upstream">Upstream Repos</div>
+          </div>
+          <div class="telemetry-card">
+            <div class="telemetry-number"><bdi class="mono-data">4</bdi></div>
+            <div class="telemetry-label" data-i18n="hero.stats.flagships">Flagship Suites</div>
+          </div>
+          <div class="telemetry-card">
+            <div class="telemetry-number"><bdi class="mono-data">620</bdi><span class="telemetry-plus">+</span></div>
+            <div class="telemetry-label" data-i18n="hero.stats.downloads">Extension Downloads</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Systems & Flagships Section -->
+    <section class="section-padding" id="work">
+      <div class="container">
+        <div class="section-head" id="flagships">
           <div>
-            <div class="eyebrow">01 · Original systems</div>
-            <h2>Projects with a reason to exist.</h2>
+            <div class="eyebrow" data-i18n="projects.eyebrow">01 · Core Engineering</div>
+            <h2 class="section-title" data-i18n="projects.title">Systems with a reason to exist.</h2>
           </div>
-          <p class="section-copy">The front page is intentionally selective. These are the original repositories where the engineering story is strongest and easiest to inspect.</p>
+          <p class="section-subtitle" data-i18n="projects.subtitle">
+            Intentionally selective. These are production platforms and architectural solutions engineered with zero AI-slop.
+          </p>
         </div>
 
-        <div class="projects">
-          <article class="project feature reveal">
-            <div class="project-visual">
-              <img src="https://raw.githubusercontent.com/omid-io/vibe-ui-suite/main/assets/icon.png" alt="Vibe UI Suite icon" loading="lazy" onerror="this.style.display='none'">
-              <span>AI tooling · design systems</span>
+        <!-- Filter Pill Tabs -->
+        <div class="filter-tabs" role="tablist" aria-label="Filter Projects">
+          <button class="filter-btn active" type="button" data-filter="all" data-i18n="filter.all">All Systems</button>
+          <button class="filter-btn" type="button" data-filter="flagship" data-i18n="filter.flagship">Flagships</button>
+          <button class="filter-btn" type="button" data-filter="ai" data-i18n="filter.ai">AI &amp; Automation</button>
+          <button class="filter-btn" type="button" data-filter="network" data-i18n="filter.network">Kernel &amp; Networking</button>
+          <button class="filter-btn" type="button" data-filter="extensions" data-i18n="filter.extensions">Engineered Forks</button>
+        </div>
+
+        <!-- Standardized 16:9 Banner Project Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 1: Vibe UI Suite -->
+          <article class="project-card" data-category="flagship ai">
+            <div class="project-banner-frame">
+              <img class="project-banner-img" src="assets/banners/vibe-ui-suite.jpg" alt="Vibe UI Suite Banner" loading="lazy" decoding="async">
+              <div class="project-banner-overlay" aria-hidden="true"></div>
+              <div class="project-banner-badge">Next.js 15 · Tailwind v4 · OKLCH</div>
             </div>
-            <div class="project-body">
-              <div class="meta"><span class="tag">Flagship original</span><a class="repo" href="https://github.com/omid-io/vibe-ui-suite" target="_blank" rel="noreferrer">Repository ↗</a></div>
-              <div class="project-title">Vibe UI Suite</div>
-              <p class="project-desc">A contract-driven frontend engineering system for AI coding assistants, combining design tokens, component recipes, schemas, CLI tooling, IDE extensions and runtime verification.</p>
-              <div class="chips"><span class="chip">TypeScript</span><span class="chip">Next.js</span><span class="chip">Tailwind v4</span><span class="chip">OKLCH</span><span class="chip">Playwright</span><span class="chip">MCP</span></div>
-              <div class="proof">Shipped through multiple v3 releases with npm/Open-VSX/VS Code surfaces and a live interactive studio.</div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-tag" data-i18n="projects.items.vibe.tag">Flagship Design System</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="projects.items.vibe.title">Vibe UI Suite</h3>
+              <p class="project-card-desc" data-i18n="projects.items.vibe.desc">
+                A contract-driven frontend engineering compiler and token architecture for autonomous coding assistants, combining 26 design families, mathematical WCAG AAA verification, Next.js 15 starters, and VS Code extensions.
+              </p>
+              <div class="project-proof-callout" data-i18n="projects.items.vibe.proof">
+                Active releases on npm, VS Code Marketplace &amp; Open-VSX with 620+ downloads.
+              </div>
+              <div class="stack-chips-group">
+                <span class="stack-chip">TypeScript</span>
+                <span class="stack-chip">Next.js 15</span>
+                <span class="stack-chip">Tailwind v4</span>
+                <span class="stack-chip">OKLCH</span>
+                <span class="stack-chip">Playwright</span>
+                <span class="stack-chip">FastMCP</span>
+              </div>
+              <div class="project-card-actions">
+                <a class="card-action-link" href="https://github.com/omid-io/vibe-ui-suite" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">Repository ↗</a>
+                <a class="card-action-link" href="https://marketplace.visualstudio.com/items?itemName=omid-io.vibe-ui-vscode" target="_blank" rel="noreferrer" data-i18n="projects.vsMarketplace">VS Marketplace ↗</a>
+                <a class="card-action-link" href="https://omid-io.github.io/vibe-ui-suite/" target="_blank" rel="noreferrer" data-i18n="projects.liveDemo">Live Demo ↗</a>
+              </div>
             </div>
           </article>
 
-          <article class="project reveal">
-            <div class="project-visual dark">
-              <img src="https://raw.githubusercontent.com/omid-io/AirTun/main/branding/github_banner.png" alt="AirTun banner" loading="lazy" onerror="this.style.display='none'">
-              <span>Networking · Android + Windows</span>
+          <!-- Project 2: AirTun -->
+          <article class="project-card" data-category="flagship network">
+            <div class="project-banner-frame">
+              <img class="project-banner-img" src="assets/banners/airtun.jpg" alt="AirTun Banner" loading="lazy" decoding="async">
+              <div class="project-banner-overlay" aria-hidden="true"></div>
+              <div class="project-banner-badge">C# .NET 8 · Wintun · WinUI 3</div>
             </div>
-            <div class="project-body">
-              <div class="meta"><span class="tag">Original</span><a class="repo" href="https://github.com/omid-io/AirTun" target="_blank" rel="noreferrer">Repository ↗</a></div>
-              <div class="project-title">AirTun</div>
-              <p class="project-desc">A mobile-to-Windows tunnel stack with Kotlin, WinUI 3, .NET 8, Wintun and SOCKS5/UDP transport, plus routing, discovery and a native desktop client.</p>
-              <div class="chips"><span class="chip">C#</span><span class="chip">.NET 8</span><span class="chip">Kotlin</span><span class="chip">WinUI 3</span><span class="chip">Wintun</span></div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-tag" data-i18n="projects.items.airtun.tag">Kernel Networking &amp; Tunneling</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="projects.items.airtun.title">AirTun</h3>
+              <p class="project-card-desc" data-i18n="projects.items.airtun.desc">
+                High-throughput mobile internet and VPN tunnel router for Windows 10/11 using Wintun kernel drivers, WinUI 3, C# .NET 8, and Kotlin without requiring Android root privileges.
+              </p>
+              <div class="project-proof-callout" data-i18n="projects.items.airtun.proof">
+                Low-latency packet routing with event-driven architecture and native desktop client.
+              </div>
+              <div class="stack-chips-group">
+                <span class="stack-chip">C#</span>
+                <span class="stack-chip">.NET 8</span>
+                <span class="stack-chip">Kotlin</span>
+                <span class="stack-chip">WinUI 3</span>
+                <span class="stack-chip">Wintun</span>
+                <span class="stack-chip">SOCKS5</span>
+              </div>
+              <div class="project-card-actions">
+                <a class="card-action-link" href="https://github.com/omid-io/AirTun" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">Repository ↗</a>
+              </div>
             </div>
           </article>
 
-          <article class="project reveal">
-            <div class="project-visual green">
-              <img src="https://raw.githubusercontent.com/omid-io/google-flow-suite/main/assets/banner.webp" alt="Google Flow Suite banner" loading="lazy" onerror="this.style.display='none'">
-              <span>Automation · AI media workflows</span>
+          <!-- Project 3: Google Flow Suite -->
+          <article class="project-card" data-category="flagship ai">
+            <div class="project-banner-frame">
+              <img class="project-banner-img" src="assets/banners/google-flow-suite.webp" alt="Google Flow Suite Banner" loading="lazy" decoding="async">
+              <div class="project-banner-overlay" aria-hidden="true"></div>
+              <div class="project-banner-badge">Python · Playwright CDP · FastMCP</div>
             </div>
-            <div class="project-body">
-              <div class="meta"><span class="tag">Original</span><a class="repo" href="https://github.com/omid-io/google-flow-suite" target="_blank" rel="noreferrer">Repository ↗</a></div>
-              <div class="project-title">Google Flow Suite</div>
-              <p class="project-desc">A dual-engine automation platform combining Chrome MV3, Playwright CDP, FastMCP, REST APIs, SQLite history and asynchronous generation workflows.</p>
-              <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Playwright</span><span class="chip">SQLite</span><span class="chip">AsyncIO</span></div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-tag" data-i18n="projects.items.flow.tag">Automation &amp; Generative Suite</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="projects.items.flow.title">Google Flow Suite</h3>
+              <p class="project-card-desc" data-i18n="projects.items.flow.desc">
+                High-throughput dual-engine automation combining Chrome MV3, Playwright CDP, FastMCP protocol, SQLite history persistence, and asynchronous AI media processing queues.
+              </p>
+              <div class="project-proof-callout" data-i18n="projects.items.flow.proof">
+                462 unit &amp; integration tests passing with dual CDP/REST architecture.
+              </div>
+              <div class="stack-chips-group">
+                <span class="stack-chip">Python</span>
+                <span class="stack-chip">FastAPI</span>
+                <span class="stack-chip">Playwright CDP</span>
+                <span class="stack-chip">SQLite</span>
+                <span class="stack-chip">FastMCP</span>
+                <span class="stack-chip">AsyncIO</span>
+              </div>
+              <div class="project-card-actions">
+                <a class="card-action-link" href="https://github.com/omid-io/google-flow-suite" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">Repository ↗</a>
+              </div>
             </div>
           </article>
 
-          <article class="project reveal">
-            <div class="project-visual purple">
-              <span>Resilience · developer tooling</span>
+          <!-- Project 4: antigravity-pause -->
+          <article class="project-card" data-category="flagship ai">
+            <div class="project-banner-frame">
+              <img class="project-banner-img" src="assets/banners/antigravity-pause.webp" alt="Antigravity Pause Banner" loading="lazy" decoding="async">
+              <div class="project-banner-overlay" aria-hidden="true"></div>
+              <div class="project-banner-badge">Python · Process Isolation · Anti-Leak</div>
             </div>
-            <div class="project-body">
-              <div class="meta"><span class="tag">Original</span><a class="repo" href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noreferrer">Repository ↗</a></div>
-              <div class="project-title">antigravity-pause</div>
-              <p class="project-desc">Session pause, deep hibernation, pre-flight protection and lifecycle controls for Google Antigravity, with explicit recovery paths.</p>
-              <div class="chips"><span class="chip">Python</span><span class="chip">CLI</span><span class="chip">Git</span><span class="chip">Resilience</span></div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-tag" data-i18n="projects.items.pause.tag">Resilience &amp; Security Guard</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="projects.items.pause.title">antigravity-pause</h3>
+              <p class="project-card-desc" data-i18n="projects.items.pause.desc">
+                Deep hibernation, graceful pause, and pre-flight data-leak protection engine for Google Antigravity (2.0 Desktop, IDE, and CLI) with deterministic state recovery.
+              </p>
+              <div class="project-proof-callout" data-i18n="projects.items.pause.proof">
+                Zero-orphan process tree teardown and network resilience safeguards.
+              </div>
+              <div class="stack-chips-group">
+                <span class="stack-chip">Python</span>
+                <span class="stack-chip">CLI</span>
+                <span class="stack-chip">Git Locks</span>
+                <span class="stack-chip">Checkpointing</span>
+                <span class="stack-chip">Resilience</span>
+              </div>
+              <div class="project-card-actions">
+                <a class="card-action-link" href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">Repository ↗</a>
+              </div>
             </div>
           </article>
+
+          <!-- Project 5: Digikala Pure Search -->
+          <article class="project-card" data-category="extensions">
+            <div class="project-banner-frame">
+              <img class="project-banner-img" src="assets/banners/digikala-pure.png" alt="Digikala Pure Search Banner" loading="lazy" decoding="async">
+              <div class="project-banner-overlay" aria-hidden="true"></div>
+              <div class="project-banner-badge">JavaScript · Greasemonkey · Chrome MV3</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-tag" data-i18n="projects.items.pure.tag">DOM Engine &amp; Anti-Ad</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="projects.items.pure.title">Digikala Pure Search</h3>
+              <p class="project-card-desc" data-i18n="projects.items.pure.desc">
+                Real-time client-side DOM mutation observer eliminating sponsored merchandise and ad feeds across massive e-commerce catalogs via Greasemonkey/uBlock and Chrome MV3.
+              </p>
+              <div class="project-proof-callout" data-i18n="projects.items.pure.proof">
+                Published userscript on Greasy Fork with instant zero-layout-shift filtering.
+              </div>
+              <div class="stack-chips-group">
+                <span class="stack-chip">JavaScript</span>
+                <span class="stack-chip">DOM MutationObserver</span>
+                <span class="stack-chip">uBlock Origin</span>
+                <span class="stack-chip">Manifest V3</span>
+              </div>
+              <div class="project-card-actions">
+                <a class="card-action-link" href="https://github.com/omid-io/digikala-pure-search" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">Repository ↗</a>
+                <a class="card-action-link" href="https://greasyfork.org/en/scripts/593664-digikala-pure-search" target="_blank" rel="noreferrer">Greasy Fork ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Antigravity RTL & UI Suite -->
+          <article class="project-card" data-category="extensions">
+            <div class="project-banner-frame">
+              <img class="project-banner-img" src="assets/banners/antigravity-rtl.png" alt="Antigravity RTL Suite Banner" loading="lazy" decoding="async">
+              <div class="project-banner-overlay" aria-hidden="true"></div>
+              <div class="project-banner-badge">JavaScript · BiDi Geometry · Persian UX</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-tag" data-i18n="projects.items.rtl.tag">Engineered Fork · BiDi Layer</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="projects.items.rtl.title">Antigravity RTL &amp; UI Suite</h3>
+              <p class="project-card-desc" data-i18n="projects.items.rtl.desc">
+                Native RTL and BiDi layout patcher for Antigravity with fluid dragging physics (160px–420px), ghost click suppression on settings toggle, and scoped Persian typography.
+              </p>
+              <div class="project-proof-callout" data-i18n="projects.items.rtl.proof">
+                Upstream pull request #5 with complete visual affordance isolation.
+              </div>
+              <div class="stack-chips-group">
+                <span class="stack-chip">JavaScript</span>
+                <span class="stack-chip">CSS Geometry</span>
+                <span class="stack-chip">DOM Events</span>
+                <span class="stack-chip">BiDi Engine</span>
+              </div>
+              <div class="project-card-actions">
+                <a class="card-action-link" href="https://github.com/omid-io/antigravity-rtl" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">Repository ↗</a>
+                <a class="card-action-link" href="https://github.com/mmnaderi/antigravity-rtl/pull/5" target="_blank" rel="noreferrer">PR #5 ↗</a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="section" id="extensions">
-      <div class="wrap">
-        <div class="section-head reveal">
+    <!-- Upstream Open Source Contributions -->
+    <section class="section-padding" id="opensource">
+      <div class="container">
+        <div class="section-head">
           <div>
-            <div class="eyebrow">02 · Engineered extensions</div>
-            <h2>Forks that became real work.</h2>
+            <div class="eyebrow" data-i18n="upstream.eyebrow">02 · Upstream Contributions</div>
+            <h2 class="section-title" data-i18n="upstream.title">Verified code merged into major engines.</h2>
           </div>
-          <p class="section-copy">These are not passive forks. They carry substantial independent changes and are useful evidence of product, UI and systems-level engineering on top of existing codebases.</p>
+          <p class="section-subtitle" data-i18n="upstream.subtitle">
+            Selected pull requests merged or submitted directly to established open-source projects.
+          </p>
         </div>
 
-        <div class="extensions">
-          <article class="extension reveal">
-            <div class="extension-top">
-              <span class="label">57 commits ahead · 24 behind</span>
-              <span class="extension-badge">Fork · divergent</span>
+        <div class="upstream-grid">
+          <!-- Hermes Agent -->
+          <article class="upstream-card">
+            <div class="upstream-card-top">
+              <span class="upstream-org">NousResearch / hermes-agent</span>
+              <span class="upstream-badge badge-merged">Merged</span>
             </div>
-            <h3>FontWoW-2.0</h3>
-            <p>A major evolution of FontWoW with canvas text effects, quick controls, desktop interaction, Android native integration, release automation and a richer visual studio.</p>
-            <div class="chips"><span class="chip">React 19</span><span class="chip">Vite</span><span class="chip">Capacitor</span><span class="chip">Canvas</span><span class="chip">Android</span></div>
-            <div class="extension-links"><a href="https://github.com/omid-io/FontWoW-2.0" target="_blank" rel="noreferrer">Repository ↗</a><a href="https://github.com/FontWoW/FontWoW.github.io/pull/58" target="_blank" rel="noreferrer">PR #58 ↗</a></div>
+            <h3 class="upstream-title">Core Concurrency &amp; Shared Memory Salvage</h3>
+            <p class="upstream-desc">
+              Core shared-memory concurrency salvage by Teknium (#114862 cherry-picked #114470) resolving high-throughput tool execution races.
+            </p>
+            <div class="upstream-footer">
+              <span class="upstream-pr-id"><bdi>PR #114862</bdi></span>
+              <a class="card-action-link" href="https://github.com/NousResearch/hermes-agent/pull/114862" target="_blank" rel="noreferrer">View Pull Request ↗</a>
+            </div>
           </article>
 
-          <article class="extension reveal">
-            <div class="extension-top">
-              <span class="label">30 commits ahead · 0 behind</span>
-              <span class="extension-badge">Fork · active extension</span>
+          <!-- HandyControls -->
+          <article class="upstream-card">
+            <div class="upstream-card-top">
+              <span class="upstream-org">ghost1372 / HandyControls</span>
+              <span class="upstream-badge badge-merged">Merged (3 PRs)</span>
             </div>
-            <h3>Antigravity RTL & UI Suite</h3>
-            <p>A substantial RTL, sidebar and theme customization layer for Antigravity, including compact sizing, docking behavior, message styling and interaction refinements.</p>
-            <div class="chips"><span class="chip">JavaScript</span><span class="chip">CSS Geometry</span><span class="chip">BiDi</span><span class="chip">DOM Events</span></div>
-            <div class="extension-links"><a href="https://github.com/omid-io/antigravity-rtl" target="_blank" rel="noreferrer">Repository ↗</a><a href="https://github.com/mmnaderi/antigravity-rtl/pull/5" target="_blank" rel="noreferrer">PR #5 ↗</a></div>
+            <h3 class="upstream-title">WPF WindowChrome &amp; Adorner Null Safety</h3>
+            <p class="upstream-desc">
+              Restored window resize borders after maximization (PR #248), guarded AdornerElement against null dependency properties (#249), and decoupled collection namespaces (#251).
+            </p>
+            <div class="upstream-footer">
+              <span class="upstream-pr-id"><bdi>PR #248, #249, #251</bdi></span>
+              <a class="card-action-link" href="https://github.com/ghost1372/HandyControls/pull/248" target="_blank" rel="noreferrer">View Pull Request ↗</a>
+            </div>
+          </article>
+
+          <!-- fl_chart -->
+          <article class="upstream-card">
+            <div class="upstream-card-top">
+              <span class="upstream-org">imaNNeo / fl_chart</span>
+              <span class="upstream-badge badge-approved">Approved</span>
+            </div>
+            <h3 class="upstream-title">Flutter BarChart Null-Safety Guard</h3>
+            <p class="upstream-desc">
+              Prevented fatal LateInitializationError runtime crash on null data spots, approved by core maintainer imaNNeo.
+            </p>
+            <div class="upstream-footer">
+              <span class="upstream-pr-id"><bdi>PR #2119</bdi></span>
+              <a class="card-action-link" href="https://github.com/imaNNeo/fl_chart/pull/2119" target="_blank" rel="noreferrer">View Pull Request ↗</a>
+            </div>
+          </article>
+
+          <!-- .NET Runtime -->
+          <article class="upstream-card">
+            <div class="upstream-card-top">
+              <span class="upstream-org">dotnet / runtime</span>
+              <span class="upstream-badge badge-approved">Active Workspace</span>
+            </div>
+            <h3 class="upstream-title">Android NativeAOT Memory-Safety Diagnostics</h3>
+            <p class="upstream-desc">
+              Targeted CS9377/CS9389 memory-safety diagnostics in the Android NativeAOT build task template.
+            </p>
+            <div class="upstream-footer">
+              <span class="upstream-pr-id"><bdi>PR #134277</bdi></span>
+              <a class="card-action-link" href="https://github.com/dotnet/runtime/pull/134277" target="_blank" rel="noreferrer">View Pull Request ↗</a>
+            </div>
           </article>
         </div>
 
-        <div class="note reveal">Other public forks — including .NET Runtime, Hermes Agent, uv, OpenCode, LlamaIndex and fl_chart — are kept as engineering workspaces rather than presented as standalone products. Their stronger signal is in the upstream contribution history below.</div>
-      </div>
-    </section>
-
-    <section class="section" id="opensource">
-      <div class="wrap opensource">
-        <article class="panel reveal">
-          <div class="eyebrow">03 · Open source</div>
-          <h3>Upstream work you can inspect directly.</h3>
-          <p>Selected examples from the public PR history. Merged work is separated from proposals that are still open or were closed without merge.</p>
-
-          <div class="contribs">
-            <a class="contrib" href="https://github.com/chigwell/telegram-mcp/pull/233" target="_blank" rel="noreferrer">
-              <div><strong>Telegram MCP · per-chat privacy allowlist</strong><small>Restricted agent visibility to explicitly permitted Telegram chats and added 19 tests.</small></div>
-              <span class="status">Merged</span>
-            </a>
-            <a class="contrib" href="https://github.com/chigwell/telegram-mcp/pull/232" target="_blank" rel="noreferrer">
-              <div><strong>Telegram MCP · bot dialog fallback</strong><small>Handled Telegram bot-account API restrictions across dialog resolution and startup paths.</small></div>
-              <span class="status">Merged</span>
-            </a>
-            <a class="contrib" href="https://github.com/chigwell/telegram-mcp/pull/229" target="_blank" rel="noreferrer">
-              <div><strong>Telegram MCP · voice transcription fix</strong><small>Normalized Telegram .oga voice uploads to the .ogg format expected by the transcription path.</small></div>
-              <span class="status">Merged</span>
-            </a>
-            <a class="contrib" href="https://github.com/ghost1372/HandyControls/pull/251" target="_blank" rel="noreferrer">
-              <div><strong>HandyControls · collection namespace refactor</strong><small>Separated collection types from Controls to improve MVVM boundaries.</small></div>
-              <span class="status">Merged</span>
-            </a>
-            <a class="contrib" href="https://github.com/ghost1372/HandyControls/pull/248" target="_blank" rel="noreferrer">
-              <div><strong>HandyControls · WPF window restore</strong><small>Restored resize border behavior after returning from maximized state.</small></div>
-              <span class="status">Merged</span>
-            </a>
-            <a class="contrib" href="https://github.com/ghost1372/HandyControls/pull/249" target="_blank" rel="noreferrer">
-              <div><strong>HandyControls · null safety</strong><small>Guarded AdornerElement against a null dependency-property value.</small></div>
-              <span class="status">Merged</span>
-            </a>
-            <a class="contrib" href="https://github.com/dotnet/runtime/pull/134277" target="_blank" rel="noreferrer">
-              <div><strong>.NET Runtime · NativeAOT memory-safety diagnostics</strong><small>Targeted CS9377/CS9389 diagnostics in the Android NativeAOT task template.</small></div>
-              <span class="status open">Open/closed</span>
-            </a>
-            <a class="contrib" href="https://github.com/run-llama/llama_index/pull/23138" target="_blank" rel="noreferrer">
-              <div><strong>LlamaIndex · ToolOutput error preservation</strong><small>Preserved structured error state through sync and async FunctionTool handling.</small></div>
-              <span class="status open">Open</span>
-            </a>
-          </div>
-
-          <a class="view-all" href="https://github.com/omid-io?tab=activity" target="_blank" rel="noreferrer">Browse the wider contribution history ↗</a>
-        </article>
-
-        <div>
-          <article class="panel reveal">
-            <div class="eyebrow" id="approach">04 · The pattern</div>
-            <h3>Different stacks. Similar problems.</h3>
-            <p>The common thread is how the work is approached, not a single language or framework.</p>
-
-            <div class="taxonomy">
-              <div class="tax"><strong>Boundaries</strong><p>Permissions, process lifecycles, API contracts, BiDi rules, network paths.</p></div>
-              <div class="tax"><strong>Failure modes</strong><p>Null states, races, stale locks, broken sessions, unsupported formats.</p></div>
-              <div class="tax"><strong>Tooling</strong><p>CLI, validators, extensions, SDKs, automation layers and test harnesses.</p></div>
-            </div>
-
-            <div class="stack">
-              <span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">C#</span><span class="chip">Kotlin</span>
-              <span class="chip">.NET</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">FastAPI</span>
-              <span class="chip">Playwright</span><span class="chip">SQLite</span><span class="chip">MCP</span><span class="chip">WinUI</span>
-              <span class="chip">Jetpack Compose</span><span class="chip">GitHub Actions</span><span class="chip">Linux</span>
-            </div>
-          </article>
-
-          <article class="panel reveal" style="margin-top:17px">
-            <div class="eyebrow">05 · Smaller shipped tools</div>
-            <h3>Useful things, even when they’re small.</h3>
-            <p>Not every repository needs to become a flagship to be worth shipping.</p>
-            <div class="contribs">
-              <a class="contrib" href="https://github.com/omid-io/digikala-pure-search" target="_blank" rel="noreferrer">
-                <div><strong>Digikala Pure Search</strong><small>Client-side userscript + Chrome extension + uBlock filtering for sponsored search results.</small></div>
-                <span class="status">Shipped</span>
-              </a>
-              <a class="contrib" href="https://github.com/omid-io/Android-Todo-App" target="_blank" rel="noreferrer">
-                <div><strong>My Tasks · Android</strong><small>Offline-first Compose app with Room, Jalali/Gregorian calendar, reminders, backups and automated releases.</small></div>
-                <span class="status">6 releases</span>
-              </a>
-              <a class="contrib" href="https://github.com/omid-io/arena.ai-chat-downloader" target="_blank" rel="noreferrer">
-                <div><strong>Arena Chat Downloader</strong><small>Local browser export tool for preserving AI conversations as structured Markdown.</small></div>
-                <span class="status">Shipped</span>
-              </a>
-            </div>
-          </article>
+        <div style="margin-top: 24px; text-align: center;">
+          <a class="card-action-link" href="https://github.com/omid-io?tab=activity" target="_blank" rel="noreferrer" data-i18n="upstream.browseAll">
+            Browse full GitHub activity on github.com/omid-io ↗
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="cta" id="contact">
-      <div class="wrap">
-        <div class="cta-box reveal">
+    <!-- Engineering DNA Section -->
+    <section class="section-padding" id="dna">
+      <div class="container">
+        <div class="section-head">
           <div>
-            <h2>Have a hard technical problem?</h2>
-            <p>Bring the constraint, the failure mode or the system boundary. The rest is usually easier to discuss once those are clear.</p>
+            <div class="eyebrow" data-i18n="dna.eyebrow">03 · Architectural DNA</div>
+            <h2 class="section-title" data-i18n="dna.title">Different stacks. Unified engineering discipline.</h2>
           </div>
-          <a class="btn" href="mailto:omidzaferi@gmail.com">Email Omid ↗</a>
+          <p class="section-subtitle" data-i18n="dna.subtitle">
+            I work from the constraint outward, prioritizing evidence over assumptions, failure mode analysis, and clean component boundaries.
+          </p>
+        </div>
+
+        <div class="dna-grid">
+          <!-- Col 1 -->
+          <div class="dna-card">
+            <div class="dna-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3 class="dna-title" data-i18n="dna.col1Title">Distributed &amp; Systems</h3>
+            <p class="dna-desc" data-i18n="dna.col1Desc">
+              Event-driven pipelines, Wintun kernel networking, async queues, SQLite state engines, and concurrency locking.
+            </p>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="dna-card">
+            <div class="dna-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 3.36 2.08 6.23 5 7.42V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.58c2.92-1.19 5-4.06 5-7.42a8 8 0 0 0-8-8z"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="10" y1="17" x2="14" y2="17"/></svg>
+            </div>
+            <h3 class="dna-title" data-i18n="dna.col2Title">Autonomous AI &amp; MCP</h3>
+            <p class="dna-desc" data-i18n="dna.col2Desc">
+              Multi-agent coordination, Model Context Protocol servers, circadian stealth browser workers, and self-healing loops.
+            </p>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="dna-card">
+            <div class="dna-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/></svg>
+            </div>
+            <h3 class="dna-title" data-i18n="dna.col3Title">Frontend &amp; Design Compilers</h3>
+            <p class="dna-desc" data-i18n="dna.col3Desc">
+              OKLCH token mathematics, WCAG AAA accessibility, Next.js 15 App Router, and zero-slop UI systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Terminal Box -->
+        <div class="terminal-box">
+          <div class="terminal-command">
+            <span class="terminal-prompt">$</span>
+            <bdi class="mono-data">npx vibe-ui-suite@latest</bdi>
+          </div>
+          <button id="terminalCopyBtn" class="terminal-copy-btn" type="button" aria-label="Copy terminal command">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- High-Impact CTA Section -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2 class="cta-title" data-i18n="cta.title">Have a high-complexity architectural challenge?</h2>
+            <p class="cta-desc" data-i18n="cta.desc">
+              Bring the constraint, the failure mode, or the system boundary. Let's engineer a resilient solution.
+            </p>
+          </div>
+          <a class="btn-primary" href="mailto:omidzaferi@gmail.com">
+            <span data-i18n="cta.emailBtn">Email Omid Directly ↗</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-inner">
-      <div>© <span id="year"></span> Omid Zaferi · omid-io</div>
-      <div class="footer-links">
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        © <span id="currentYear">2026</span> Omid Zaferi · omid-io. <span data-i18n="footer.rights">All rights reserved. Engineered with Vibe UI Suite standards.</span>
+      </div>
+
+      <div class="footer-social-links">
         <a href="https://github.com/omid-io" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/omid-zaferi" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://x.com/omid_io" target="_blank" rel="noreferrer">X</a>
-        <a href="mailto:omidzaferi@gmail.com">Email</a>
+        <a href="https://instagram.com/omid.zaferi" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.reddit.com/user/omid-io/" target="_blank" rel="noreferrer">Reddit</a>
+        <a href="https://virgool.io/@omid.zaferi" target="_blank" rel="noreferrer">Virgool</a>
+        <a href="#hero" data-i18n="footer.top">Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    (function(){
-      var root=document.documentElement;
-      var theme=document.getElementById('themeToggle');
-      var menu=document.getElementById('menuToggle');
-      var nav=document.querySelector('.nav');
-      var saved=localStorage.getItem('omid-theme');
-      if(saved==='dark') root.setAttribute('data-theme','dark');
-
-      theme.addEventListener('click',function(){
-        var dark=root.getAttribute('data-theme')==='dark';
-        if(dark){
-          root.removeAttribute('data-theme');
-          localStorage.setItem('omid-theme','light');
-        }else{
-          root.setAttribute('data-theme','dark');
-          localStorage.setItem('omid-theme','dark');
-        }
-      });
-
-      menu.addEventListener('click',function(){nav.classList.toggle('open')});
-      document.querySelectorAll('.nav-links a').forEach(function(a){
-        a.addEventListener('click',function(){nav.classList.remove('open')});
-      });
-
-      document.getElementById('year').textContent=new Date().getFullYear();
-
-      var items=document.querySelectorAll('.reveal');
-      var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if(reduce || !('IntersectionObserver' in window)){
-        items.forEach(function(item){item.classList.add('show')});
-      }else{
-        var observer=new IntersectionObserver(function(entries){
-          entries.forEach(function(entry){
-            if(entry.isIntersecting){
-              entry.target.classList.add('show');
-              observer.unobserve(entry.target);
-            }
-          });
-        },{threshold:.10});
-        items.forEach(function(item){observer.observe(item)});
-      }
-    })();
-  </script>
+  <!-- Portfolio Logic -->
+  <script src="main.js"></script>
 </body>
 </html>

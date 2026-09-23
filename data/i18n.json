@@ -1,0 +1,218 @@
+{
+  "en": {
+    "nav": {
+      "work": "Work",
+      "flagships": "Flagships",
+      "opensource": "Open Source",
+      "dna": "Engineering DNA",
+      "contact": "Contact",
+      "langBtn": "فارسی",
+      "themeDark": "Switch to dark mode",
+      "themeLight": "Switch to light mode"
+    },
+    "hero": {
+      "status": "Available for High-Impact Architecture",
+      "location": "Tehran (UTC+3:30)",
+      "greeting": "I build resilient software where",
+      "greetingAccent": "the details matter.",
+      "bio": "I am Omid Zaferi (omid-io) — Systems Architect & Autonomous Agent Specialist. I engineer high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers from awkward constraints to robust production boundaries.",
+      "ctaWork": "Explore Flagship Work",
+      "ctaContact": "Start a Conversation",
+      "copyEmail": "Copy Email",
+      "emailCopied": "Email Copied!",
+      "stats": {
+        "prs": "Public PRs Found",
+        "upstream": "Upstream Repos",
+        "flagships": "Flagship Suites",
+        "downloads": "Extension Downloads"
+      }
+    },
+    "filter": {
+      "all": "All Systems",
+      "flagship": "Flagships",
+      "ai": "AI & Automation",
+      "network": "Kernel & Networking",
+      "extensions": "Engineered Forks"
+    },
+    "projects": {
+      "eyebrow": "01 · Core Engineering",
+      "title": "Systems with a reason to exist.",
+      "subtitle": "Intentionally selective. These are production platforms and architectural solutions engineered with zero AI-slop.",
+      "viewRepo": "Repository",
+      "liveDemo": "Live Demo",
+      "vsMarketplace": "VS Marketplace",
+      "items": {
+        "vibe": {
+          "tag": "Flagship Design System",
+          "title": "Vibe UI Suite",
+          "desc": "A contract-driven frontend engineering compiler and token architecture for autonomous coding assistants, combining 26 design families, mathematical WCAG AAA verification, Next.js 15 starters, and VS Code extensions.",
+          "proof": "Active releases on npm, VS Code Marketplace & Open-VSX with 620+ downloads."
+        },
+        "airtun": {
+          "tag": "Kernel Networking & Tunneling",
+          "title": "AirTun",
+          "desc": "High-throughput mobile internet and VPN tunnel router for Windows 10/11 using Wintun kernel drivers, WinUI 3, C# .NET 8, and Kotlin without requiring Android root privileges.",
+          "proof": "Low-latency packet routing with event-driven architecture and native desktop client."
+        },
+        "flow": {
+          "tag": "Automation & Generative Suite",
+          "title": "Google Flow Suite",
+          "desc": "High-throughput dual-engine automation combining Chrome MV3, Playwright CDP, FastMCP protocol, SQLite history persistence, and asynchronous AI media processing queues.",
+          "proof": "462 unit & integration tests passing with dual CDP/REST architecture."
+        },
+        "pause": {
+          "tag": "Resilience & Security Guard",
+          "title": "antigravity-pause",
+          "desc": "Deep hibernation, graceful pause, and pre-flight data-leak protection engine for Google Antigravity (2.0 Desktop, IDE, and CLI) with deterministic state recovery.",
+          "proof": "Zero-orphan process tree teardown and network resilience safeguards."
+        },
+        "pure": {
+          "tag": "DOM Engine & Anti-Ad",
+          "title": "Digikala Pure Search",
+          "desc": "Real-time client-side DOM mutation observer eliminating sponsored merchandise and ad feeds across massive e-commerce catalogs via Greasemonkey/uBlock and Chrome MV3.",
+          "proof": "Published userscript on Greasy Fork with instant zero-layout-shift filtering."
+        },
+        "rtl": {
+          "tag": "Engineered Fork · BiDi Layer",
+          "title": "Antigravity RTL & UI Suite",
+          "desc": "Native RTL and BiDi layout patcher for Antigravity with fluid dragging physics (160px–420px), ghost click suppression on settings toggle, and scoped Persian typography.",
+          "proof": "Upstream pull request #5 with complete visual affordance isolation."
+        }
+      }
+    },
+    "upstream": {
+      "eyebrow": "02 · Upstream Contributions",
+      "title": "Verified code merged into major engines.",
+      "subtitle": "Selected pull requests merged or submitted directly to established open-source projects.",
+      "browseAll": "Browse full GitHub activity on github.com/omid-io"
+    },
+    "dna": {
+      "eyebrow": "03 · Architectural DNA",
+      "title": "Different stacks. Unified engineering discipline.",
+      "subtitle": "I work from the constraint outward, prioritizing evidence over assumptions, failure mode analysis, and clean component boundaries.",
+      "col1Title": "Distributed & Systems",
+      "col1Desc": "Event-driven pipelines, Wintun kernel networking, async queues, SQLite state engines, and concurrency locking.",
+      "col2Title": "Autonomous AI & MCP",
+      "col2Desc": "Multi-agent coordination, Model Context Protocol servers, circadian stealth browser workers, and self-healing loops.",
+      "col3Title": "Frontend & Design Compilers",
+      "col3Desc": "OKLCH token mathematics, WCAG AAA accessibility, Next.js 15 App Router, and zero-slop UI systems."
+    },
+    "cta": {
+      "title": "Have a high-complexity architectural challenge?",
+      "desc": "Bring the constraint, the failure mode, or the system boundary. Let's engineer a resilient solution.",
+      "emailBtn": "Email Omid Directly"
+    },
+    "footer": {
+      "rights": "All rights reserved. Built with Vibe UI Suite standards.",
+      "top": "Back to top"
+    }
+  },
+  "fa": {
+    "nav": {
+      "work": "پروژه ها",
+      "flagships": "سیستم های اصلی",
+      "opensource": "متن باز",
+      "dna": "معماری مهندسی",
+      "contact": "ارتباط",
+      "langBtn": "English",
+      "themeDark": "تغییر به تم تاریک",
+      "themeLight": "تغییر به تم روشن"
+    },
+    "hero": {
+      "status": "آماده برای معماری سیستم های مقیاس پذیر",
+      "location": "تهران (UTC+3:30)",
+      "greeting": "من نرم افزارهایی می سازم که در آنها",
+      "greetingAccent": "جزئیات اهمیت دارند.",
+      "bio": "من امید زعفری (omid-io) هستم — معمار سیستم و متخصص عامل های هوشمند خودکار (AI Agents). تخصص من در طراحی شبکه های سطح کرنل، پروتکل های توزیع شده چند ایجنتی بر بستر MCP و کامپایلرهای دقیق طراحی سیستم، با عبور از سخت ترین محدودیت ها است.",
+      "ctaWork": "مشاهده سیستم های اصلی",
+      "ctaContact": "آغاز گفتگو",
+      "copyEmail": "کپی ایمیل",
+      "emailCopied": "ایمیل کپی شد!",
+      "stats": {
+        "prs": "پول ریکوئست عمومی",
+        "upstream": "مخزن اصلی همکار",
+        "flagships": "سوئیت مهندسی پیشرو",
+        "downloads": "دانلود اکستنشن ها"
+      }
+    },
+    "filter": {
+      "all": "همه سیستم ها",
+      "flagship": "سیستم های اصلی",
+      "ai": "هوش مصنوعی و اتوماسیون",
+      "network": "کرنل و شبکه",
+      "extensions": "فورک های مهندسی شده"
+    },
+    "projects": {
+      "eyebrow": "۰۱ · مهندسی سیستم های بنیادین",
+      "title": "سیستم هایی که دلیلی برای وجود دارند.",
+      "subtitle": "این ویترین با وسواس بالا انتخاب شده است؛ سیستم های عملیاتی و واقعی بدون هیچ گونه شعار یا زباله هوش مصنوعی.",
+      "viewRepo": "مشاهده مخزن",
+      "liveDemo": "دموی زنده",
+      "vsMarketplace": "مارکت پلیس VS Code",
+      "items": {
+        "vibe": {
+          "tag": "سیستم طراحی پیشرو",
+          "title": "Vibe UI Suite",
+          "desc": "سیستم طراحی مبتنی بر قرارداد مهندسی و موتور کامپایلر توکن ها برای دستیاران کدنویسی هوش مصنوعی، شامل ۲۶ خانواده طراحی، راستی آزمایی ریاضی کنتراست WCAG AAA، استارتر Next.js 15 و اکستنشن های VS Code.",
+          "proof": "منتشر شده در npm و مخازن رسمی VS Code و Open-VSX با بیش از ۶۲۰ دانلود فعال."
+        },
+        "airtun": {
+          "tag": "شبکه سازی کرنل و تانلینگ",
+          "title": "AirTun",
+          "desc": "مسیریاب و اشتراک گذار پرسرعت اینترنت و تونل های VPN از موبایل به ویندوز ۱۰ و ۱۱ با درایور سطح کرنل Wintun، رابط کاربری WinUI 3، فریمورک دات نت ۸ و کاتلین، بدون نیاز به روت اندروید.",
+          "proof": "مسیریابی پکت ها با حداقل تاخیر، معماری مبتنی بر رخداد و کلاینت بومی دسکتاپ."
+        },
+        "flow": {
+          "tag": "سوئیت اتوماسیون و تولید محتوا",
+          "title": "Google Flow Suite",
+          "desc": "پلتفرم پرسرعت اتوماسیون با معماری دوگانه شامل اکستنشن کروم MV3، پروتکل Playwright CDP، پروتکل FastMCP، تاریخچه دیتابیس SQLite و صف های پردازش نامتقارن هوش مصنوعی.",
+          "proof": "دارای ۴۶۲ تست واحد و یکپارچه موفق با معماری منعطف CDP و REST."
+        },
+        "pause": {
+          "tag": "پایداری سیستم و ضد نشت داده",
+          "title": "antigravity-pause",
+          "desc": "موتور توقف ایمن، خواب عمیق (هایبرنیشن) و محافظت پیشگیرانه از نشت اطلاعات برای گوگل آنتی گراویتی (نسخه های دسکتاپ، محیط توسعه و خط فرمان) با بازیابی قطعی وضعیت.",
+          "proof": "پاکسازی کامل درخت پردازش ها بدون باقی ماندن پروسه یتیم و تاب آوری شبکه."
+        },
+        "pure": {
+          "tag": "موتور پالایش DOM و حذف تبلیغات",
+          "title": "Digikala Pure Search",
+          "desc": "موتور تحلیل و نظارت زنده بر جهش های DOM جهت حذف کامل کالاها و تبلیغات اسپانسری در فروشگاه های بزرگ اینترنتی با ترکیب یوزراسکریپت، uBlock و اکستنشن کروم MV3.",
+          "proof": "منتشر شده روی مخزن Greasy Fork با حذف آنی و بدون پرش ساختار صفحه."
+        },
+        "rtl": {
+          "tag": "فورک مهندسی · لایه BiDi",
+          "title": "Antigravity RTL & UI Suite",
+          "desc": "لایه بومی سازی راست به چپ (RTL) و اصلاح جهت متن (BiDi) برای آنتی گراویتی با فیزیک درگ روان (۱۶۰ تا ۴۲۰ پیکسل)، حذف کلیک های شبح در پنل تنظیمات و تایپوگرافی اختصاصی فارسی.",
+          "proof": "پول ریکوئست شماره ۵ با ایزولاسیون کامل نمادهای بصری و دکمه ها."
+        }
+      }
+    },
+    "upstream": {
+      "eyebrow": "۰۲ · مشارکت های متن باز جهانی",
+      "title": "کدهای تایید و مرج شده در پروژه های بین المللی.",
+      "subtitle": "نمونه هایی منتخب از پول ریکوئست های مرج شده در مخازن مشهور جهانی.",
+      "browseAll": "مشاهده تمامی فعالیت های گیت هاب در github.com/omid-io"
+    },
+    "dna": {
+      "eyebrow": "۰۳ · دی ان ای معماری سیستم",
+      "title": "استک های گوناگون. انضباط مهندسی واحد.",
+      "subtitle": "من طراحی را از تحلیل محدودیت ها و بدترین سناریوهای خرابی آغاز می کنم؛ با اولویت دادن به شواهد عینی، مرزهای شفاف و تاب آوری بالا.",
+      "col1Title": "سیستم های توزیع شده و زیرساخت",
+      "col1Desc": "پایپ لاین های رخدادمحور، شبکه سازی سطح کرنل با Wintun، صف های ناهمگام، موتورهای پایگاه داده و قفل های همروندی.",
+      "col2Title": "عامل های خودکار هوش مصنوعی و MCP",
+      "col2Desc": "ارکستراسیون ایجنت ها، سرورهای پروتکل کانتکست مدل (MCP)، ورکر های نامحسوس مرورگر و حلقه های خودبهبوددهنده.",
+      "col3Title": "فرانت اند و کامپایلرهای طراحی",
+      "col3Desc": "ریاضیات توکن های OKLCH، دسترسی پذیری سطح WCAG AAA، فریمورک Next.js 15 و سیستم های بدون زباله هوش مصنوعی."
+    },
+    "cta": {
+      "title": "مسئله یا چالش فنی پیچیده ای در پیش دارید؟",
+      "desc": "محدودیت اصلی سیستم، الگوهای خرابی یا مرزهای معماری را مطرح کنید تا راهکاری پایدار بسازیم.",
+      "emailBtn": "ارسال مستقیم ایمیل به امید"
+    },
+    "footer": {
+      "rights": "تمامی حقوق محفوظ است. پیاده سازی شده با استانداردهای Vibe UI Suite.",
+      "top": "بازگشت به بالا"
+    }
+  }
+}
