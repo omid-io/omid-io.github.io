@@ -60,7 +60,10 @@
   </script>
 </head>
 <body>
-  <!-- Ambient Grids & Glows -->
+  <!-- 1. Interactive Living Neural Canvas Layer -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Blueprint Grid & Ambient Glows -->
   <div class="blueprint-grid"></div>
   <div class="ambient-glow-top"></div>
   <div class="ambient-glow-bottom"></div>
@@ -79,6 +82,7 @@
       </a>
       
       <nav class="nav-menu">
+        <a href="#telemetry" class="nav-item">Live Pulse</a>
         <a href="#architecture" class="nav-item">System Flow</a>
         <a href="#projects" class="nav-item">Featured Work</a>
         <a href="#pillars" class="nav-item">Core Pillars</a>
@@ -110,13 +114,17 @@
         <span>Architecting Next-Gen Agentic Systems</span>
       </div>
 
+      <!-- Dynamic Typewriter Title -->
       <h1 class="hero-title">
         High-Resilience Engineering for <br />
-        <span class="gradient-text">Autonomous AI Agents</span>
+        <span class="typewriter-wrapper">
+          <span id="typewriter-text" class="typewriter-text"></span>
+          <span class="cursor-blink"></span>
+        </span>
       </h1>
 
       <p class="hero-bio">
-        I am <strong>Omid Zaferi</strong> (omid-io) — Software Architect and Full-Stack Systems Engineer. I design mission-critical multi-agent orchestrations, Model Context Protocol (MCP) ecosystems, and anti-leak communication layers engineered to survive unstable networks and hostile environments.
+        I am <strong>Omid Zaferi</strong> (omid-io) — Software Architect and Full-Stack Systems Engineer. I design mission-critical multi-agent orchestrations, Model Context Protocol (MCP) ecosystems, and anti-leak communication layers engineered to survive hostile networks and volatile environments.
       </p>
 
       <div class="hero-cta">
@@ -137,24 +145,36 @@
         </a>
       </div>
 
-      <!-- Metrics Ribbon -->
-      <div class="metrics-ribbon">
-        <div class="metric-item">
-          <span class="metric-value cyan">&lt;200ms</span>
-          <span class="metric-label">Sub-second pre-flight leak probe & geo verification</span>
+      <!-- Live Heartbeat & Telemetry Ribbon -->
+      <div id="telemetry" class="telemetry-bar">
+        <div class="telemetry-signal">
+          <div class="signal-canvas-wrap">
+            <canvas id="pulse-canvas"></canvas>
+          </div>
+          <div class="signal-info">
+            <span class="signal-title">Network Probe Pulse</span>
+            <span class="signal-val" id="live-latency-val">138ms</span>
+          </div>
         </div>
-        <div class="metric-item">
-          <span class="metric-value emerald">100%</span>
-          <span class="metric-label">Zero-kill standby & orphan process immunization</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-value violet">FastMCP</span>
-          <span class="metric-label">Compliant context protocols connecting LLMs with OS/APIs</span>
+
+        <div class="telemetry-stats">
+          <div class="telem-stat">
+            <span class="telem-num c-cyan">&lt;200ms</span>
+            <span class="telem-label">Pre-flight leak probe</span>
+          </div>
+          <div class="telem-stat">
+            <span class="telem-num" style="color: var(--emerald-bright);">100%</span>
+            <span class="telem-label">Zero-kill standby</span>
+          </div>
+          <div class="telem-stat">
+            <span class="telem-num c-violet">FastMCP</span>
+            <span class="telem-label">Tool protocol compliance</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Architecture & Data Flow Diagram -->
+    <!-- Architecture & Data Flow Diagram with Moving Beams -->
     <section id="architecture" class="section">
       <div class="section-header">
         <span class="section-tag">
@@ -167,25 +187,27 @@
           <span>System Topology</span>
         </span>
         <h2 class="section-title">Resilient Agent Architecture</h2>
-        <p class="section-desc">How autonomous coding agents, pre-flight network guards, and context servers safely interact.</p>
+        <p class="section-desc">Live simulation of autonomous coding agents, pre-flight network guards, and context servers interacting.</p>
       </div>
 
-      <div class="arch-diagram-wrapper">
+      <div class="spotlight-card arch-diagram-wrapper">
         <div class="arch-canvas">
           <div class="arch-node">
             <div class="arch-node-header">
-              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                 <line x1="8" y1="21" x2="16" y2="21"></line>
                 <line x1="12" y1="17" x2="12" y2="21"></line>
               </svg>
               <div class="arch-node-title">Coding Agent Runtimes</div>
             </div>
-            <div class="arch-node-desc">Google Antigravity 2.0 / Claude Code / Subagents managing long-running tasks.</div>
+            <div class="arch-node-desc">Google Antigravity 2.0 / Claude Code / Subagents managing continuous task workflows.</div>
           </div>
 
           <div class="arch-connector">
-            <div class="arch-pulse-line"></div>
+            <div class="beam-track">
+              <div class="beam-packet"></div>
+            </div>
           </div>
 
           <div class="arch-node">
@@ -195,11 +217,13 @@
               </svg>
               <div class="arch-node-title">antigravity-pause</div>
             </div>
-            <div class="arch-node-desc">Atomic checkpoint engine, 200ms pre-flight probe, and git lock sanitization.</div>
+            <div class="arch-node-desc">Atomic checkpoint engine, 200ms pre-flight leak probe, and git lock sanitization.</div>
           </div>
 
           <div class="arch-connector">
-            <div class="arch-pulse-line"></div>
+            <div class="beam-track">
+              <div class="beam-packet delay"></div>
+            </div>
           </div>
 
           <div class="arch-node">
@@ -216,7 +240,7 @@
       </div>
     </section>
 
-    <!-- Featured Projects (with Tabbed Code & Specs) -->
+    <!-- Featured Projects (Spotlight Cards with Tabs) -->
     <section id="projects" class="section">
       <div class="section-header">
         <span class="section-tag">
@@ -232,7 +256,7 @@
 
       <div class="projects-container">
         <!-- Project 1: antigravity-pause -->
-        <article class="showcase-card">
+        <article class="spotlight-card showcase-card">
           <div class="card-topbar">
             <div class="card-title-group">
               <div class="card-title-row">
@@ -262,7 +286,6 @@
               <button class="tab-btn" data-tab="architecture">Core Modules</button>
             </div>
 
-            <!-- Tab 1: Highlights -->
             <div class="tab-pane active" data-pane="features">
               <div class="features-list">
                 <div class="feature-bullet">
@@ -284,7 +307,6 @@
               </div>
             </div>
 
-            <!-- Tab 2: Code -->
             <div class="tab-pane" data-pane="code">
               <pre class="code-box"><code><span class="code-comment"># 1. Hot Standby during VPN switches</span>
 /pause      <span class="code-comment"># Enters radio silence; holds HTTP/2 sockets safely</span>
@@ -295,7 +317,6 @@
 /continue   <span class="code-comment"># Rehydrates state and continues next task step</span></code></pre>
             </div>
 
-            <!-- Tab 3: Architecture -->
             <div class="tab-pane" data-pane="architecture">
               <pre class="code-box"><code>core/
  ├── network_probe.py    <span class="code-comment"># Lightweight high-speed anti-leak probe</span>
@@ -326,7 +347,7 @@ skills/
         </article>
 
         <!-- Project 2: telegram-mcp -->
-        <article class="showcase-card">
+        <article class="spotlight-card showcase-card">
           <div class="card-topbar">
             <div class="card-title-group">
               <div class="card-title-row">
@@ -408,7 +429,7 @@ skills/
         </article>
 
         <!-- Project 3: omid-core -->
-        <article class="showcase-card">
+        <article class="spotlight-card showcase-card">
           <div class="card-topbar">
             <div class="card-title-group">
               <div class="card-title-row">
@@ -467,7 +488,7 @@ skills/
       </div>
     </section>
 
-    <!-- Technical Pillars -->
+    <!-- Technical Pillars (Spotlight Cards) -->
     <section id="pillars" class="section">
       <div class="section-header">
         <span class="section-tag">
@@ -483,7 +504,7 @@ skills/
       </div>
 
       <div class="pillars-grid">
-        <div class="pillar-card">
+        <div class="spotlight-card pillar-card">
           <div>
             <div class="pillar-header">
               <div class="pillar-icon-box">
@@ -504,7 +525,7 @@ skills/
           </ul>
         </div>
 
-        <div class="pillar-card">
+        <div class="spotlight-card pillar-card">
           <div>
             <div class="pillar-header">
               <div class="pillar-icon-box violet">
@@ -523,7 +544,7 @@ skills/
           </ul>
         </div>
 
-        <div class="pillar-card">
+        <div class="spotlight-card pillar-card">
           <div>
             <div class="pillar-header">
               <div class="pillar-icon-box emerald">
@@ -549,7 +570,7 @@ skills/
           </ul>
         </div>
 
-        <div class="pillar-card">
+        <div class="spotlight-card pillar-card">
           <div>
             <div class="pillar-header">
               <div class="pillar-icon-box amber">

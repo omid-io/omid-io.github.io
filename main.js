@@ -1,5 +1,224 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Project Card Tab Switching
+  // ==========================================
+  // 1. Dynamic Typewriter in Hero Header
+  // ==========================================
+  const phrases = [
+    "Autonomous AI Agents",
+    "Anti-Leak Security Guards",
+    "FastMCP Protocol Systems",
+    "Self-Healing Subagent Clusters",
+    "Fault-Tolerant Distributed APIs"
+  ];
+  const typeTarget = document.getElementById("typewriter-text");
+  let phraseIdx = 0;
+  let charIdx = 0;
+  let isDeleting = false;
+  let typeSpeed = 90;
+
+  function runTypewriter() {
+    if (!typeTarget) return;
+    const currentPhrase = phrases[phraseIdx];
+
+    if (isDeleting) {
+      typeTarget.textContent = currentPhrase.substring(0, charIdx - 1);
+      charIdx--;
+      typeSpeed = 45;
+    } else {
+      typeTarget.textContent = currentPhrase.substring(0, charIdx + 1);
+      charIdx++;
+      typeSpeed = 85;
+    }
+
+    if (!isDeleting && charIdx === currentPhrase.length) {
+      typeSpeed = 2200; // Pause at full phrase
+      isDeleting = true;
+    } else if (isDeleting && charIdx === 0) {
+      isDeleting = false;
+      phraseIdx = (phraseIdx + 1) % phrases.length;
+      typeSpeed = 500;
+    }
+
+    setTimeout(runTypewriter, typeSpeed);
+  }
+  runTypewriter();
+
+  // ==========================================
+  // 2. Interactive Neural Mesh Background Canvas
+  // ==========================================
+  const canvas = document.getElementById("neural-canvas");
+  if (canvas) {
+    const ctx = canvas.getContext("2d");
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    let mouse = { x: null, y: null, radius: 150 };
+
+    window.addEventListener("resize", () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      initParticles();
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    window.addEventListener("mouseout", () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.75;
+        this.vy = (Math.random() - 0.5) * 0.75;
+        this.radius = Math.random() * 1.8 + 1;
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+
+        // Mouse interaction
+        if (mouse.x !== null && mouse.y !== null) {
+          const dx = mouse.x - this.x;
+          const dy = mouse.y - this.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < mouse.radius) {
+            const angle = Math.atan2(dy, dx);
+            const force = (mouse.radius - dist) / mouse.radius;
+            this.x -= Math.cos(angle) * force * 1.5;
+            this.y -= Math.sin(angle) * force * 1.5;
+          }
+        }
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(56, 189, 248, 0.65)";
+        ctx.shadowColor = "rgba(0, 240, 255, 0.4)";
+        ctx.shadowBlur = 8;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      }
+    }
+
+    let particles = [];
+    function initParticles() {
+      particles = [];
+      const count = Math.min(Math.floor((width * height) / 14000), 75);
+      for (let i = 0; i < count; i++) {
+        particles.push(new Particle());
+      }
+    }
+    initParticles();
+
+    function animateNeuralMesh() {
+      ctx.clearRect(0, 0, width, height);
+
+      // Connect near particles
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 125) {
+            const alpha = (1 - dist / 125) * 0.22;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(56, 189, 248, ${alpha})`;
+            ctx.lineWidth = 0.9;
+            ctx.stroke();
+          }
+        }
+      }
+
+      particles.forEach((p) => {
+        p.update();
+        p.draw();
+      });
+
+      requestAnimationFrame(animateNeuralMesh);
+    }
+    animateNeuralMesh();
+  }
+
+  // ==========================================
+  // 3. Mouse Spotlight on Cards (Linear Style)
+  // ==========================================
+  document.querySelectorAll(".spotlight-card").forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    });
+  });
+
+  // ==========================================
+  // 4. Live Pulse Waveform Canvas & Ping Jitter
+  // ==========================================
+  const pulseCanvas = document.getElementById("pulse-canvas");
+  const latencyDisplay = document.getElementById("live-latency-val");
+
+  if (pulseCanvas) {
+    const pCtx = pulseCanvas.getContext("2d");
+    const pWidth = (pulseCanvas.width = 140);
+    const pHeight = (pulseCanvas.height = 34);
+
+    let offset = 0;
+    function drawPulse() {
+      pCtx.clearRect(0, 0, pWidth, pHeight);
+      pCtx.beginPath();
+      pCtx.strokeStyle = "#10b981";
+      pCtx.lineWidth = 1.7;
+      pCtx.shadowColor = "rgba(16, 185, 129, 0.5)";
+      pCtx.shadowBlur = 6;
+
+      const midY = pHeight / 2;
+      pCtx.moveTo(0, midY);
+
+      for (let x = 0; x < pWidth; x++) {
+        // Create an ECG-like repeating spike
+        const cycle = (x + offset) % 60;
+        let y = midY;
+        if (cycle > 24 && cycle < 28) y -= 4;
+        else if (cycle >= 28 && cycle < 32) y += 12;
+        else if (cycle >= 32 && cycle < 37) y -= 14;
+        else if (cycle >= 37 && cycle < 42) y += 5;
+        pCtx.lineTo(x, y);
+      }
+      pCtx.stroke();
+      pCtx.shadowBlur = 0;
+
+      offset += 1.4;
+      requestAnimationFrame(drawPulse);
+    }
+    drawPulse();
+
+    // Simulated Real-Time Ping Jitter
+    if (latencyDisplay) {
+      setInterval(() => {
+        const jitter = Math.floor(Math.random() * 11) - 5; // -5 to +5 ms
+        const base = 138;
+        latencyDisplay.textContent = `${base + jitter}ms`;
+      }, 2400);
+    }
+  }
+
+  // ==========================================
+  // 5. Project Card Tab Switching
+  // ==========================================
   document.querySelectorAll(".showcase-card").forEach((card) => {
     const tabBtns = card.querySelectorAll(".tab-btn");
     const tabPanes = card.querySelectorAll(".tab-pane");
@@ -18,7 +237,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 2. 1-Click Clone Command Copy
+  // ==========================================
+  // 6. 1-Click Clone Command Copy
+  // ==========================================
   document.querySelectorAll(".quick-clone-btn").forEach((btn) => {
     btn.addEventListener("click", async () => {
       const copyText = btn.getAttribute("data-copy");
@@ -37,7 +258,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 3. Interactive Terminal Playground
+  // ==========================================
+  // 7. Interactive Terminal Playground
+  // ==========================================
   const termScreen = document.getElementById("terminal-screen");
   const termInput = document.getElementById("terminal-input");
 
@@ -54,11 +277,11 @@ document.addEventListener("DOMContentLoaded", () => {
     Graceful Pause, Deep Hibernation & Pre-Flight Leak Protection for Google Antigravity.
     Repo: https://github.com/omid-io/antigravity-pause
 
-[2] telegram-mcp (v1.0.0)
+[2] telegram-mcp (Production)
     High-throughput Telegram Model Context Protocol (MCP) server powered by Telethon.
     Repo: https://github.com/omid-io/telegram-mcp
 
-[3] omid-core (Active)
+[3] omid-core (Core Engine)
     Personal Distributed Automation & Multi-Agent Intelligence Engine.
     Repo: https://github.com/omid-io/omid-core`,
 
@@ -97,12 +320,10 @@ Obsessed with resilient autonomous AI agents, MCP ecosystems, and zero-downtime 
           return;
         }
 
-        // Print Input Command
         const entry = document.createElement("div");
         entry.className = "log-entry";
         entry.innerHTML = `<div><span class="log-prompt">omid@hub:~$</span> <span class="log-cmd">${rawCmd}</span></div>`;
 
-        // Handle Command Output
         const output = document.createElement("div");
         output.className = "log-response";
 
@@ -119,7 +340,7 @@ Obsessed with resilient autonomous AI agents, MCP ecosystems, and zero-downtime 
     });
   }
 
-  // 4. Update Footer Year
+  // Footer Year
   const yearEl = document.getElementById("year-display");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
