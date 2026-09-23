@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   const phrases = [
     "Autonomous AI Agents",
+    "AirTun VPN & Kernel Runtimes",
+    "Vibe UI Design Systems",
     "Anti-Leak Security Guards",
     "FastMCP Protocol Systems",
-    "Self-Healing Subagent Clusters",
-    "Fault-Tolerant Distributed APIs"
+    "Self-Healing Subagent Clusters"
   ];
   const typeTarget = document.getElementById("typewriter-text");
   let phraseIdx = 0;
@@ -85,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (this.x < 0 || this.x > width) this.vx *= -1;
         if (this.y < 0 || this.y > height) this.vy *= -1;
 
-        // Mouse interaction
         if (mouse.x !== null && mouse.y !== null) {
           const dx = mouse.x - this.x;
           const dy = mouse.y - this.y;
@@ -123,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function animateNeuralMesh() {
       ctx.clearRect(0, 0, width, height);
 
-      // Connect near particles
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
@@ -189,7 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
       pCtx.moveTo(0, midY);
 
       for (let x = 0; x < pWidth; x++) {
-        // Create an ECG-like repeating spike
         const cycle = (x + offset) % 60;
         let y = midY;
         if (cycle > 24 && cycle < 28) y -= 4;
@@ -206,10 +204,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     drawPulse();
 
-    // Simulated Real-Time Ping Jitter
     if (latencyDisplay) {
       setInterval(() => {
-        const jitter = Math.floor(Math.random() * 11) - 5; // -5 to +5 ms
+        const jitter = Math.floor(Math.random() * 11) - 5;
         const base = 138;
         latencyDisplay.textContent = `${base + jitter}ms`;
       }, 2400);
@@ -238,7 +235,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ==========================================
-  // 6. 1-Click Clone Command Copy
+  // 6. Category Filter for Catalog Cards
+  // ==========================================
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const catalogCards = document.querySelectorAll(".catalog-card");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const category = btn.getAttribute("data-filter");
+
+      catalogCards.forEach((card) => {
+        if (category === "all" || card.getAttribute("data-category") === category) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // ==========================================
+  // 7. 1-Click Clone Command Copy
   // ==========================================
   document.querySelectorAll(".quick-clone-btn").forEach((btn) => {
     btn.addEventListener("click", async () => {
@@ -259,37 +279,65 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ==========================================
-  // 7. Interactive Terminal Playground
+  // 8. Interactive Terminal Playground
   // ==========================================
   const termScreen = document.getElementById("terminal-screen");
   const termInput = document.getElementById("terminal-input");
 
   const terminalCommands = {
     help: `Available commands:
-  • projects   - List featured open-source repositories
-  • status     - Real-time agent cluster & probe status
-  • probe      - Execute sub-200ms anti-leak network probe
-  • stack      - View core software architecture stack
-  • whoami     - Display developer identity and profile
-  • clear      - Clear terminal screen buffer`,
+  • projects     - List core featured repositories (AirTun, Vibe UI, etc.)
+  • catalog      - Show full directory of 20+ repositories
+  • upstream     - Show upstream contributions (.NET Runtime, LlamaIndex, etc.)
+  • status       - Real-time agent cluster & probe status
+  • probe        - Execute sub-200ms anti-leak network probe
+  • whoami       - Display developer identity and profile
+  • clear        - Clear terminal screen buffer`,
 
-    projects: `[1] antigravity-pause (v0.1.0-stable)
+    projects: `[1] AirTun (Featured Flagship)
+    Ultra-fast mobile internet & VPN tunnel sharing for Windows 10/11.
+    Stack: Kotlin Jetpack Compose & WinUI 3 .NET 8.
+    Repo: https://github.com/omid-io/AirTun
+
+[2] vibe-ui-suite (Production System)
+    Deterministic design contracts & WCAG AA evaluation gates for AI coding agents.
+    Demo: https://omid-io.github.io/vibe-ui-suite/
+    Repo: https://github.com/omid-io/vibe-ui-suite
+
+[3] antigravity-pause (v0.1.0-stable)
     Graceful Pause, Deep Hibernation & Pre-Flight Leak Protection for Google Antigravity.
     Repo: https://github.com/omid-io/antigravity-pause
 
-[2] telegram-mcp (Production)
-    High-throughput Telegram Model Context Protocol (MCP) server powered by Telethon.
-    Repo: https://github.com/omid-io/telegram-mcp
+[4] Android-Todo-App (Glassmorphism)
+    Ultra-Modern Android Task Manager with Room Flow and Dual Calendar.
+    Repo: https://github.com/omid-io/Android-Todo-App`,
 
-[3] omid-core (Core Engine)
-    Personal Distributed Automation & Multi-Agent Intelligence Engine.
-    Repo: https://github.com/omid-io/omid-core`,
+    catalog: `CATALOG DIRECTORY:
+  • AirTun                - WinUI 3 + Kotlin low-latency tunnel
+  • vibe-ui-suite         - Anti AI-Slop design system & CLI
+  • antigravity-pause     - Pre-flight anti-leak session protection
+  • Android-Todo-App      - Glassmorphism Jetpack Compose app
+  • google-flow-suite     - Google flow automation suite (Playwright & FastMCP)
+  • telegram-mcp          - Telegram context protocol bridge
+  • antigravity-rtl       - Smart RTL UI patcher for Antigravity 2.0
+  • digikala-pure-search  - Ad & sponsor cleaner userscript
+  • arena.ai-downloader   - LMSYS Arena chat exporter
+  • FontWoW-2.0           - Web font preview engine
+  • omid-core             - Multi-agent orchestration engine`,
 
-    status: `[CLUSTER HEALTH CHECK]
-  ✓ Antigravity 2.0 Integration : Connected
-  ✓ Active Subagent Isolation   : 100% Zero-Orphan
-  ✓ MCP Tool Context Protocols  : telegram-mcp (active), browser-suite (ready)
-  ✓ Network Guard State         : Armed (Anti-Leak Pre-Flight Active)`,
+    upstream: `UPSTREAM CONTRIBUTIONS & FORKS:
+  • dotnet/runtime       - .NET Core cross-platform runtime engine
+  • run-llama/llama_index- Document processing & RAG framework for LLMs
+  • astral-sh/uv         - Ultra-fast Rust package manager for Python
+  • sst/opencode         - Open-source terminal coding agent
+  • imaNNeo/fl_chart     - Top Flutter charting library
+  • NousResearch/hermes  - Open-weights reasoning agent engine`,
+
+    status: `[SYSTEM TELEMETRY]
+  ✓ Core Repositories Sync  : Automated (GitHub Actions Workflow Active)
+  ✓ Exit Node Connectivity  : Non-Sanctioned Safe Exit (138ms Latency)
+  ✓ Antigravity 2.0 State   : Connected & Armed with Anti-Leak
+  ✓ Upstream Contribution   : 6 Global Open-Source Repositories Monitored`,
 
     probe: `Executing pre-flight connectivity verification...
   [+] Handshake latency: 138ms
@@ -297,15 +345,9 @@ document.addEventListener("DOMContentLoaded", () => {
   [+] Geo-Location: Non-Sanctioned Safe Exit Node
   [✓] RESULT: Green Light. Session safe from 403 Forbidden drops.`,
 
-    stack: `ARCHITECTURAL FOCUS:
-  • AI & Agents  : Google Antigravity 2.0, Claude Code, Autonomous Subagents
-  • Protocols    : Model Context Protocol (MCP), FastMCP, REST, SSE, WebSockets
-  • Runtimes     : Python 3.12 (AsyncIO), .NET 8/9 C#, Node.js
-  • Systems      : Distributed Sockets, Fault-Tolerant Checkpointing, Git Locks`,
-
     whoami: `Omid Zaferi (omid-io)
 Software Architect & Full-Stack Systems Engineer.
-Obsessed with resilient autonomous AI agents, MCP ecosystems, and zero-downtime engineering.`
+Specialized in mobile-to-desktop low-latency tunneling, autonomous AI agents, and resilient backends.`
   };
 
   if (termInput && termScreen) {

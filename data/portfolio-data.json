@@ -1,0 +1,657 @@
+{
+  "updated_at": "2026-09-23",
+  "repos": [
+    {
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
+      "isFork": false,
+      "name": "omid-io.github.io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-engineer"
+        },
+        {
+          "name": "developer-portfolio"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "github-pages"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-23T16:43:36Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "⏸️ Graceful Pause, Deep Hibernation & Pre-Flight Leak Protection for Google Antigravity (2.0 Desktop, IDE, and CLI)",
+      "homepageUrl": "https://github.com/omid-io/antigravity-pause#readme",
+      "isFork": false,
+      "name": "antigravity-pause",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "agentic-ai"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "anti-leak"
+        },
+        {
+          "name": "antigravity"
+        },
+        {
+          "name": "antigravity-skill"
+        },
+        {
+          "name": "checkpointing"
+        },
+        {
+          "name": "cli"
+        },
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "google-antigravity"
+        },
+        {
+          "name": "hibernation"
+        },
+        {
+          "name": "network-resilience"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "session-management"
+        },
+        {
+          "name": "slash-commands"
+        },
+        {
+          "name": "git-locks"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-23T16:31:28Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": ".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps.",
+      "homepageUrl": "https://docs.microsoft.com/dotnet/core/",
+      "isFork": true,
+      "name": "runtime",
+      "parent": {
+        "id": "MDEwOlJlcG9zaXRvcnkyMTA3MTYwMDU=",
+        "name": "runtime",
+        "owner": {
+          "id": "MDEyOk9yZ2FuaXphdGlvbjkxNDE5NjE=",
+          "login": "dotnet"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T13:09:35Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Personal Intelligence & Automation Engine for Omid Zaferi",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "omid-core",
+      "parent": null,
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-22T06:02:46Z",
+      "visibility": "PRIVATE"
+    },
+    {
+      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "telegram-mcp",
+      "parent": {
+        "id": "R_kgDOOL27Bw",
+        "name": "telegram-mcp",
+        "owner": {
+          "id": "MDQ6VXNlcjM2MzkyNzUx",
+          "login": "chigwell"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T22:46:11Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The agent that grows with you",
+      "homepageUrl": "https://hermes-agent.nousresearch.com",
+      "isFork": true,
+      "name": "hermes-agent",
+      "parent": {
+        "id": "R_kgDOPRF1Gw",
+        "name": "hermes-agent",
+        "owner": {
+          "id": "O_kgDOB_9BPQ",
+          "login": "NousResearch"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-04T21:50:52Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "homepageUrl": "https://docs.astral.sh/uv",
+      "isFork": true,
+      "name": "uv",
+      "parent": {
+        "id": "R_kgDOKbIFZQ",
+        "name": "uv",
+        "owner": {
+          "id": "O_kgDOBulz1w",
+          "login": "astral-sh"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T22:11:02Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The open source coding agent.",
+      "homepageUrl": "https://opencode.ai",
+      "isFork": true,
+      "name": "opencode",
+      "parent": {
+        "id": "R_kgDOOiiGLw",
+        "name": "opencode",
+        "owner": {
+          "id": "MDEyOk9yZ2FuaXphdGlvbjY2NTcwOTE1",
+          "login": "anomalyco"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T15:17:14Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "🚀 Personal GitHub Profile & Open-Source Engineering Portfolio | Omid Zaferi",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "omid-io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "developer-profile"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "mcp-protocol"
+        },
+        {
+          "name": "open-source"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T14:56:53Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "LlamaIndex is the document processing platform for AI",
+      "homepageUrl": "https://developers.llamaindex.ai",
+      "isFork": true,
+      "name": "llama_index",
+      "parent": {
+        "id": "R_kgDOIWuq5w",
+        "name": "llama_index",
+        "owner": {
+          "id": "O_kgDOB8qsMg",
+          "login": "run-llama"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T12:53:56Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "A smart RTL (Right-to-Left) UI patcher for Antigravity 2.0, bringing native support for Persian, Arabic, and Hebrew languages with customizable fonts.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "antigravity-rtl",
+      "parent": {
+        "id": "R_kgDOTEq-fQ",
+        "name": "antigravity-rtl",
+        "owner": {
+          "id": "MDQ6VXNlcjI5MTQ5MjQ=",
+          "login": "mmnaderi"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-18T19:48:40Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "⚡ Ultra-fast, low-latency mobile internet & VPN tunnel sharing for Windows 10/11 powered by Kotlin Jetpack Compose & WinUI 3 .NET 8.",
+      "homepageUrl": "https://github.com/omid-io/AirTun#readme",
+      "isFork": false,
+      "name": "AirTun",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "android"
+        },
+        {
+          "name": "anti-censorship"
+        },
+        {
+          "name": "bypass-lan"
+        },
+        {
+          "name": "cross-platform"
+        },
+        {
+          "name": "csharp"
+        },
+        {
+          "name": "dotnet"
+        },
+        {
+          "name": "kotlin"
+        },
+        {
+          "name": "networking-tools"
+        },
+        {
+          "name": "socks5"
+        },
+        {
+          "name": "split-tunneling"
+        },
+        {
+          "name": "traffic-monitor"
+        },
+        {
+          "name": "windows"
+        },
+        {
+          "name": "wintun"
+        },
+        {
+          "name": "winui3"
+        },
+        {
+          "name": "proxy-sharing"
+        },
+        {
+          "name": "jetpack-compose"
+        },
+        {
+          "name": "hotspot"
+        },
+        {
+          "name": "internet-sharing"
+        },
+        {
+          "name": "tethering"
+        },
+        {
+          "name": "vpn"
+        }
+      ],
+      "stargazerCount": 1,
+      "updatedAt": "2026-09-21T21:38:41Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "",
+      "homepageUrl": "https://omid-io.github.io/FontWoW-2.0",
+      "isFork": true,
+      "name": "FontWoW-2.0",
+      "parent": {
+        "id": "R_kgDOTtlPqA",
+        "name": "FontWoW.github.io",
+        "owner": {
+          "id": "O_kgDOEqdKSw",
+          "login": "FontWoW"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-18T13:25:26Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "FL Chart is a highly customizable Flutter chart library that supports Line Chart, Bar Chart, Pie Chart, Scatter Chart, Radar Chart and Candlestick Chart.",
+      "homepageUrl": "https://flchart.dev",
+      "isFork": true,
+      "name": "fl_chart",
+      "parent": {
+        "id": "MDEwOlJlcG9zaXRvcnkxODYyNTU0NjA=",
+        "name": "fl_chart",
+        "owner": {
+          "id": "MDQ6VXNlcjcwMDkzMDA=",
+          "login": "imaNNeo"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-17T23:04:07Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "my todo list telegram bot",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "todo-bot",
+      "parent": null,
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-07-01T11:39:58Z",
+      "visibility": "PRIVATE"
+    },
+    {
+      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
+      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
+      "isFork": false,
+      "name": "vibe-ui-suite",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "accessibility"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "claude-code"
+        },
+        {
+          "name": "cursor"
+        },
+        {
+          "name": "design-systems"
+        },
+        {
+          "name": "nextjs15"
+        },
+        {
+          "name": "oklch"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "shadcn-ui"
+        },
+        {
+          "name": "tailwind"
+        },
+        {
+          "name": "ui-ux"
+        },
+        {
+          "name": "vibe-coding"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-04T06:23:53Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Unified Production-Grade Google Flow Automation Suite (Nano Banana 2 & Omni Flash / Veo 3.1) with Chrome MV3 Bridge, Playwright CDP, FastMCP & CLI",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "google-flow-suite",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-generation"
+        },
+        {
+          "name": "browser-automation"
+        },
+        {
+          "name": "chrome-extension"
+        },
+        {
+          "name": "fastmcp"
+        },
+        {
+          "name": "google-flow"
+        },
+        {
+          "name": "mcp"
+        },
+        {
+          "name": "nano-banana-2"
+        },
+        {
+          "name": "omni-flash"
+        },
+        {
+          "name": "playwright"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "veo"
+        },
+        {
+          "name": "video-generation"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-08-31T20:25:13Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "🧹 حذف هوشمند تبلیغات، کالاهای سفارشی و اسپانسر شده از دیجی‌کالا | نمایش نتایج ۱۰۰٪ واقعی و ارگانیک",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "digikala-pure-search",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "adblock"
+        },
+        {
+          "name": "adblocker"
+        },
+        {
+          "name": "digikala"
+        },
+        {
+          "name": "tampermonkey"
+        },
+        {
+          "name": "userscript"
+        },
+        {
+          "name": "anti-adblock"
+        },
+        {
+          "name": "chrome-extension"
+        },
+        {
+          "name": "ecommerce"
+        },
+        {
+          "name": "iran"
+        },
+        {
+          "name": "persian"
+        },
+        {
+          "name": "shopping-cart"
+        },
+        {
+          "name": "sponsored-products"
+        },
+        {
+          "name": "ublock-origin"
+        },
+        {
+          "name": "filter"
+        },
+        {
+          "name": "javascript"
+        },
+        {
+          "name": "price-filter"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-08-31T05:28:01Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "Gloria-Beauty",
+      "parent": null,
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-08-30T02:49:00Z",
+      "visibility": "PRIVATE"
+    },
+    {
+      "description": "✨ Ultra-Modern Glassmorphism Todo & Task Manager for Android built with 100% Jetpack Compose, Room Flow, Shamsi/Gregorian Dual-Calendar & Automated CI/CD.",
+      "homepageUrl": "https://github.com/omid-io/Android-Todo-App/releases",
+      "isFork": false,
+      "name": "Android-Todo-App",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "glassmorphism"
+        },
+        {
+          "name": "jetpack-compose"
+        },
+        {
+          "name": "kotlin"
+        },
+        {
+          "name": "material3"
+        },
+        {
+          "name": "task-manager"
+        },
+        {
+          "name": "todo-app"
+        },
+        {
+          "name": "android"
+        },
+        {
+          "name": "jalali-calendar"
+        },
+        {
+          "name": "persian"
+        },
+        {
+          "name": "reminder-app"
+        },
+        {
+          "name": "room-database"
+        },
+        {
+          "name": "shamsi"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-08-30T03:08:48Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "A Tampermonkey userscript designed to help you easily download your chat conversations from the LMSYS Arena (arena.ai / lmarena.ai). It exports the chat into a clean Markdown format. Features include an 'Auto Download' mode that scrolls and captures the entire thread, and a 'Manual Select' mode for cherry-picking specific messages.",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "arena.ai-chat-downloader",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-tools"
+        },
+        {
+          "name": "browser-extension"
+        },
+        {
+          "name": "chat-downloader"
+        },
+        {
+          "name": "chatbot-arena"
+        },
+        {
+          "name": "javascript"
+        },
+        {
+          "name": "lmsys"
+        },
+        {
+          "name": "markdown-export"
+        },
+        {
+          "name": "tampermonkey"
+        },
+        {
+          "name": "userscript"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-08-30T03:08:49Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "telegram-todo-bot",
+      "parent": null,
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-08-30T02:00:20Z",
+      "visibility": "PRIVATE"
+    },
+    {
+      "description": "",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "salon-price-form",
+      "parent": null,
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-08-17T21:24:07Z",
+      "visibility": "PRIVATE"
+    }
+  ]
+}
