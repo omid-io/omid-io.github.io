@@ -4,38 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- Google Search Console Verification -->
+  <!-- Google Search Console Verifications -->
   <meta name="google-site-verification" content="oIACsvTcmr58F3tODCuHS9Zq_-4gCD4-wMK8NX3KnD4" />
   <meta name="google-site-verification" content="Lhq_SvwJj1hq1waSqU1BmBQRzCGjdTeM8aDfxTe9VbU" />
 
   <title>Omid Zaferi | Software Architect & AI Systems Engineer</title>
-  <meta name="description" content="Personal portfolio and open-source engineering hub of Omid Zaferi (omid-io). Specializing in scalable backends, autonomous AI agent architectures, and Model Context Protocol (MCP) systems." />
-  <meta name="keywords" content="Omid Zaferi, omid-io, Software Architect, AI Agents, MCP, Model Context Protocol, Antigravity, Python, .NET, Distributed Systems, Open Source" />
+  <meta name="description" content="Engineering hub of Omid Zaferi (omid-io). Architecting resilient autonomous AI agents, Model Context Protocol (MCP) ecosystems, and fault-tolerant distributed systems." />
+  <meta name="keywords" content="Omid Zaferi, omid-io, Software Architect, AI Agents, MCP, Model Context Protocol, Antigravity, Python, .NET, Distributed Systems, Open Source, High Resilience" />
   <meta name="author" content="Omid Zaferi" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://omid-io.github.io/" />
 
-  <!-- Open Graph / Facebook / LinkedIn -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://omid-io.github.io/" />
   <meta property="og:title" content="Omid Zaferi | Software Architect & AI Systems Engineer" />
-  <meta property="og:description" content="Personal engineering hub and open-source systems of Omid Zaferi. Scalable systems, AI agents & MCP." />
-  <meta property="og:site_name" content="omid-io" />
+  <meta property="og:description" content="Architecting resilient autonomous AI agents, Model Context Protocol (MCP) ecosystems, and fault-tolerant distributed systems." />
+  <meta property="og:site_name" content="omid.io" />
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Omid Zaferi | Software Architect & AI Systems Engineer" />
-  <meta name="twitter:description" content="Engineering hub and open-source systems of Omid Zaferi. Scalable systems, AI agents & MCP." />
+  <meta name="twitter:description" content="Architecting resilient autonomous AI agents, Model Context Protocol (MCP) ecosystems, and fault-tolerant distributed systems." />
 
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Schema.org JSON-LD for Search Engines -->
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,14 +43,14 @@
     "name": "Omid Zaferi",
     "alternateName": "omid-io",
     "url": "https://omid-io.github.io",
-    "jobTitle": "Software Architect & Full-Stack Engineer",
+    "jobTitle": "Software Architect & Systems Engineer",
     "knowsAbout": [
       "Software Architecture",
-      "AI Agents",
+      "Autonomous AI Agents",
       "Model Context Protocol (MCP)",
-      "Python",
-      ".NET",
       "Distributed Systems",
+      "Python AsyncIO",
+      ".NET Core",
       "Network Resilience"
     ],
     "sameAs": [
@@ -60,301 +60,557 @@
   </script>
 </head>
 <body>
-  <div class="background-glow"></div>
+  <!-- Ambient Grids & Glows -->
+  <div class="blueprint-grid"></div>
+  <div class="ambient-glow-top"></div>
+  <div class="ambient-glow-bottom"></div>
 
   <!-- Navigation -->
   <header class="navbar">
     <div class="container nav-content">
       <a href="#" class="brand">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="16 18 22 12 16 6"></polyline>
-          <polyline points="8 6 2 12 8 18"></polyline>
-        </svg>
-        <span>omid.io</span>
+        <div class="brand-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <div class="brand-title">omid<span>.io</span></div>
       </a>
-      <nav class="nav-links">
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#expertise" class="nav-link">Architecture</a>
-        <a href="#terminal" class="nav-link">CLI Hub</a>
+      
+      <nav class="nav-menu">
+        <a href="#architecture" class="nav-item">System Flow</a>
+        <a href="#projects" class="nav-item">Featured Work</a>
+        <a href="#pillars" class="nav-item">Core Pillars</a>
+        <a href="#terminal" class="nav-item">Console</a>
       </nav>
-      <a href="https://github.com/omid-io" target="_blank" rel="noopener noreferrer" class="nav-btn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-        </svg>
-        <span>GitHub Profile</span>
-      </a>
+
+      <div class="nav-actions">
+        <div class="nav-status">
+          <span class="pulse-dot"></span>
+          <span>Online</span>
+        </div>
+        <a href="https://github.com/omid-io" target="_blank" rel="noopener noreferrer" class="btn-github-nav">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <main class="container">
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="badge-status">
-        <span class="status-dot"></span>
-        <span>Architecting AI Agents & Distributed Systems</span>
+      <div class="hero-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        <span>Architecting Next-Gen Agentic Systems</span>
       </div>
+
       <h1 class="hero-title">
-        High-Resilience Systems & <br />
-        <span class="hero-highlight">Autonomous AI Workflows</span>
+        High-Resilience Engineering for <br />
+        <span class="gradient-text">Autonomous AI Agents</span>
       </h1>
-      <p class="hero-subtitle">
-        Hi, I'm <strong>Omid Zaferi</strong>. Software Architect and Full-Stack Engineer crafting resilient agentic workflows, Model Context Protocol (MCP) ecosystems, and low-latency systems built to withstand hostile network environments.
+
+      <p class="hero-bio">
+        I am <strong>Omid Zaferi</strong> (omid-io) — Software Architect and Full-Stack Systems Engineer. I design mission-critical multi-agent orchestrations, Model Context Protocol (MCP) ecosystems, and anti-leak communication layers engineered to survive unstable networks and hostile environments.
       </p>
-      <div class="hero-actions">
+
+      <div class="hero-cta">
         <a href="#projects" class="btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
             <polyline points="2 17 12 22 22 17"></polyline>
             <polyline points="2 12 12 17 22 12"></polyline>
           </svg>
-          <span>Explore Open Source</span>
+          <span>View Production Systems</span>
         </a>
-        <a href="https://github.com/omid-io" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+        <a href="#terminal" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
           </svg>
-          <span>github.com/omid-io</span>
+          <span>Launch Interactive CLI</span>
         </a>
+      </div>
+
+      <!-- Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="metric-item">
+          <span class="metric-value cyan">&lt;200ms</span>
+          <span class="metric-label">Sub-second pre-flight leak probe & geo verification</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value emerald">100%</span>
+          <span class="metric-label">Zero-kill standby & orphan process immunization</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value violet">FastMCP</span>
+          <span class="metric-label">Compliant context protocols connecting LLMs with OS/APIs</span>
+        </div>
       </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section id="projects" class="section">
-      <div class="section-head">
-        <h2 class="section-title">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan);">
-            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-            <line x1="8" y1="21" x2="16" y2="21"></line>
-            <line x1="12" y1="17" x2="12" y2="21"></line>
+    <!-- Architecture & Data Flow Diagram -->
+    <section id="architecture" class="section">
+      <div class="section-header">
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="6" y1="3" x2="6" y2="15"></line>
+            <circle cx="18" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M18 9a9 9 0 0 1-9 9"></path>
           </svg>
-          <span>Featured Projects</span>
-        </h2>
-        <span class="section-subtitle">Production-grade tools & frameworks</span>
+          <span>System Topology</span>
+        </span>
+        <h2 class="section-title">Resilient Agent Architecture</h2>
+        <p class="section-desc">How autonomous coding agents, pre-flight network guards, and context servers safely interact.</p>
       </div>
 
-      <div class="projects-grid">
+      <div class="arch-diagram-wrapper">
+        <div class="arch-canvas">
+          <div class="arch-node">
+            <div class="arch-node-header">
+              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <div class="arch-node-title">Coding Agent Runtimes</div>
+            </div>
+            <div class="arch-node-desc">Google Antigravity 2.0 / Claude Code / Subagents managing long-running tasks.</div>
+          </div>
+
+          <div class="arch-connector">
+            <div class="arch-pulse-line"></div>
+          </div>
+
+          <div class="arch-node">
+            <div class="arch-node-header">
+              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div class="arch-node-title">antigravity-pause</div>
+            </div>
+            <div class="arch-node-desc">Atomic checkpoint engine, 200ms pre-flight probe, and git lock sanitization.</div>
+          </div>
+
+          <div class="arch-connector">
+            <div class="arch-pulse-line"></div>
+          </div>
+
+          <div class="arch-node">
+            <div class="arch-node-header">
+              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <div class="arch-node-title">telegram-mcp & Tools</div>
+            </div>
+            <div class="arch-node-desc">Context protocol bridges driving chats, headless browsers, and OS tasks.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects (with Tabbed Code & Specs) -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span>Production Hub</span>
+        </span>
+        <h2 class="section-title">Featured Systems & Repositories</h2>
+        <p class="section-desc">Selected open-source frameworks built for autonomy, resilience, and scale.</p>
+      </div>
+
+      <div class="projects-container">
         <!-- Project 1: antigravity-pause -->
-        <article class="project-card">
-          <div class="project-top">
-            <div class="project-header">
-              <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="project-name">
-                <span>antigravity-pause</span>
-                <svg class="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+        <article class="showcase-card">
+          <div class="card-topbar">
+            <div class="card-title-group">
+              <div class="card-title-row">
+                <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="card-title">
+                  antigravity-pause
+                </a>
+                <span class="tag-version">v0.1.0-stable</span>
+              </div>
+              <p class="card-summary">
+                Graceful Pause, Deep Hibernation & Pre-Flight Leak Protection for Google Antigravity (2.0 Desktop, IDE, and CLI). Shields sessions against 403 Forbidden geoblocks, ECONNRESET drops, and stuck Git index locks.
+              </p>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
                 </svg>
+                <span>GitHub Repo</span>
               </a>
             </div>
-            <p class="project-desc">
-              Graceful Pause, Deep Hibernation & Pre-Flight Leak Protection for Google Antigravity agents. Protects against 403 geoblocks, ECONNRESET, and corrupt Git lock states during network transitions.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Antigravity 2.0</span>
-              <span class="tag">Resilience</span>
-              <span class="tag">Anti-Leak</span>
-              <span class="tag">Slash-Commands</span>
+          </div>
+
+          <div class="card-content-area">
+            <div class="tabs-nav">
+              <button class="tab-btn active" data-tab="features">Highlights</button>
+              <button class="tab-btn" data-tab="code">CLI & Slash Commands</button>
+              <button class="tab-btn" data-tab="architecture">Core Modules</button>
+            </div>
+
+            <!-- Tab 1: Highlights -->
+            <div class="tab-pane active" data-pane="features">
+              <div class="features-list">
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>&lt;200ms Pre-Flight Leak Probe:</strong> Blocks requests before an IP leak can cause a 403 sanction ban.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Zero-Kill Hot Standby (/pause):</strong> Suspends subagent trees into light sleep without terminating processes.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Atomic Checkpointing (/hibernate):</strong> Safely dumps multi-turn context and subagent tasks to disk.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Git Lock Sanitizer:</strong> Automatically detects and removes orphaned <code>.git/index.lock</code> files.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Code -->
+            <div class="tab-pane" data-pane="code">
+              <pre class="code-box"><code><span class="code-comment"># 1. Hot Standby during VPN switches</span>
+/pause      <span class="code-comment"># Enters radio silence; holds HTTP/2 sockets safely</span>
+/play       <span class="code-comment"># Validates non-sanctioned exit node in &lt;140ms &amp; resumes</span>
+
+<span class="code-comment"># 2. Deep Hibernation for system reboot / shutdowns</span>
+/hibernate  <span class="code-comment"># Atomic state snapshot dumped to .checkpoints/</span>
+/continue   <span class="code-comment"># Rehydrates state and continues next task step</span></code></pre>
+            </div>
+
+            <!-- Tab 3: Architecture -->
+            <div class="tab-pane" data-pane="architecture">
+              <pre class="code-box"><code>core/
+ ├── network_probe.py    <span class="code-comment"># Lightweight high-speed anti-leak probe</span>
+ ├── engine.py           <span class="code-comment"># Atomic state checkpoint serializer</span>
+ └── process_guard.py    <span class="code-comment"># Safe orphan-cleaner &amp; git lock sanitizer</span>
+skills/
+ ├── pause/              <span class="code-comment"># Antigravity slash-command definition</span>
+ └── hibernate/          <span class="code-comment"># Deep sleep and snapshot recovery skill</span></code></pre>
             </div>
           </div>
-          <div class="project-footer">
-            <span class="clone-cmd" data-copy="git clone https://github.com/omid-io/antigravity-pause.git" title="Click to copy clone command">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+          <div class="card-bottom">
+            <div class="tech-pills">
+              <span class="pill">Python 3.10+</span>
+              <span class="pill">Antigravity 2.0</span>
+              <span class="pill">AsyncIO</span>
+              <span class="pill">Anti-Leak</span>
+              <span class="pill">MIT License</span>
+            </div>
+            <button class="quick-clone-btn" data-copy="git clone https://github.com/omid-io/antigravity-pause.git">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
               </svg>
-              <span>clone repo</span>
-            </span>
-            <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="view-repo-link">
-              <span>View Source</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
+              <span>Copy Clone Command</span>
+            </button>
           </div>
         </article>
 
         <!-- Project 2: telegram-mcp -->
-        <article class="project-card">
-          <div class="project-top">
-            <div class="project-header">
-              <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer" class="project-name">
-                <span>telegram-mcp</span>
-                <svg class="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+        <article class="showcase-card">
+          <div class="card-topbar">
+            <div class="card-title-group">
+              <div class="card-title-row">
+                <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer" class="card-title">
+                  telegram-mcp
+                </a>
+                <span class="tag-version">Production</span>
+              </div>
+              <p class="card-summary">
+                High-throughput Telegram Model Context Protocol (MCP) server powered by Telethon. Bridges autonomous agents with real-time Telegram channels, groups, streaming media, and chat automation.
+              </p>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
                 </svg>
+                <span>GitHub Repo</span>
               </a>
             </div>
-            <p class="project-desc">
-              High-throughput Telegram MCP (Model Context Protocol) server powered by Telethon. Enables AI coding assistants and LLMs to interact with chats, stream notifications, and dispatch media.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">MCP</span>
-              <span class="tag">Telethon</span>
-              <span class="tag">AsyncIO</span>
-              <span class="tag">Agent-Tools</span>
+          </div>
+
+          <div class="card-content-area">
+            <div class="tabs-nav">
+              <button class="tab-btn active" data-tab="features">Highlights</button>
+              <button class="tab-btn" data-tab="code">MCP Configuration</button>
+            </div>
+
+            <div class="tab-pane active" data-pane="features">
+              <div class="features-list">
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Full MCP Tool Suite:</strong> Send, edit, read messages, listen to channels, and query user dialogs.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Telethon Async Engine:</strong> MTProto native protocol support with zero bottlenecking.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Multi-Client Compatibility:</strong> Works seamlessly with Claude Desktop, Antigravity, and Cursor.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" data-pane="code">
+              <pre class="code-box"><code><span class="code-comment">// Add to your MCP client config (e.g. claude_desktop_config.json)</span>
+{
+  "mcpServers": {
+    "telegram": {
+      "command": "python",
+      "args": ["-m", "telegram_mcp.server"],
+      "env": {
+        "TG_API_ID": "your_api_id",
+        "TG_API_HASH": "your_api_hash"
+      }
+    }
+  }
+}</code></pre>
             </div>
           </div>
-          <div class="project-footer">
-            <span class="clone-cmd" data-copy="git clone https://github.com/omid-io/telegram-mcp.git" title="Click to copy clone command">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+          <div class="card-bottom">
+            <div class="tech-pills">
+              <span class="pill">Python</span>
+              <span class="pill">MCP</span>
+              <span class="pill">Telethon</span>
+              <span class="pill">MTProto</span>
+              <span class="pill">FastMCP</span>
+            </div>
+            <button class="quick-clone-btn" data-copy="git clone https://github.com/omid-io/telegram-mcp.git">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
               </svg>
-              <span>clone repo</span>
-            </span>
-            <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer" class="view-repo-link">
-              <span>View Source</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
+              <span>Copy Clone Command</span>
+            </button>
           </div>
         </article>
 
         <!-- Project 3: omid-core -->
-        <article class="project-card">
-          <div class="project-top">
-            <div class="project-header">
-              <a href="https://github.com/omid-io/omid-core" target="_blank" rel="noopener noreferrer" class="project-name">
-                <span>omid-core</span>
-                <svg class="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+        <article class="showcase-card">
+          <div class="card-topbar">
+            <div class="card-title-group">
+              <div class="card-title-row">
+                <a href="https://github.com/omid-io/omid-core" target="_blank" rel="noopener noreferrer" class="card-title">
+                  omid-core
+                </a>
+                <span class="tag-version">Core Engine</span>
+              </div>
+              <p class="card-summary">
+                Personal Intelligence & Distributed Automation Engine for autonomous task triage, background subagent orchestration, and developer workflows.
+              </p>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/omid-io/omid-core" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
                 </svg>
+                <span>GitHub Repo</span>
               </a>
             </div>
-            <p class="project-desc">
-              Personal Intelligence & Distributed Automation Engine. Orchestrates background subagents, multi-platform integrations, and autonomous task triage with zero human intervention.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Architecture</span>
-              <span class="tag">Automation</span>
-              <span class="tag">Subagents</span>
-              <span class="tag">Orchestration</span>
+          </div>
+
+          <div class="card-content-area">
+            <div class="tabs-nav">
+              <button class="tab-btn active" data-tab="features">Highlights</button>
+            </div>
+            <div class="tab-pane active" data-pane="features">
+              <div class="features-list">
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Multi-Agent Dispatcher:</strong> Autonomous triage of GitHub notifications, issues, and code reviews.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-icon">✓</span>
+                  <span><strong>Self-Healing Loops:</strong> Reactive wake-up without CPU-draining polling loops.</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="project-footer">
-            <span class="clone-cmd" data-copy="git clone https://github.com/omid-io/omid-core.git" title="Click to copy clone command">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+          <div class="card-bottom">
+            <div class="tech-pills">
+              <span class="pill">Agentic Architecture</span>
+              <span class="pill">Orchestration</span>
+              <span class="pill">Python</span>
+            </div>
+            <button class="quick-clone-btn" data-copy="git clone https://github.com/omid-io/omid-core.git">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
               </svg>
-              <span>clone repo</span>
-            </span>
-            <a href="https://github.com/omid-io/omid-core" target="_blank" rel="noopener noreferrer" class="view-repo-link">
-              <span>View Source</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
+              <span>Copy Clone Command</span>
+            </button>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Architecture & Core Stack -->
-    <section id="expertise" class="section">
-      <div class="section-head">
-        <h2 class="section-title">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-emerald);">
+    <!-- Technical Pillars -->
+    <section id="pillars" class="section">
+      <div class="section-header">
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
             <path d="M2 17l10 5 10-5"></path>
             <path d="M2 12l10 5 10-5"></path>
           </svg>
-          <span>Architecture & Stack</span>
-        </h2>
-        <span class="section-subtitle">System design principles & tooling</span>
+          <span>Competencies</span>
+        </span>
+        <h2 class="section-title">Core Engineering Pillars</h2>
+        <p class="section-desc">Specialized technical domains refined across production workloads.</p>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-box">
-          <h3 class="skill-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan);">
-              <circle cx="12" cy="12" r="3"></circle>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-            </svg>
-            <span>Autonomous Agents</span>
-          </h3>
-          <p class="skill-desc">Multi-agent orchestration, state machines, atomic checkpointing, and reactive self-healing execution loops.</p>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-header">
+              <div class="pillar-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Autonomous Agents</h3>
+            </div>
+            <p class="pillar-body">Multi-agent orchestrations, state machines, atomic checkpointing, and reactive self-healing execution loops.</p>
+          </div>
+          <ul class="pillar-items">
+            <li>Subagent isolation &amp; tree-kill</li>
+            <li>Zero-polling reactive wakeup</li>
+            <li>Multi-turn trajectory compaction</li>
+          </ul>
         </div>
 
-        <div class="skill-box">
-          <h3 class="skill-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-violet);">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-            </svg>
-            <span>Model Context Protocol</span>
-          </h3>
-          <p class="skill-desc">Building secure MCP servers & client integrations bridging LLMs with databases, browser automation, and IPC.</p>
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-header">
+              <div class="pillar-icon-box violet">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Model Context Protocol</h3>
+            </div>
+            <p class="pillar-body">Designing secure MCP servers and client toolchains connecting LLMs to external systems.</p>
+          </div>
+          <ul class="pillar-items">
+            <li>FastMCP &amp; stdio transport</li>
+            <li>Server-Sent Events (SSE)</li>
+            <li>Custom tool schema generation</li>
+          </ul>
         </div>
 
-        <div class="skill-box">
-          <h3 class="skill-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-emerald);">
-              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-              <rect x="9" y="9" width="6" height="6"></rect>
-              <line x1="9" y1="1" x2="9" y2="4"></line>
-              <line x1="15" y1="1" x2="15" y2="4"></line>
-              <line x1="9" y1="20" x2="9" y2="23"></line>
-              <line x1="15" y1="20" x2="15" y2="23"></line>
-              <line x1="20" y1="9" x2="23" y2="9"></line>
-              <line x1="20" y1="14" x2="23" y2="14"></line>
-              <line x1="1" y1="9" x2="4" y2="9"></line>
-              <line x1="1" y1="14" x2="4" y2="14"></line>
-            </svg>
-            <span>Backend Systems</span>
-          </h3>
-          <p class="skill-desc">Python (AsyncIO, FastAPI), modern .NET core runtime, high-concurrency microservices, and fault-tolerant APIs.</p>
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-header">
+              <div class="pillar-icon-box emerald">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Backend Architecture</h3>
+            </div>
+            <p class="pillar-body">High-throughput microservices and concurrent APIs in modern Python AsyncIO and .NET 8/9.</p>
+          </div>
+          <ul class="pillar-items">
+            <li>Fault-tolerant distributed storage</li>
+            <li>Zero-alloc memory pipelines</li>
+            <li>AsyncIO event-driven services</li>
+          </ul>
         </div>
 
-        <div class="skill-box">
-          <h3 class="skill-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-amber);">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <span>Network Resilience</span>
-          </h3>
-          <p class="skill-desc">Anti-leak pre-flight routing, geoblock mitigation, and clean socket recovery in volatile connectivity environments.</p>
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-header">
+              <div class="pillar-icon-box amber">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Network Resilience</h3>
+            </div>
+            <p class="pillar-body">Anti-leak pre-flight routing and socket preservation across volatile connections.</p>
+          </div>
+          <ul class="pillar-items">
+            <li>Sub-second pre-flight probe</li>
+            <li>Geoblock evasion &amp; IP guard</li>
+            <li>Socket clean recovery &amp; locks</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Terminal Console Widget -->
+    <!-- Interactive Terminal Playground -->
     <section id="terminal" class="section">
-      <div class="terminal-card">
-        <div class="terminal-header">
-          <span class="term-dot red"></span>
-          <span class="term-dot yellow"></span>
-          <span class="term-dot green"></span>
-          <span class="term-title">omid@workstation: ~/cluster</span>
+      <div class="section-header">
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+          <span>Live Console</span>
+        </span>
+        <h2 class="section-title">Interactive Terminal Playground</h2>
+        <p class="section-desc">Type commands below to query system status, benchmark the network probe, or inspect repos.</p>
+      </div>
+
+      <div class="terminal-shell">
+        <div class="term-topbar">
+          <div class="term-traffic-lights">
+            <span class="traffic-circle c-red"></span>
+            <span class="traffic-circle c-yellow"></span>
+            <span class="traffic-circle c-green"></span>
+          </div>
+          <span class="term-title-text">omid@workstation: ~/cluster-control</span>
+          <span class="term-hint">Try: help, probe, projects</span>
         </div>
-        <div class="terminal-body">
-          <div class="term-line">
-            <span class="term-prompt">$</span> <span class="term-cmd">antigravity-pause --probe --target api.deepmind.google</span>
+
+        <div class="term-screen" id="terminal-screen">
+          <div class="log-entry">
+            <div><span class="log-prompt">omid@hub:~$</span> <span class="log-cmd">antigravity-pause --probe</span></div>
+            <div class="log-response">[+] Pre-flight leak probe initialized...
+[+] Handshake latency: 138ms | Exit IP: Verified Safe (Non-Sanctioned)
+[✓] Safe to proceed without 403 geoblock penalties.</div>
           </div>
-          <div class="term-line term-output">
-            [+] Probe latency: <span class="term-highlight">142ms</span> | Geo-IP: Verified (Non-Sanctioned) | Session: Safe
+          <div class="log-entry">
+            <div><span class="log-prompt">omid@hub:~$</span> <span class="log-cmd">help</span></div>
+            <div class="log-response">Available commands: projects, status, probe, stack, whoami, clear</div>
           </div>
-          <div class="term-line">
-            <span class="term-prompt">$</span> <span class="term-cmd">mcp-server-hub --status</span>
-          </div>
-          <div class="term-line term-output">
-            [+] Active Context Servers: telegram-mcp (running), browser-suite (listening:9223)
-          </div>
-          <div class="term-line">
-            <span class="term-prompt">$</span> <span class="term-cmd">whoami</span>
-          </div>
-          <div class="term-line term-output">
-            Omid Zaferi — Software Architect & Autonomous Systems Builder
-          </div>
+        </div>
+
+        <div class="term-input-row">
+          <span class="log-prompt">omid@hub:~$</span>
+          <input type="text" id="terminal-input" class="term-input" placeholder="Type a command (e.g. 'probe', 'projects', 'status') and press Enter..." autocomplete="off" />
         </div>
       </div>
     </section>
@@ -362,12 +618,19 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; <span id="current-year">2026</span> Omid Zaferi (omid-io). Open source under MIT.</p>
-      <div class="footer-links">
-        <a href="https://github.com/omid-io" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer">antigravity-pause</a>
-        <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer">telegram-mcp</a>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">omid<span>.io</span></div>
+        <div class="footer-links-grid">
+          <a href="https://github.com/omid-io" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a>
+          <a href="https://github.com/omid-io/antigravity-pause" target="_blank" rel="noopener noreferrer" class="footer-link">antigravity-pause</a>
+          <a href="https://github.com/omid-io/telegram-mcp" target="_blank" rel="noopener noreferrer" class="footer-link">telegram-mcp</a>
+          <a href="https://github.com/omid-io/omid-core" target="_blank" rel="noopener noreferrer" class="footer-link">omid-core</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span id="year-display">2026</span> Omid Zaferi. Architected for resilience. Released under MIT.</div>
+        <div style="color: var(--text-dim);">Deployed on GitHub Pages &bull; Verified on Google Search Console</div>
       </div>
     </div>
   </footer>
