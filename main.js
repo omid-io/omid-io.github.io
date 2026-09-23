@@ -261,7 +261,7 @@
   // 1. Theme Manager
   function initTheme() {
     if (!currentTheme) {
-      currentTheme = "dark";
+      currentTheme = "light";
     }
     applyTheme(currentTheme);
   }

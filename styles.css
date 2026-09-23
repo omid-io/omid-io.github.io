@@ -142,10 +142,6 @@ body {
 }
 
 /* Persian Language Font & Fine-Tuned Typography Calibration */
-html[lang="fa"] {
-  font-size: 13.5px; /* Compact root scale for elegant, non-bloated Persian typography */
-}
-
 html[lang="fa"] body {
   font-family: var(--font-fa);
   line-height: 1.7;
@@ -163,27 +159,27 @@ html[lang="fa"] h6 {
 }
 
 html[lang="fa"] .hero-title {
-  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
-  line-height: 1.35;
+  font-size: clamp(1.65rem, 2.8vw, 2.15rem);
+  line-height: 1.25;
   letter-spacing: normal;
   font-weight: 700;
 }
 
 html[lang="fa"] .hero-description {
-  font-size: 0.925rem;
-  line-height: 1.75;
-  max-width: 540px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  max-width: 560px;
 }
 
 html[lang="fa"] .section-title {
-  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  font-size: clamp(1.2rem, 1.9vw, 1.6rem);
   line-height: 1.35;
   letter-spacing: normal;
   font-weight: 700;
 }
 
 html[lang="fa"] .section-subtitle {
-  font-size: 0.825rem;
+  font-size: 0.85rem;
   line-height: 1.65;
 }
 
@@ -302,48 +298,46 @@ bdi, .bdi, code, pre, .mono-data, .metric-number, .stat-value {
 
 html[dir="rtl"] .nav-container,
 html[dir="rtl"] .hero-layout,
-html[dir="rtl"] .telemetry-grid,
+html[dir="rtl"] .hero-info-col,
+html[dir="rtl"] .status-pill-group,
+html[dir="rtl"] .specialization-tags,
+html[dir="rtl"] .hero-cta-group,
+html[dir="rtl"] .section-head,
+html[dir="rtl"] .filter-tabs,
 html[dir="rtl"] .projects-grid,
+html[dir="rtl"] .project-card-actions,
 html[dir="rtl"] .upstream-grid,
+html[dir="rtl"] .upstream-footer,
 html[dir="rtl"] .dna-grid,
+html[dir="rtl"] .telemetry-grid,
 html[dir="rtl"] .cta-banner,
 html[dir="rtl"] .footer-inner,
 html[dir="rtl"] .social-dock,
 html[dir="rtl"] .nav-actions,
-html[dir="rtl"] .specialization-tags,
-html[dir="rtl"] .stack-chips-group,
-html[dir="rtl"] .filter-tabs {
+html[dir="rtl"] .stack-chips-group {
   direction: ltr; /* Keeps macro coordinate system and columns physically locked */
 }
 
-/* Explicit textual RTL for content containers */
-html[dir="rtl"] .hero-info-col,
-html[dir="rtl"] .hero-visual-card,
-html[dir="rtl"] .project-card-body,
-html[dir="rtl"] .upstream-card,
-html[dir="rtl"] .dna-card,
-html[dir="rtl"] .section-head,
-html[dir="rtl"] .cta-banner > div,
-html[dir="rtl"] .telemetry-card,
-html[dir="rtl"] .nav-item {
-  direction: rtl;
+/* Explicit textual RTL & BiDi Punctuation Isolation */
+html[lang="fa"] .hero-title,
+html[lang="fa"] .hero-title span,
+html[lang="fa"] .hero-description,
+html[lang="fa"] .section-title,
+html[lang="fa"] .section-subtitle,
+html[lang="fa"] .project-card-title,
+html[lang="fa"] .project-card-desc,
+html[lang="fa"] .project-proof-callout,
+html[lang="fa"] .upstream-title,
+html[lang="fa"] .upstream-desc,
+html[lang="fa"] .dna-title,
+html[lang="fa"] .dna-desc,
+html[lang="fa"] .cta-title,
+html[lang="fa"] .cta-desc,
+html[lang="fa"] .project-card-body,
+html[lang="fa"] .upstream-card,
+html[lang="fa"] .dna-card {
+  unicode-bidi: plaintext;
   text-align: start;
-}
-
-html[dir="rtl"] .hero-cta-group {
-  direction: rtl;
-}
-
-html[dir="rtl"] .status-pill-group {
-  direction: rtl;
-}
-
-html[dir="rtl"] .project-card-actions {
-  direction: rtl;
-}
-
-html[dir="rtl"] .upstream-footer {
-  direction: rtl;
 }
 
 html[dir="rtl"] .terminal-box {
@@ -733,6 +727,7 @@ img {
 }
 
 .hero-title .accent-gradient {
+  display: block;
   background: linear-gradient(135deg, var(--accent) 20%, var(--purple) 85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
