@@ -170,7 +170,7 @@ html[lang="fa"] .hero-title {
 html[lang="fa"] .hero-description {
   font-size: 0.95rem;
   line-height: 1.8;
-  max-width: 560px;
+  max-width: 580px;
 }
 
 html[lang="fa"] .section-title {
@@ -761,7 +761,7 @@ img {
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--text-secondary);
-  max-width: 560px;
+  max-width: 580px;
   margin-bottom: 18px;
 }
 
