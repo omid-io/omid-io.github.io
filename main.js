@@ -32,7 +32,6 @@
       },
       hero: {
         status: "Available for High-Impact Architecture",
-        locationPrefix: "Tehran",
         greeting: "I build resilient software where",
         greetingAccent: "the details matter.",
         bio: "I am Omid Zaferi (omid-io) — Systems Architect & Autonomous Agent Specialist. I engineer high-throughput kernel networks, resilient AI multi-agent protocols, and precision design compilers from awkward constraints to robust production boundaries.",
@@ -130,8 +129,8 @@
     },
     fa: {
       meta: {
-        title: "امید زعفری (omid-io) — معمار نرم افزار و مهندس سیستم ها",
-        desc: "امید زعفری (omid-io) — معمار سیستم ها و متخصص عامل های هوشمند خودکار (AI Agents). طراحی شبکه های سطح کرنل، پروتکل های توزیع شده چند ایجنتی و کامپایلرهای دقیق طراحی سیستم."
+        title: "امید ظفری (omid-io) — معمار نرم افزار و مهندس سیستم ها",
+        desc: "امید ظفری (omid-io) — معمار سیستم ها و متخصص عامل های هوشمند خودکار (AI Agents). طراحی شبکه های سطح کرنل، پروتکل های توزیع شده چند ایجنتی و کامپایلرهای دقیق طراحی سیستم."
       },
       nav: {
         work: "پروژه ها",
@@ -145,10 +144,9 @@
       },
       hero: {
         status: "آماده برای معماری سیستم های مقیاس پذیر",
-        locationPrefix: "تهران",
         greeting: "من نرم افزارهایی می سازم که در آنها",
         greetingAccent: "جزئیات اهمیت دارند.",
-        bio: "من امید زعفری (omid-io) هستم — معمار سیستم و متخصص عامل های هوشمند خودکار (AI Agents). تخصص من در طراحی شبکه های سطح کرنل، پروتکل های توزیع شده چند ایجنتی بر بستر MCP و کامپایلرهای دقیق طراحی سیستم، با عبور از سخت ترین محدودیت ها است.",
+        bio: "من امید ظفری (omid-io) هستم — معمار سیستم و متخصص عامل های هوشمند خودکار (AI Agents). تخصص من در طراحی شبکه های سطح کرنل، پروتکل های توزیع شده چند ایجنتی بر بستر MCP و کامپایلرهای دقیق طراحی سیستم، با عبور از سخت ترین محدودیت ها است.",
         ctaWork: "مشاهده سیستم های اصلی",
         ctaContact: "آغاز گفتگو",
         copyEmail: "کپی ایمیل",
@@ -255,7 +253,6 @@
   const copyEmailBtn = document.getElementById("copyEmailBtn");
   const copyTooltip = document.getElementById("copyTooltip");
   const terminalCopyBtn = document.getElementById("terminalCopyBtn");
-  const tehranClock = document.getElementById("tehranClock");
   const currentYearSpan = document.getElementById("currentYear");
 
   // 1. Theme Manager
@@ -342,7 +339,6 @@
     }
 
     updateThemeIcon();
-    updateTehranClock();
   }
 
   if (langSwitchBtn) {
@@ -351,28 +347,7 @@
     });
   }
 
-  // 3. Live Tehran Clock Ticker
-  function updateTehranClock() {
-    if (!tehranClock) return;
-    try {
-      const now = new Date();
-      const timeStr = now.toLocaleTimeString("en-GB", {
-        timeZone: "Asia/Tehran",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false
-      });
-      const prefix = translations[currentLang].hero.locationPrefix;
-      tehranClock.innerHTML = `${prefix} <bdi class="mono-data">${timeStr}</bdi> (UTC+3:30)`;
-    } catch (e) {
-      tehranClock.textContent = "Tehran (UTC+3:30)";
-    }
-  }
-
-  setInterval(updateTehranClock, 1000);
-
-  // 4. Email Copy Micro-Action
+  // 3. Email Copy Micro-Action
   if (copyEmailBtn && copyTooltip) {
     copyEmailBtn.addEventListener("click", () => {
       const email = "omidzaferi@gmail.com";
@@ -615,5 +590,4 @@
   // Initial Boot
   initTheme();
   applyLanguage(currentLang);
-  updateTehranClock();
 })();
