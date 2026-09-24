@@ -325,6 +325,7 @@ html[dir="rtl"] .project-card-actions,
 html[dir="rtl"] .upstream-grid,
 html[dir="rtl"] .upstream-footer,
 html[dir="rtl"] .dna-grid,
+html[dir="rtl"] .engagement-grid,
 html[dir="rtl"] .telemetry-grid,
 html[dir="rtl"] .cta-banner,
 html[dir="rtl"] .footer-inner,
@@ -347,11 +348,14 @@ html[lang="fa"] .upstream-title,
 html[lang="fa"] .upstream-desc,
 html[lang="fa"] .dna-title,
 html[lang="fa"] .dna-desc,
+html[lang="fa"] .engagement-title,
+html[lang="fa"] .engagement-desc,
 html[lang="fa"] .cta-title,
 html[lang="fa"] .cta-desc,
 html[lang="fa"] .project-card-body,
 html[lang="fa"] .upstream-card,
-html[lang="fa"] .dna-card {
+html[lang="fa"] .dna-card,
+html[lang="fa"] .engagement-card {
   unicode-bidi: plaintext;
   text-align: start;
 }
@@ -1603,8 +1607,66 @@ html[lang="fa"] .project-tag {
    High-Impact CTA Box & Footer
    ========================================================================== */
 
-.cta-section {
-  padding: 38px 0 54px;
+/* Collaboration & Engagement Vectors Grid */
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.engagement-card {
+  padding: 20px 20px;
+  border-radius: var(--radius-sm);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s var(--ease-spring);
+}
+
+.engagement-card:hover {
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.engagement-icon-frame {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-xs);
+  background-color: var(--accent-soft);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  margin-bottom: 12px;
+}
+
+.engagement-icon-frame svg {
+  width: 16px;
+  height: 16px;
+}
+
+.engagement-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.engagement-desc {
+  font-size: 0.825rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.cta-banner-title {
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
 }
 
 .cta-banner {
@@ -1697,6 +1759,10 @@ html[lang="fa"] .project-tag {
   }
 
   .dna-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engagement-grid {
     grid-template-columns: 1fr;
   }
 

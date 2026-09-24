@@ -88,22 +88,57 @@
       "eyebrow": "02 · Upstream Contributions",
       "title": "Verified code merged into major engines.",
       "subtitle": "Selected pull requests merged or submitted directly to established open-source projects.",
-      "browseAll": "Browse full GitHub activity on github.com/omid-io"
+      "browseAll": "Browse full GitHub activity on github.com/omid-io",
+      "items": {
+        "hermes": {
+          "title": "Core Concurrency & Shared Memory Salvage",
+          "desc": "Resolved high-throughput multi-agent execution races via shared-memory concurrency salvage in NousResearch flagship agent runtime."
+        },
+        "handy": {
+          "title": "WPF WindowChrome & Adorner Null Safety",
+          "desc": "Eliminated longstanding maximization resize borders, guarded AdornerElement against null dependency properties, and decoupled collection namespaces across 3 pull requests."
+        },
+        "flchart": {
+          "title": "Flutter BarChart Null-Safety Guard",
+          "desc": "Prevented fatal LateInitializationError runtime crashes on null data spots in Flutter's premier data visualization engine."
+        },
+        "dotnet": {
+          "title": "Android NativeAOT Memory-Safety Diagnostics",
+          "desc": "Targeted CS9377/CS9389 memory-safety diagnostics in the Android NativeAOT build task template for the official .NET runtime."
+        }
+      }
     },
     "dna": {
-      "eyebrow": "03 · Architectural DNA",
-      "title": "Different stacks. Unified engineering discipline.",
-      "subtitle": "I work from the constraint outward, prioritizing evidence over assumptions, failure mode analysis, and clean component boundaries.",
-      "col1Title": "Distributed & Systems",
-      "col1Desc": "Event-driven pipelines, Wintun kernel networking, async queues, SQLite state engines, and concurrency locking.",
-      "col2Title": "Autonomous AI & MCP",
-      "col2Desc": "Multi-agent coordination, Model Context Protocol servers, circadian stealth browser workers, and self-healing loops.",
-      "col3Title": "Frontend & Design Compilers",
-      "col3Desc": "OKLCH token mathematics, WCAG AAA accessibility, Next.js 15 App Router, and zero-slop UI systems."
+      "eyebrow": "03 · Engineering Tenets",
+      "title": "Mental models before syntax. Invariants over assumptions.",
+      "subtitle": "I engineer systems from the constraints outward, prioritizing deterministic failure modes, component autonomy, and mathematical precision.",
+      "col1Title": "Failure-Mode First",
+      "col1Desc": "Systems do not break in ideal environments. Real-world resilience is defined by graceful degradation under choking latency, packet loss, and memory pressure.",
+      "col2Title": "Deterministic Multi-Agent Infra",
+      "col2Desc": "Moving beyond toy chatbot wrappers. Designing autonomous orchestrators with Model Context Protocol (MCP), tool synchronization, and self-healing recovery loops.",
+      "col3Title": "Zero-Slop Contract Engineering",
+      "col3Desc": "Zero tolerance for hallucinated or unverified dependencies. Mathematical WCAG AAA contrast, strict type boundaries, and clean layered architecture from kernel to UI."
     },
     "cta": {
+      "eyebrow": "04 · Collaboration Vectors",
       "title": "Have a high-complexity architectural challenge?",
-      "desc": "Bring the constraint, the failure mode, or the system boundary. Let's engineer a resilient solution.",
+      "subtitle": "Direct engagements for teams needing senior systems judgment, production AI agents, or deep performance recovery.",
+      "vectors": {
+        "systems": {
+          "title": "Core Distributed Systems",
+          "desc": "Wintun kernel networking, asynchronous event pipelines, scale-out SQLite state engines, and race-free IPC architectures."
+        },
+        "agents": {
+          "title": "Autonomous Multi-Agent Infra",
+          "desc": "Production-grade MCP server ecosystems, stealth circadian browser automation, and resilient multi-step self-healing workflows."
+        },
+        "audits": {
+          "title": "Deep Performance & Resilience Audits",
+          "desc": "Eliminating catastrophic bottlenecks, fixing memory leaks, zero-orphan process governance, and mission-critical code remediation."
+        }
+      },
+      "bannerTitle": "Ready to engineer a resilient solution?",
+      "desc": "Bring the constraint, the failure mode, or the system boundary. Let's build software where the details truly matter.",
       "emailBtn": "Email Omid Directly"
     },
     "footer": {
@@ -120,8 +155,8 @@
       "work": "پروژه ها",
       "flagships": "سیستم های اصلی",
       "opensource": "متن باز",
-      "dna": "معماری مهندسی",
-      "contact": "ارتباط",
+      "dna": "اصول معماری",
+      "contact": "ارتباط و همکاری",
       "langBtn": "English",
       "themeDark": "تغییر به تم تاریک",
       "themeLight": "تغییر به تم روشن"
@@ -198,23 +233,58 @@
     "upstream": {
       "eyebrow": "۰۲ · مشارکت های متن باز جهانی",
       "title": "کدهای تایید و مرج شده در پروژه های بین المللی.",
-      "subtitle": "نمونه هایی منتخب از پول ریکوئست های مرج شده در مخازن مشهور جهانی.",
-      "browseAll": "مشاهده تمامی فعالیت های گیت هاب در github.com/omid-io"
+      "subtitle": "نمونه هایی منتخب از پول ریکوئست های ادغام شده مستقیم در مخازن مشهور جهانی.",
+      "browseAll": "مشاهده تمامی فعالیت های گیت هاب در github.com/omid-io",
+      "items": {
+        "hermes": {
+          "title": "پایداری همروندی و نجات حافظه اشتراکی",
+          "desc": "رفع رقابت های همزمان در اجرای ابزارهای چند ایجنتی از طریق بازسازی مدیریت حافظه اشتراکی در رانتایم پرچمدار NousResearch."
+        },
+        "handy": {
+          "title": "رفع خطاهای نال و ری سایز در WindowChrome",
+          "desc": "حل مشکل دیرینه حاشیه های تغییر اندازه پنجره پس از ماکسیمایز، محافظت از AdornerElement در برابر خطای نال و تفکیک فضای نام ها در ۳ پول ریکوئست مستقل."
+        },
+        "flchart": {
+          "title": "محافظت در برابر خطای نال در BarChart فلوتر",
+          "desc": "جلوگیری از کرش مرگبار LateInitializationError در نقاط داده تهی در محبوب ترین موتور رسم نمودار فلوتر."
+        },
+        "dotnet": {
+          "title": "عیب یابی ایمنی حافظه در NativeAOT اندروید",
+          "desc": "رهگیری و رفع خطاهای تشخیصی CS9377 و CS9389 در تمپلیت تسک های بیلد NativeAOT اندروید در هسته رسمی دات نت مایکروسافت."
+        }
+      }
     },
     "dna": {
-      "eyebrow": "۰۳ · دی ان ای معماری سیستم",
-      "title": "استک های گوناگون. انضباط مهندسی واحد.",
-      "subtitle": "من طراحی را از تحلیل محدودیت ها و بدترین سناریوهای خرابی آغاز می کنم؛ با اولویت دادن به شواهد عینی، مرزهای شفاف و تاب آوری بالا.",
-      "col1Title": "سیستم های توزیع شده و زیرساخت",
-      "col1Desc": "پایپ لاین های رخدادمحور، شبکه سازی سطح کرنل با Wintun، صف های ناهمگام، موتورهای پایگاه داده و قفل های همروندی.",
-      "col2Title": "عامل های خودکار هوش مصنوعی و MCP",
-      "col2Desc": "ارکستراسیون ایجنت ها، سرورهای پروتکل کانتکست مدل (MCP)، ورکر های نامحسوس مرورگر و حلقه های خودبهبوددهنده.",
-      "col3Title": "فرانت اند و کامپایلرهای طراحی",
-      "col3Desc": "ریاضیات توکن های OKLCH، دسترسی پذیری سطح WCAG AAA، فریمورک Next.js 15 و سیستم های بدون زباله هوش مصنوعی."
+      "eyebrow": "۰۳ · اصول تفکر معماری",
+      "title": "مدل های ذهنی پیش از کدنویسی. شواهد قطعی به جای فرضیات.",
+      "subtitle": "من مهندسی سیستم را از مرز محدودیت ها آغاز می کنم؛ با اولویت دادن به سناریوهای خرابی، خودمختاری اجزا و دقت ریاضی.",
+      "col1Title": "طراحی بر مدار سناریوهای خرابی",
+      "col1Desc": "سیستم ها در شرایط ایده آل شکست نمی خورند؛ پایداری واقعی در افت کنترل شده و بازیابی خودکار تحت تاخیرهای خفه کننده، نشت حافظه و قطعی ناگهانی شبکه تعریف می شود.",
+      "col2Title": "زیرساخت های قطعی چند ایجنتی",
+      "col2Desc": "عبور از پوسته های سطحی چت بات؛ معماری ارکستریتورهای خودمختار با پروتکل کانتکست مدل (MCP)، همگام سازی ابزارها و حلقه های خودترمیمی بدون دخالت انسانی.",
+      "col3Title": "مهندسی صفر درصد زباله و قراردادمحور",
+      "col3Desc": "پرهیز مطلق از وابستگی های کپی شده و نامطمئن؛ تضمین ریاضیاتی کنتراست WCAG AAA، مرزهای صلب نوع داده (Types) و معماری لایه ای تمیز از هسته تا لایه نمایش."
     },
     "cta": {
+      "eyebrow": "۰۴ · محورهای همکاری تخصصی",
       "title": "مسئله یا چالش فنی پیچیده ای در پیش دارید؟",
-      "desc": "محدودیت اصلی سیستم، الگوهای خرابی یا مرزهای معماری را مطرح کنید تا راهکاری پایدار بسازیم.",
+      "subtitle": "همکاری مستقیم برای سازمان ها و تیم هایی که به قضاوت ارشد مهندسی، سیستم های خودکار هوش مصنوعی و رفع گلوگاه های بحرانی نیاز دارند.",
+      "vectors": {
+        "systems": {
+          "title": "معماری سیستم های توزیع شده هسته ای",
+          "desc": "شبکه سازی سطح کرنل با Wintun، پایپ لاین های رخدادمحور، پایگاه های داده مقیاس پذیر SQLite و ارتباطات بین پردازشی (IPC) بدون تداخل."
+        },
+        "agents": {
+          "title": "زیرساخت ایجنت های خودکار و سرورهای MCP",
+          "desc": "اکوسیستم های عملیاتی پروتکل MCP، اتوماسیون هوشمند و نامحسوس مرورگر در مقیاس بالا و گردش کارهای چندمرحله ای خودبهبوددهنده."
+        },
+        "audits": {
+          "title": "ممیزی عمیق کارایی، شبکه و تاب آوری",
+          "desc": "حذف گلوگاه های فاجعه بار عملکردی، مهار کامل پروسه های یتیم، عیب یابی نشت حافظه و بازنویسی مقاوم سازی کدهای حیاتی کسب و کار."
+        }
+      },
+      "bannerTitle": "آماده برای ساخت راهکاری پایدار و مقتدر؟",
+      "desc": "محدودیت اصلی سیستم، سناریوی خرابی یا مرزهای معماری را در میان بگذارید تا نرم افزاری بسازیم که در آن جزئیات به راستی اهمیت دارند.",
       "emailBtn": "ارسال مستقیم ایمیل به امید"
     },
     "footer": {
