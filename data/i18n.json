@@ -25,10 +25,10 @@
       "copyEmail": "Copy Email",
       "emailCopied": "Email Copied!",
       "stats": {
-        "prs": "Public PRs Found",
-        "upstream": "Upstream Repos",
-        "flagships": "Flagship Suites",
-        "downloads": "Extension Downloads"
+        "prs": "Merged Upstream PRs",
+        "upstream": "Upstream Repositories",
+        "flagships": "Engineered Platforms",
+        "tests": "Automated Test Suites"
       }
     },
     "filter": {
@@ -136,10 +136,10 @@
       "copyEmail": "کپی ایمیل",
       "emailCopied": "ایمیل کپی شد!",
       "stats": {
-        "prs": "پول ریکوئست عمومی",
-        "upstream": "مخزن اصلی همکار",
-        "flagships": "سوئیت مهندسی پیشرو",
-        "downloads": "دانلود اکستنشن ها"
+        "prs": "پول ریکوئست های ادغام شده",
+        "upstream": "مخازن مستقل بالادستی",
+        "flagships": "پلتفرم های بنیادین",
+        "tests": "سوئیت های تست خودکار"
       }
     },
     "filter": {

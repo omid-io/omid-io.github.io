@@ -41,10 +41,10 @@
         emailCopied: "Email Copied!",
         role: "Systems Architect & Lead Engineer",
         stats: {
-          prs: "Public PRs Found",
-          upstream: "Upstream Repos",
-          flagships: "Flagship Suites",
-          downloads: "Extension Downloads"
+          prs: "Merged Upstream PRs",
+          upstream: "Upstream Repositories",
+          flagships: "Engineered Platforms",
+          tests: "Automated Test Suites"
         }
       },
       filter: {
@@ -153,10 +153,10 @@
         emailCopied: "ایمیل کپی شد!",
         role: "معمار سیستم و مهندس ارشد",
         stats: {
-          prs: "پول ریکوئست عمومی",
-          upstream: "مخزن اصلی همکار",
-          flagships: "سوئیت مهندسی پیشرو",
-          downloads: "دانلود اکستنشن ها"
+          prs: "پول ریکوئست های ادغام شده",
+          upstream: "مخازن مستقل بالادستی",
+          flagships: "پلتفرم های بنیادین",
+          tests: "سوئیت های تست خودکار"
         }
       },
       filter: {
@@ -250,6 +250,7 @@
   const langSwitchBtn = document.getElementById("langSwitchBtn");
   const menuToggleBtn = document.getElementById("menuToggleBtn");
   const navMenu = document.getElementById("navMenu");
+  const navBackdrop = document.getElementById("navBackdrop");
   const copyEmailBtn = document.getElementById("copyEmailBtn");
   const copyTooltip = document.getElementById("copyTooltip");
   const terminalCopyBtn = document.getElementById("terminalCopyBtn");
@@ -397,16 +398,31 @@
     });
   });
 
-  // 7. Mobile Navigation Drawer
+  // 7. Mobile Navigation Drawer (Ergonomic Slide & Backdrop)
   if (menuToggleBtn && navMenu) {
-    menuToggleBtn.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
-    });
+    const toggleMenu = (forceState) => {
+      const shouldOpen = typeof forceState === "boolean" ? forceState : !navMenu.classList.contains("open");
+      navMenu.classList.toggle("open", shouldOpen);
+      menuToggleBtn.setAttribute("aria-expanded", String(shouldOpen));
+      if (navBackdrop) {
+        navBackdrop.classList.toggle("show", shouldOpen);
+      }
+    };
+
+    menuToggleBtn.addEventListener("click", () => toggleMenu());
+
+    if (navBackdrop) {
+      navBackdrop.addEventListener("click", () => toggleMenu(false));
+    }
 
     document.querySelectorAll(".nav-item").forEach((link) => {
-      link.addEventListener("click", () => {
-        navMenu.classList.remove("open");
-      });
+      link.addEventListener("click", () => toggleMenu(false));
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768 && navMenu.classList.contains("open")) {
+        toggleMenu(false);
+      }
     });
   }
 
