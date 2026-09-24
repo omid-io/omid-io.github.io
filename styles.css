@@ -1679,11 +1679,12 @@ html[lang="fa"] .project-tag {
 @media (max-width: 1024px) {
   .hero-layout {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
   .hero-visual-card {
-    max-width: 480px;
+    order: -1;
+    max-width: 320px;
     margin-inline: auto;
   }
 
