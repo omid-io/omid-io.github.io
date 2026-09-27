@@ -2,33 +2,153 @@
   "updated_at": "2026-09-23",
   "repos": [
     {
-      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
-      "homepageUrl": "https://omid-io.github.io",
+      "description": "The complete UI enhancement, workspace ergonomics, and multilingual (RTL/BiDi) studio for Google Antigravity & Antigravity IDE.",
+      "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
       "isFork": false,
-      "name": "omid-io.github.io",
+      "name": "antigravity-ui",
       "parent": null,
       "repositoryTopics": [
         {
-          "name": "ai-engineer"
+          "name": "antigravity"
         },
         {
-          "name": "developer-portfolio"
+          "name": "antigravity-ide"
         },
         {
-          "name": "full-stack"
+          "name": "antigravity-ui"
         },
         {
-          "name": "github-pages"
+          "name": "arabic"
         },
         {
-          "name": "portfolio"
+          "name": "asar-patcher"
         },
         {
-          "name": "software-architect"
+          "name": "bidi"
+        },
+        {
+          "name": "electron"
+        },
+        {
+          "name": "google-antigravity"
+        },
+        {
+          "name": "persian"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "ui-studio"
+        },
+        {
+          "name": "vazirmatn"
+        },
+        {
+          "name": "vscode-extension"
+        },
+        {
+          "name": "compact-sidebar"
+        },
+        {
+          "name": "sidebar-resizer"
         }
       ],
       "stargazerCount": 0,
-      "updatedAt": "2026-09-23T16:43:36Z",
+      "updatedAt": "2026-09-27T00:50:03Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
+      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
+      "isFork": false,
+      "name": "vibe-ui-suite",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "accessibility"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "claude-code"
+        },
+        {
+          "name": "cursor"
+        },
+        {
+          "name": "design-systems"
+        },
+        {
+          "name": "nextjs15"
+        },
+        {
+          "name": "oklch"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "shadcn-ui"
+        },
+        {
+          "name": "tailwind"
+        },
+        {
+          "name": "ui-ux"
+        },
+        {
+          "name": "vibe-coding"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-27T00:01:16Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The complete UI enhancement, workspace ergonomics, and multilingual (RTL/BiDi) studio for Google Antigravity & Antigravity IDE.",
+      "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
+      "isFork": false,
+      "name": "antigravity-ui-temp",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "antigravity"
+        },
+        {
+          "name": "antigravity-ide"
+        },
+        {
+          "name": "antigravity-ui"
+        },
+        {
+          "name": "bidi"
+        },
+        {
+          "name": "customizer"
+        },
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "electron"
+        },
+        {
+          "name": "google-antigravity"
+        },
+        {
+          "name": "persian"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "vazirmatn"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-26T22:24:00Z",
       "visibility": "PUBLIC"
     },
     {
@@ -85,7 +205,88 @@
         }
       ],
       "stargazerCount": 0,
-      "updatedAt": "2026-09-23T16:31:28Z",
+      "updatedAt": "2026-09-26T21:49:52Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "telegram-mcp",
+      "parent": {
+        "id": "R_kgDOOL27Bw",
+        "name": "telegram-mcp",
+        "owner": {
+          "id": "MDQ6VXNlcjM2MzkyNzUx",
+          "login": "chigwell"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T22:46:11Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "🚀 Personal GitHub Profile & Open-Source Engineering Portfolio | Omid Zaferi",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "omid-io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "developer-profile"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "mcp-protocol"
+        },
+        {
+          "name": "open-source"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-25T12:06:27Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
+      "isFork": false,
+      "name": "omid-io.github.io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-engineer"
+        },
+        {
+          "name": "developer-portfolio"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "github-pages"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-24T01:49:39Z",
       "visibility": "PUBLIC"
     },
     {
@@ -104,35 +305,6 @@
       "repositoryTopics": null,
       "stargazerCount": 0,
       "updatedAt": "2026-09-19T13:09:35Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Personal Intelligence & Automation Engine for Omid Zaferi",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "omid-core",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-22T06:02:46Z",
-      "visibility": "PRIVATE"
-    },
-    {
-      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "telegram-mcp",
-      "parent": {
-        "id": "R_kgDOOL27Bw",
-        "name": "telegram-mcp",
-        "owner": {
-          "id": "MDQ6VXNlcjM2MzkyNzUx",
-          "login": "chigwell"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T22:46:11Z",
       "visibility": "PUBLIC"
     },
     {
@@ -190,39 +362,6 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "🚀 Personal GitHub Profile & Open-Source Engineering Portfolio | Omid Zaferi",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "omid-io",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "ai-agents"
-        },
-        {
-          "name": "developer-profile"
-        },
-        {
-          "name": "full-stack"
-        },
-        {
-          "name": "mcp-protocol"
-        },
-        {
-          "name": "open-source"
-        },
-        {
-          "name": "portfolio"
-        },
-        {
-          "name": "software-architect"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T14:56:53Z",
-      "visibility": "PUBLIC"
-    },
-    {
       "description": "LlamaIndex is the document processing platform for AI",
       "homepageUrl": "https://developers.llamaindex.ai",
       "isFork": true,
@@ -238,24 +377,6 @@
       "repositoryTopics": null,
       "stargazerCount": 0,
       "updatedAt": "2026-09-19T12:53:56Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "A smart RTL (Right-to-Left) UI patcher for Antigravity 2.0, bringing native support for Persian, Arabic, and Hebrew languages with customizable fonts.",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "antigravity-rtl",
-      "parent": {
-        "id": "R_kgDOTEq-fQ",
-        "name": "antigravity-rtl",
-        "owner": {
-          "id": "MDQ6VXNlcjI5MTQ5MjQ=",
-          "login": "mmnaderi"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-18T19:48:40Z",
       "visibility": "PUBLIC"
     },
     {
@@ -367,65 +488,6 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "my todo list telegram bot",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "todo-bot",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-07-01T11:39:58Z",
-      "visibility": "PRIVATE"
-    },
-    {
-      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
-      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
-      "isFork": false,
-      "name": "vibe-ui-suite",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "accessibility"
-        },
-        {
-          "name": "ai-agents"
-        },
-        {
-          "name": "claude-code"
-        },
-        {
-          "name": "cursor"
-        },
-        {
-          "name": "design-systems"
-        },
-        {
-          "name": "nextjs15"
-        },
-        {
-          "name": "oklch"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "shadcn-ui"
-        },
-        {
-          "name": "tailwind"
-        },
-        {
-          "name": "ui-ux"
-        },
-        {
-          "name": "vibe-coding"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-04T06:23:53Z",
-      "visibility": "PUBLIC"
-    },
-    {
       "description": "Unified Production-Grade Google Flow Automation Suite (Nano Banana 2 & Omni Flash / Veo 3.1) with Chrome MV3 Bridge, Playwright CDP, FastMCP & CLI",
       "homepageUrl": "",
       "isFork": false,
@@ -474,7 +536,7 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "🧹 حذف هوشمند تبلیغات، کالاهای سفارشی و اسپانسر شده از دیجی کالا | نمایش نتایج ۱۰۰٪ واقعی و ارگانیک",
+      "description": "🧹 حذف هوشمند تبلیغات، کالاهای سفارشی و اسپانسر شده از دیجی‌کالا | نمایش نتایج ۱۰۰٪ واقعی و ارگانیک",
       "homepageUrl": "",
       "isFork": false,
       "name": "digikala-pure-search",
@@ -534,17 +596,6 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "Gloria-Beauty",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-08-30T02:49:00Z",
-      "visibility": "PRIVATE"
-    },
-    {
       "description": "✨ Ultra-Modern Glassmorphism Todo & Task Manager for Android built with 100% Jetpack Compose, Room Flow, Shamsi/Gregorian Dual-Calendar & Automated CI/CD.",
       "homepageUrl": "https://github.com/omid-io/Android-Todo-App/releases",
       "isFork": false,
@@ -588,8 +639,8 @@
           "name": "shamsi"
         }
       ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-08-30T03:08:48Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-09-24T05:50:07Z",
       "visibility": "PUBLIC"
     },
     {
@@ -630,28 +681,6 @@
       "stargazerCount": 0,
       "updatedAt": "2026-08-30T03:08:49Z",
       "visibility": "PUBLIC"
-    },
-    {
-      "description": "",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "telegram-todo-bot",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-08-30T02:00:20Z",
-      "visibility": "PRIVATE"
-    },
-    {
-      "description": "",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "salon-price-form",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-08-17T21:24:07Z",
-      "visibility": "PRIVATE"
     }
   ]
 }
