@@ -2,6 +2,54 @@
   "updated_at": "2026-09-23",
   "repos": [
     {
+      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
+      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
+      "isFork": false,
+      "name": "vibe-ui-suite",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "accessibility"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "claude-code"
+        },
+        {
+          "name": "cursor"
+        },
+        {
+          "name": "design-systems"
+        },
+        {
+          "name": "nextjs15"
+        },
+        {
+          "name": "oklch"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "shadcn-ui"
+        },
+        {
+          "name": "tailwind"
+        },
+        {
+          "name": "ui-ux"
+        },
+        {
+          "name": "vibe-coding"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-10-04T02:42:22Z",
+      "visibility": "PUBLIC"
+    },
+    {
       "description": "The complete UI enhancement, workspace ergonomics, and multilingual (RTL/BiDi) studio for Google Antigravity & Antigravity IDE.",
       "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
       "isFork": false,
@@ -55,157 +103,7 @@
         }
       ],
       "stargazerCount": 0,
-      "updatedAt": "2026-09-27T00:50:03Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
-      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
-      "isFork": false,
-      "name": "vibe-ui-suite",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "accessibility"
-        },
-        {
-          "name": "ai-agents"
-        },
-        {
-          "name": "claude-code"
-        },
-        {
-          "name": "cursor"
-        },
-        {
-          "name": "design-systems"
-        },
-        {
-          "name": "nextjs15"
-        },
-        {
-          "name": "oklch"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "shadcn-ui"
-        },
-        {
-          "name": "tailwind"
-        },
-        {
-          "name": "ui-ux"
-        },
-        {
-          "name": "vibe-coding"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-27T00:01:16Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "The complete UI enhancement, workspace ergonomics, and multilingual (RTL/BiDi) studio for Google Antigravity & Antigravity IDE.",
-      "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
-      "isFork": false,
-      "name": "antigravity-ui-temp",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "antigravity"
-        },
-        {
-          "name": "antigravity-ide"
-        },
-        {
-          "name": "antigravity-ui"
-        },
-        {
-          "name": "bidi"
-        },
-        {
-          "name": "customizer"
-        },
-        {
-          "name": "developer-tools"
-        },
-        {
-          "name": "electron"
-        },
-        {
-          "name": "google-antigravity"
-        },
-        {
-          "name": "persian"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "vazirmatn"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-26T22:24:00Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "⏸️ Graceful Pause, Deep Hibernation & Pre-Flight Leak Protection for Google Antigravity (2.0 Desktop, IDE, and CLI)",
-      "homepageUrl": "https://github.com/omid-io/antigravity-pause#readme",
-      "isFork": false,
-      "name": "antigravity-pause",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "agentic-ai"
-        },
-        {
-          "name": "ai-agents"
-        },
-        {
-          "name": "anti-leak"
-        },
-        {
-          "name": "antigravity"
-        },
-        {
-          "name": "antigravity-skill"
-        },
-        {
-          "name": "checkpointing"
-        },
-        {
-          "name": "cli"
-        },
-        {
-          "name": "developer-tools"
-        },
-        {
-          "name": "google-antigravity"
-        },
-        {
-          "name": "hibernation"
-        },
-        {
-          "name": "network-resilience"
-        },
-        {
-          "name": "python"
-        },
-        {
-          "name": "session-management"
-        },
-        {
-          "name": "slash-commands"
-        },
-        {
-          "name": "git-locks"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-26T21:49:52Z",
+      "updatedAt": "2026-09-29T21:12:10Z",
       "visibility": "PUBLIC"
     },
     {
@@ -224,6 +122,36 @@
       "repositoryTopics": null,
       "stargazerCount": 0,
       "updatedAt": "2026-09-19T22:46:11Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
+      "isFork": false,
+      "name": "omid-io.github.io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-engineer"
+        },
+        {
+          "name": "developer-portfolio"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "github-pages"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-27T04:02:40Z",
       "visibility": "PUBLIC"
     },
     {
@@ -257,36 +185,6 @@
       ],
       "stargazerCount": 0,
       "updatedAt": "2026-09-25T12:06:27Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
-      "homepageUrl": "https://omid-io.github.io",
-      "isFork": false,
-      "name": "omid-io.github.io",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "ai-engineer"
-        },
-        {
-          "name": "developer-portfolio"
-        },
-        {
-          "name": "full-stack"
-        },
-        {
-          "name": "github-pages"
-        },
-        {
-          "name": "portfolio"
-        },
-        {
-          "name": "software-architect"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-24T01:49:39Z",
       "visibility": "PUBLIC"
     },
     {
@@ -531,8 +429,8 @@
           "name": "video-generation"
         }
       ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-08-31T20:25:13Z",
+      "stargazerCount": 2,
+      "updatedAt": "2026-10-03T11:14:43Z",
       "visibility": "PUBLIC"
     },
     {
@@ -591,8 +489,8 @@
           "name": "price-filter"
         }
       ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-08-31T05:28:01Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-03T09:42:30Z",
       "visibility": "PUBLIC"
     },
     {
