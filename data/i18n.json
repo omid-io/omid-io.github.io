@@ -58,12 +58,6 @@
           "desc": "High-throughput mobile internet and VPN tunnel router for Windows 10/11 using Wintun kernel drivers, WinUI 3, C# .NET 8, and Kotlin without requiring Android root privileges.",
           "proof": "Low-latency packet routing with event-driven architecture and native desktop client."
         },
-        "flow": {
-          "tag": "Automation & Generative Suite",
-          "title": "Google Flow Suite",
-          "desc": "High-throughput dual-engine automation combining Chrome MV3, Playwright CDP, FastMCP protocol, SQLite history persistence, and asynchronous AI media processing queues.",
-          "proof": "462 unit & integration tests passing with dual CDP/REST architecture."
-        },
         "pause": {
           "tag": "Resilience & Security Guard",
           "title": "antigravity-pause",
@@ -203,12 +197,6 @@
           "title": "AirTun",
           "desc": "مسیریاب و اشتراک گذار پرسرعت اینترنت و تونل های VPN از موبایل به ویندوز ۱۰ و ۱۱ با درایور سطح کرنل Wintun، رابط کاربری WinUI 3، فریمورک دات نت ۸ و کاتلین، بدون نیاز به روت اندروید.",
           "proof": "مسیریابی پکت ها با حداقل تاخیر، معماری مبتنی بر رخداد و کلاینت بومی دسکتاپ."
-        },
-        "flow": {
-          "tag": "سوئیت اتوماسیون و تولید محتوا",
-          "title": "Google Flow Suite",
-          "desc": "پلتفرم پرسرعت اتوماسیون با معماری دوگانه شامل اکستنشن کروم MV3، پروتکل Playwright CDP، پروتکل FastMCP، تاریخچه دیتابیس SQLite و صف های پردازش نامتقارن هوش مصنوعی.",
-          "proof": "دارای ۴۶۲ تست واحد و یکپارچه موفق با معماری منعطف CDP و REST."
         },
         "pause": {
           "tag": "پایداری سیستم و ضد نشت داده",

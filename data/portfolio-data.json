@@ -386,54 +386,6 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "Unified Production-Grade Google Flow Automation Suite (Nano Banana 2 & Omni Flash / Veo 3.1) with Chrome MV3 Bridge, Playwright CDP, FastMCP & CLI",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "google-flow-suite",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "ai-generation"
-        },
-        {
-          "name": "browser-automation"
-        },
-        {
-          "name": "chrome-extension"
-        },
-        {
-          "name": "fastmcp"
-        },
-        {
-          "name": "google-flow"
-        },
-        {
-          "name": "mcp"
-        },
-        {
-          "name": "nano-banana-2"
-        },
-        {
-          "name": "omni-flash"
-        },
-        {
-          "name": "playwright"
-        },
-        {
-          "name": "python"
-        },
-        {
-          "name": "veo"
-        },
-        {
-          "name": "video-generation"
-        }
-      ],
-      "stargazerCount": 2,
-      "updatedAt": "2026-10-03T11:14:43Z",
-      "visibility": "PUBLIC"
-    },
-    {
       "description": "🧹 حذف هوشمند تبلیغات، کالاهای سفارشی و اسپانسر شده از دیجی‌کالا | نمایش نتایج ۱۰۰٪ واقعی و ارگانیک",
       "homepageUrl": "",
       "isFork": false,
