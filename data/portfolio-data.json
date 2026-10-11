@@ -45,8 +45,185 @@
           "name": "vibe-coding"
         }
       ],
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-10T16:11:04Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "🧹 حذف هوشمند تبلیغات، کالاهای سفارشی و اسپانسر شده از دیجی‌کالا | نمایش نتایج ۱۰۰٪ واقعی و ارگانیک",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "digikala-pure-search",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "adblock"
+        },
+        {
+          "name": "adblocker"
+        },
+        {
+          "name": "digikala"
+        },
+        {
+          "name": "tampermonkey"
+        },
+        {
+          "name": "userscript"
+        },
+        {
+          "name": "anti-adblock"
+        },
+        {
+          "name": "chrome-extension"
+        },
+        {
+          "name": "ecommerce"
+        },
+        {
+          "name": "iran"
+        },
+        {
+          "name": "persian"
+        },
+        {
+          "name": "shopping-cart"
+        },
+        {
+          "name": "sponsored-products"
+        },
+        {
+          "name": "ublock-origin"
+        },
+        {
+          "name": "filter"
+        },
+        {
+          "name": "javascript"
+        },
+        {
+          "name": "price-filter"
+        }
+      ],
+      "stargazerCount": 2,
+      "updatedAt": "2026-10-10T14:34:49Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Drive Google Flow from the command line: Veo video and Imagen images, scripted, batched and pipeline-ready. Ships an MCP server so coding agents can drive it too, giving you and your agents full programmatic control over generation. Unofficial, alpha, not affiliated with Google.",
+      "homepageUrl": "https://ffroliva.github.io/gflow-cli/",
+      "isFork": true,
+      "name": "gflow-cli",
+      "parent": {
+        "id": "R_kgDOSYyvBQ",
+        "name": "gflow-cli",
+        "owner": {
+          "id": "MDQ6VXNlcjI1MDMzMzcx",
+          "login": "ffroliva"
+        }
+      },
+      "repositoryTopics": null,
       "stargazerCount": 0,
-      "updatedAt": "2026-10-04T02:42:22Z",
+      "updatedAt": "2026-10-08T06:50:00Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
+      "isFork": false,
+      "name": "omid-io.github.io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-engineer"
+        },
+        {
+          "name": "developer-portfolio"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "github-pages"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-10-08T05:53:22Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "🚀 Personal GitHub Profile & Open-Source Engineering Portfolio | Omid Zaferi",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "omid-io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "developer-profile"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "mcp-protocol"
+        },
+        {
+          "name": "open-source"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 0,
+      "updatedAt": "2026-10-08T05:52:04Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "telegram-mcp",
+      "parent": {
+        "id": "R_kgDOOL27Bw",
+        "name": "telegram-mcp",
+        "owner": {
+          "id": "MDQ6VXNlcjM2MzkyNzUx",
+          "login": "chigwell"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-19T22:46:11Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The agent that grows with you",
+      "homepageUrl": "https://hermes-agent.nousresearch.com",
+      "isFork": true,
+      "name": "hermes-agent",
+      "parent": {
+        "id": "R_kgDOPRF1Gw",
+        "name": "hermes-agent",
+        "owner": {
+          "id": "O_kgDOB_9BPQ",
+          "login": "NousResearch"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-09-04T21:50:52Z",
       "visibility": "PUBLIC"
     },
     {
@@ -103,88 +280,7 @@
         }
       ],
       "stargazerCount": 0,
-      "updatedAt": "2026-09-29T21:12:10Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "telegram-mcp",
-      "parent": {
-        "id": "R_kgDOOL27Bw",
-        "name": "telegram-mcp",
-        "owner": {
-          "id": "MDQ6VXNlcjM2MzkyNzUx",
-          "login": "chigwell"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T22:46:11Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
-      "homepageUrl": "https://omid-io.github.io",
-      "isFork": false,
-      "name": "omid-io.github.io",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "ai-engineer"
-        },
-        {
-          "name": "developer-portfolio"
-        },
-        {
-          "name": "full-stack"
-        },
-        {
-          "name": "github-pages"
-        },
-        {
-          "name": "portfolio"
-        },
-        {
-          "name": "software-architect"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-27T04:02:40Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "🚀 Personal GitHub Profile & Open-Source Engineering Portfolio | Omid Zaferi",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "omid-io",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "ai-agents"
-        },
-        {
-          "name": "developer-profile"
-        },
-        {
-          "name": "full-stack"
-        },
-        {
-          "name": "mcp-protocol"
-        },
-        {
-          "name": "open-source"
-        },
-        {
-          "name": "portfolio"
-        },
-        {
-          "name": "software-architect"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-25T12:06:27Z",
+      "updatedAt": "2026-10-05T23:36:31Z",
       "visibility": "PUBLIC"
     },
     {
@@ -203,24 +299,6 @@
       "repositoryTopics": null,
       "stargazerCount": 0,
       "updatedAt": "2026-09-19T13:09:35Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "The agent that grows with you",
-      "homepageUrl": "https://hermes-agent.nousresearch.com",
-      "isFork": true,
-      "name": "hermes-agent",
-      "parent": {
-        "id": "R_kgDOPRF1Gw",
-        "name": "hermes-agent",
-        "owner": {
-          "id": "O_kgDOB_9BPQ",
-          "login": "NousResearch"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-04T21:50:52Z",
       "visibility": "PUBLIC"
     },
     {
@@ -345,8 +423,8 @@
           "name": "vpn"
         }
       ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-09-21T21:38:41Z",
+      "stargazerCount": 3,
+      "updatedAt": "2026-10-10T03:48:05Z",
       "visibility": "PUBLIC"
     },
     {
@@ -383,66 +461,6 @@
       "repositoryTopics": null,
       "stargazerCount": 0,
       "updatedAt": "2026-09-17T23:04:07Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "🧹 حذف هوشمند تبلیغات، کالاهای سفارشی و اسپانسر شده از دیجی‌کالا | نمایش نتایج ۱۰۰٪ واقعی و ارگانیک",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "digikala-pure-search",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "adblock"
-        },
-        {
-          "name": "adblocker"
-        },
-        {
-          "name": "digikala"
-        },
-        {
-          "name": "tampermonkey"
-        },
-        {
-          "name": "userscript"
-        },
-        {
-          "name": "anti-adblock"
-        },
-        {
-          "name": "chrome-extension"
-        },
-        {
-          "name": "ecommerce"
-        },
-        {
-          "name": "iran"
-        },
-        {
-          "name": "persian"
-        },
-        {
-          "name": "shopping-cart"
-        },
-        {
-          "name": "sponsored-products"
-        },
-        {
-          "name": "ublock-origin"
-        },
-        {
-          "name": "filter"
-        },
-        {
-          "name": "javascript"
-        },
-        {
-          "name": "price-filter"
-        }
-      ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-03T09:42:30Z",
       "visibility": "PUBLIC"
     },
     {
