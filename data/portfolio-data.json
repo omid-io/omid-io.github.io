@@ -2,6 +2,24 @@
   "updated_at": "2026-09-23",
   "repos": [
     {
+      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "telegram-mcp",
+      "parent": {
+        "id": "R_kgDOOL27Bw",
+        "name": "telegram-mcp",
+        "owner": {
+          "id": "MDQ6VXNlcjM2MzkyNzUx",
+          "login": "chigwell"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-17T22:42:02Z",
+      "visibility": "PUBLIC"
+    },
+    {
       "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
       "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
       "isFork": false,
@@ -46,7 +64,166 @@
         }
       ],
       "stargazerCount": 1,
-      "updatedAt": "2026-10-10T16:11:04Z",
+      "updatedAt": "2026-10-16T22:08:25Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The complete UI enhancement, workspace ergonomics, and multilingual (RTL/BiDi) studio for Google Antigravity & Antigravity IDE.",
+      "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
+      "isFork": false,
+      "name": "antigravity-ui",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "antigravity"
+        },
+        {
+          "name": "antigravity-ide"
+        },
+        {
+          "name": "antigravity-ui"
+        },
+        {
+          "name": "arabic"
+        },
+        {
+          "name": "asar-patcher"
+        },
+        {
+          "name": "bidi"
+        },
+        {
+          "name": "electron"
+        },
+        {
+          "name": "google-antigravity"
+        },
+        {
+          "name": "persian"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "ui-studio"
+        },
+        {
+          "name": "vazirmatn"
+        },
+        {
+          "name": "vscode-extension"
+        },
+        {
+          "name": "compact-sidebar"
+        },
+        {
+          "name": "sidebar-resizer"
+        }
+      ],
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-16T21:49:59Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0.",
+      "homepageUrl": "https://futureagi.com",
+      "isFork": true,
+      "name": "future-agi",
+      "parent": {
+        "id": "R_kgDOSKnNaw",
+        "name": "future-agi",
+        "owner": {
+          "id": "O_kgDOCMkHbg",
+          "login": "future-agi"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:09Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "FL Chart is a highly customizable Flutter chart library that supports Line Chart, Bar Chart, Pie Chart, Scatter Chart, Radar Chart and Candlestick Chart.",
+      "homepageUrl": "https://flchart.dev",
+      "isFork": true,
+      "name": "fl_chart",
+      "parent": {
+        "id": "MDEwOlJlcG9zaXRvcnkxODYyNTU0NjA=",
+        "name": "fl_chart",
+        "owner": {
+          "id": "MDQ6VXNlcjcwMDkzMDA=",
+          "login": "imaNNeo"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:46Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Smart RTL (Right-to-Left) UI patcher for Antigravity & Antigravity IDE with Persian, Arabic, and Hebrew typography support.",
+      "homepageUrl": "https://www.npmjs.com/package/antigravity-rtl",
+      "isFork": true,
+      "name": "antigravity-rtl",
+      "parent": {
+        "id": "R_kgDOTEq-fQ",
+        "name": "antigravity-rtl",
+        "owner": {
+          "id": "MDQ6VXNlcjI5MTQ5MjQ=",
+          "login": "mmnaderi"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:35:58Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The agent that grows with you",
+      "homepageUrl": "https://hermes-agent.nousresearch.com",
+      "isFork": true,
+      "name": "hermes-agent",
+      "parent": {
+        "id": "R_kgDOPRF1Gw",
+        "name": "hermes-agent",
+        "owner": {
+          "id": "O_kgDOB_9BPQ",
+          "login": "NousResearch"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:08Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
+      "isFork": false,
+      "name": "omid-io.github.io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-engineer"
+        },
+        {
+          "name": "developer-portfolio"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "github-pages"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:17Z",
       "visibility": "PUBLIC"
     },
     {
@@ -123,38 +300,8 @@
         }
       },
       "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-10-08T06:50:00Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
-      "homepageUrl": "https://omid-io.github.io",
-      "isFork": false,
-      "name": "omid-io.github.io",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "ai-engineer"
-        },
-        {
-          "name": "developer-portfolio"
-        },
-        {
-          "name": "full-stack"
-        },
-        {
-          "name": "github-pages"
-        },
-        {
-          "name": "portfolio"
-        },
-        {
-          "name": "software-architect"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-10-08T05:53:22Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:11Z",
       "visibility": "PUBLIC"
     },
     {
@@ -186,101 +333,8 @@
           "name": "software-architect"
         }
       ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-10-08T05:52:04Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "telegram-mcp",
-      "parent": {
-        "id": "R_kgDOOL27Bw",
-        "name": "telegram-mcp",
-        "owner": {
-          "id": "MDQ6VXNlcjM2MzkyNzUx",
-          "login": "chigwell"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T22:46:11Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "The agent that grows with you",
-      "homepageUrl": "https://hermes-agent.nousresearch.com",
-      "isFork": true,
-      "name": "hermes-agent",
-      "parent": {
-        "id": "R_kgDOPRF1Gw",
-        "name": "hermes-agent",
-        "owner": {
-          "id": "O_kgDOB_9BPQ",
-          "login": "NousResearch"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-04T21:50:52Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "The complete UI enhancement, workspace ergonomics, and multilingual (RTL/BiDi) studio for Google Antigravity & Antigravity IDE.",
-      "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
-      "isFork": false,
-      "name": "antigravity-ui",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "antigravity"
-        },
-        {
-          "name": "antigravity-ide"
-        },
-        {
-          "name": "antigravity-ui"
-        },
-        {
-          "name": "arabic"
-        },
-        {
-          "name": "asar-patcher"
-        },
-        {
-          "name": "bidi"
-        },
-        {
-          "name": "electron"
-        },
-        {
-          "name": "google-antigravity"
-        },
-        {
-          "name": "persian"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "ui-studio"
-        },
-        {
-          "name": "vazirmatn"
-        },
-        {
-          "name": "vscode-extension"
-        },
-        {
-          "name": "compact-sidebar"
-        },
-        {
-          "name": "sidebar-resizer"
-        }
-      ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-10-05T23:36:31Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:18Z",
       "visibility": "PUBLIC"
     },
     {
@@ -297,8 +351,8 @@
         }
       },
       "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T13:09:35Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:35Z",
       "visibility": "PUBLIC"
     },
     {
@@ -315,8 +369,8 @@
         }
       },
       "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T22:11:02Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:36Z",
       "visibility": "PUBLIC"
     },
     {
@@ -333,8 +387,8 @@
         }
       },
       "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T15:17:14Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:20Z",
       "visibility": "PUBLIC"
     },
     {
@@ -351,8 +405,8 @@
         }
       },
       "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-19T12:53:56Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:37Z",
       "visibility": "PUBLIC"
     },
     {
@@ -441,26 +495,8 @@
         }
       },
       "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-18T13:25:26Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "FL Chart is a highly customizable Flutter chart library that supports Line Chart, Bar Chart, Pie Chart, Scatter Chart, Radar Chart and Candlestick Chart.",
-      "homepageUrl": "https://flchart.dev",
-      "isFork": true,
-      "name": "fl_chart",
-      "parent": {
-        "id": "MDEwOlJlcG9zaXRvcnkxODYyNTU0NjA=",
-        "name": "fl_chart",
-        "owner": {
-          "id": "MDQ6VXNlcjcwMDkzMDA=",
-          "login": "imaNNeo"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-09-17T23:04:07Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:12Z",
       "visibility": "PUBLIC"
     },
     {
@@ -507,8 +543,8 @@
           "name": "shamsi"
         }
       ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-09-24T05:50:07Z",
+      "stargazerCount": 2,
+      "updatedAt": "2026-10-13T12:36:14Z",
       "visibility": "PUBLIC"
     },
     {
@@ -546,8 +582,8 @@
           "name": "userscript"
         }
       ],
-      "stargazerCount": 0,
-      "updatedAt": "2026-08-30T03:08:49Z",
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:15Z",
       "visibility": "PUBLIC"
     }
   ]
