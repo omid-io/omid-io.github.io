@@ -2,21 +2,75 @@
   "updated_at": "2026-09-23",
   "repos": [
     {
-      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "telegram-mcp",
-      "parent": {
-        "id": "R_kgDOOL27Bw",
-        "name": "telegram-mcp",
-        "owner": {
-          "id": "MDQ6VXNlcjM2MzkyNzUx",
-          "login": "chigwell"
+      "description": "The complete UI enhancement, RTL & Persian/Arabic راست چین studio, workspace ergonomics, and BiDi typography for Google Antigravity & Antigravity IDE.",
+      "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
+      "isFork": false,
+      "name": "antigravity-ui",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "antigravity"
+        },
+        {
+          "name": "antigravity-ide"
+        },
+        {
+          "name": "antigravity-ui"
+        },
+        {
+          "name": "arabic"
+        },
+        {
+          "name": "bidi"
+        },
+        {
+          "name": "electron"
+        },
+        {
+          "name": "google-antigravity"
+        },
+        {
+          "name": "persian"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "ui-studio"
+        },
+        {
+          "name": "vazirmatn"
+        },
+        {
+          "name": "vscode-extension"
+        },
+        {
+          "name": "compact-sidebar"
+        },
+        {
+          "name": "antigravity-rtl"
+        },
+        {
+          "name": "arabic-rtl"
+        },
+        {
+          "name": "bidi-text"
+        },
+        {
+          "name": "farsi"
+        },
+        {
+          "name": "persian-rtl"
+        },
+        {
+          "name": "right-to-left"
+        },
+        {
+          "name": "rtl-support"
         }
-      },
-      "repositoryTopics": null,
+      ],
       "stargazerCount": 1,
-      "updatedAt": "2026-10-17T22:42:02Z",
+      "updatedAt": "2026-10-24T10:28:04Z",
       "visibility": "PUBLIC"
     },
     {
@@ -64,82 +118,7 @@
         }
       ],
       "stargazerCount": 1,
-      "updatedAt": "2026-10-16T22:08:25Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "The complete UI enhancement, workspace ergonomics, and multilingual (RTL/BiDi) studio for Google Antigravity & Antigravity IDE.",
-      "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
-      "isFork": false,
-      "name": "antigravity-ui",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "antigravity"
-        },
-        {
-          "name": "antigravity-ide"
-        },
-        {
-          "name": "antigravity-ui"
-        },
-        {
-          "name": "arabic"
-        },
-        {
-          "name": "asar-patcher"
-        },
-        {
-          "name": "bidi"
-        },
-        {
-          "name": "electron"
-        },
-        {
-          "name": "google-antigravity"
-        },
-        {
-          "name": "persian"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "ui-studio"
-        },
-        {
-          "name": "vazirmatn"
-        },
-        {
-          "name": "vscode-extension"
-        },
-        {
-          "name": "compact-sidebar"
-        },
-        {
-          "name": "sidebar-resizer"
-        }
-      ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-16T21:49:59Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0.",
-      "homepageUrl": "https://futureagi.com",
-      "isFork": true,
-      "name": "future-agi",
-      "parent": {
-        "id": "R_kgDOSKnNaw",
-        "name": "future-agi",
-        "owner": {
-          "id": "O_kgDOCMkHbg",
-          "login": "future-agi"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:09Z",
+      "updatedAt": "2026-10-22T15:20:32Z",
       "visibility": "PUBLIC"
     },
     {
@@ -158,6 +137,72 @@
       "repositoryTopics": null,
       "stargazerCount": 1,
       "updatedAt": "2026-10-13T12:36:46Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
+      "isFork": false,
+      "name": "omid-io.github.io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-engineer"
+        },
+        {
+          "name": "developer-portfolio"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "github-pages"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-18T03:22:08Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "telegram-mcp",
+      "parent": {
+        "id": "R_kgDOOL27Bw",
+        "name": "telegram-mcp",
+        "owner": {
+          "id": "MDQ6VXNlcjM2MzkyNzUx",
+          "login": "chigwell"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-17T22:42:02Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0.",
+      "homepageUrl": "https://futureagi.com",
+      "isFork": true,
+      "name": "future-agi",
+      "parent": {
+        "id": "R_kgDOSKnNaw",
+        "name": "future-agi",
+        "owner": {
+          "id": "O_kgDOCMkHbg",
+          "login": "future-agi"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:09Z",
       "visibility": "PUBLIC"
     },
     {
@@ -194,36 +239,6 @@
       "repositoryTopics": null,
       "stargazerCount": 1,
       "updatedAt": "2026-10-13T12:36:08Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
-      "homepageUrl": "https://omid-io.github.io",
-      "isFork": false,
-      "name": "omid-io.github.io",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "ai-engineer"
-        },
-        {
-          "name": "developer-portfolio"
-        },
-        {
-          "name": "full-stack"
-        },
-        {
-          "name": "github-pages"
-        },
-        {
-          "name": "portfolio"
-        },
-        {
-          "name": "software-architect"
-        }
-      ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:17Z",
       "visibility": "PUBLIC"
     },
     {
@@ -282,8 +297,8 @@
           "name": "price-filter"
         }
       ],
-      "stargazerCount": 2,
-      "updatedAt": "2026-10-10T14:34:49Z",
+      "stargazerCount": 3,
+      "updatedAt": "2026-10-18T07:53:38Z",
       "visibility": "PUBLIC"
     },
     {
