@@ -75,6 +75,12 @@
           "title": "Antigravity RTL & UI Suite",
           "desc": "Native RTL and BiDi layout patcher for Antigravity with fluid dragging physics (160px–420px), ghost click suppression on settings toggle, and scoped Persian typography.",
           "proof": "Upstream pull request #5 with complete visual affordance isolation."
+        },
+        "switcher": {
+          "tag": "Antigravity 2.0 Ecosystem",
+          "title": "Antigravity Account Switcher",
+          "desc": "The first native in-app Multi-Account & Live Quota Switcher for Google Antigravity 2.0 with instant zero-reload state synchronization.",
+          "proof": "Active open-source tool with instant hot-switch and zero token collisions across personal and organization workspaces."
         }
       }
     },
@@ -93,12 +99,12 @@
           "desc": "Eliminated longstanding maximization resize borders, guarded AdornerElement against null dependency properties, and decoupled collection namespaces across 3 pull requests."
         },
         "flchart": {
-          "title": "Flutter BarChart Null-Safety Guard",
-          "desc": "Prevented fatal LateInitializationError runtime crashes on null data spots in Flutter's premier data visualization engine."
+          "title": "Rotated Chart Axis Labels Regression Shield",
+          "desc": "Engineered comprehensive regression test for rotated BarChart axis labels in Flutter premier chart library, resolving label clipping under constrained layouts."
         },
         "dotnet": {
-          "title": "Android NativeAOT Memory-Safety Diagnostics",
-          "desc": "Targeted CS9377/CS9389 memory-safety diagnostics in the Android NativeAOT build task template for the official .NET runtime."
+          "title": "CoreLib Task.WaitAll OOM Elimination (#136268)",
+          "desc": "Targeted Windows x86 stress-test out-of-memory bottlenecks in Task.AddExceptionsForCompletedTask by caching remote stack traces and avoiding per-task allocations in CoreLib."
         }
       }
     },
@@ -215,6 +221,12 @@
           "title": "Antigravity RTL & UI Suite",
           "desc": "لایه بومی سازی راست به چپ (RTL) و اصلاح جهت متن (BiDi) برای آنتی گراویتی با فیزیک درگ روان (۱۶۰ تا ۴۲۰ پیکسل)، حذف کلیک های شبح در پنل تنظیمات و تایپوگرافی اختصاصی فارسی.",
           "proof": "پول ریکوئست شماره ۵ با ایزولاسیون کامل نمادهای بصری و دکمه ها."
+        },
+        "switcher": {
+          "tag": "اکوسیستم آنتی‌گرویتی ۲.۰",
+          "title": "آنتی‌گرویتی اکانت سوییچر",
+          "desc": "نخستین سوییچر نیتیو چند اکانته درون‌برنامه‌ای و پایشگر سهمیه مصرفی برای گوگل آنتی‌گرویتی ۲.۰ با همگام‌سازی بلادرنگ وضعیت.",
+          "proof": "سوییچ لحظه‌ای بین حساب‌های شخصی و سازمانی بدون تداخل توکن و بدون نیاز به بستن برنامه."
         }
       }
     },
@@ -233,12 +245,12 @@
           "desc": "حل مشکل دیرینه حاشیه های تغییر اندازه پنجره پس از ماکسیمایز، محافظت از AdornerElement در برابر خطای نال و تفکیک فضای نام ها در ۳ پول ریکوئست مستقل."
         },
         "flchart": {
-          "title": "محافظت در برابر خطای نال در BarChart فلوتر",
-          "desc": "جلوگیری از کرش مرگبار LateInitializationError در نقاط داده تهی در محبوب ترین موتور رسم نمودار فلوتر."
+          "title": "سپر رگرسیون برچسب‌های چرخشی محور در fl_chart",
+          "desc": "پیاده‌سازی تست‌های جامع رگرسیون برای برچسب‌های چرخشی BarChart فلوتر در مخزن معتبر fl_chart جهت جلوگیری از بریده‌شدن برچسب‌ها در لی‌اوت‌های فشرده."
         },
         "dotnet": {
-          "title": "عیب یابی ایمنی حافظه در NativeAOT اندروید",
-          "desc": "رهگیری و رفع خطاهای تشخیصی CS9377 و CS9389 در تمپلیت تسک های بیلد NativeAOT اندروید در هسته رسمی دات نت مایکروسافت."
+          "title": "حذف خطای کمبود حافظه (OOM) در تسک‌های هسته دات‌نت (#136268)",
+          "desc": "رفع بحران اشباع حافظه در استرس‌تست‌های WaitAll با اشتراک‌گذاری رفرنس استک‌تریس فرمت‌شده و حذف هزاران الکیشن تکراری در System.Private.CoreLib مایکروسافت."
         }
       }
     },

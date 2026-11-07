@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://omid-io.github.io/sitemap.xml
+Sitemap: https://omid-io.github.io/sitemap.txt

@@ -2,6 +2,54 @@
   "updated_at": "2026-09-23",
   "repos": [
     {
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
+      "isFork": false,
+      "name": "omid-io.github.io",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "ai-engineer"
+        },
+        {
+          "name": "developer-portfolio"
+        },
+        {
+          "name": "full-stack"
+        },
+        {
+          "name": "github-pages"
+        },
+        {
+          "name": "portfolio"
+        },
+        {
+          "name": "software-architect"
+        }
+      ],
+      "stargazerCount": 1,
+      "updatedAt": "2026-11-07T22:26:46Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "telegram-mcp",
+      "parent": {
+        "id": "R_kgDOOL27Bw",
+        "name": "telegram-mcp",
+        "owner": {
+          "id": "MDQ6VXNlcjM2MzkyNzUx",
+          "login": "chigwell"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-11-07T22:07:21Z",
+      "visibility": "PUBLIC"
+    },
+    {
       "description": "به سادگی یک کلیک وصل بشید",
       "homepageUrl": "",
       "isFork": true,
@@ -16,145 +64,29 @@
       },
       "repositoryTopics": null,
       "stargazerCount": 0,
-      "updatedAt": "2026-10-31T13:05:18Z",
+      "updatedAt": "2026-11-07T18:19:47Z",
       "visibility": "PUBLIC"
     },
     {
-      "description": ".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps.",
-      "homepageUrl": "https://docs.microsoft.com/dotnet/core/",
-      "isFork": true,
-      "name": "runtime",
-      "parent": {
-        "id": "MDEwOlJlcG9zaXRvcnkyMTA3MTYwMDU=",
-        "name": "runtime",
-        "owner": {
-          "id": "MDEyOk9yZ2FuaXphdGlvbjkxNDE5NjE=",
-          "login": "dotnet"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:35Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
-      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
+      "description": "Personal Intelligence & Automation Engine for Omid Zaferi",
+      "homepageUrl": "",
       "isFork": false,
-      "name": "vibe-ui-suite",
+      "name": "omid-core",
       "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "accessibility"
-        },
-        {
-          "name": "ai-agents"
-        },
-        {
-          "name": "claude-code"
-        },
-        {
-          "name": "cursor"
-        },
-        {
-          "name": "design-systems"
-        },
-        {
-          "name": "nextjs15"
-        },
-        {
-          "name": "oklch"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "shadcn-ui"
-        },
-        {
-          "name": "tailwind"
-        },
-        {
-          "name": "ui-ux"
-        },
-        {
-          "name": "vibe-coding"
-        }
-      ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-31T17:07:06Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "An extremely fast Python package and project manager, written in Rust.",
-      "homepageUrl": "https://docs.astral.sh/uv",
-      "isFork": true,
-      "name": "uv",
-      "parent": {
-        "id": "R_kgDOKbIFZQ",
-        "name": "uv",
-        "owner": {
-          "id": "O_kgDOBulz1w",
-          "login": "astral-sh"
-        }
-      },
       "repositoryTopics": null,
       "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:36Z",
-      "visibility": "PUBLIC"
+      "updatedAt": "2026-11-07T16:07:03Z",
+      "visibility": "PRIVATE"
     },
     {
-      "description": "FL Chart is a highly customizable Flutter chart library that supports Line Chart, Bar Chart, Pie Chart, Scatter Chart, Radar Chart and Candlestick Chart.",
-      "homepageUrl": "https://flchart.dev",
-      "isFork": true,
-      "name": "fl_chart",
-      "parent": {
-        "id": "MDEwOlJlcG9zaXRvcnkxODYyNTU0NjA=",
-        "name": "fl_chart",
-        "owner": {
-          "id": "MDQ6VXNlcjcwMDkzMDA=",
-          "login": "imaNNeo"
-        }
-      },
+      "description": "The first native in-app Multi-Account & Live Quota Switcher for Google Antigravity 2.0",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "antigravity-account-switcher",
+      "parent": null,
       "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:46Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Data validation using Python type hints",
-      "homepageUrl": "https://pydantic.dev/docs/validation",
-      "isFork": true,
-      "name": "pydantic",
-      "parent": {
-        "id": "MDEwOlJlcG9zaXRvcnk5MDE5NDYxNg==",
-        "name": "pydantic",
-        "owner": {
-          "id": "O_kgDOBpr0bw",
-          "login": "pydantic"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-10-31T09:25:12Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Model Context Protocol Servers",
-      "homepageUrl": "https://modelcontextprotocol.io",
-      "isFork": true,
-      "name": "servers",
-      "parent": {
-        "id": "R_kgDONRaG_w",
-        "name": "servers",
-        "owner": {
-          "id": "O_kgDOCt2AzQ",
-          "login": "modelcontextprotocol"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-10-31T08:52:16Z",
+      "stargazerCount": 4,
+      "updatedAt": "2026-11-07T22:32:22Z",
       "visibility": "PUBLIC"
     },
     {
@@ -225,74 +157,110 @@
           "name": "rtl-support"
         }
       ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-30T09:00:38Z",
+      "stargazerCount": 2,
+      "updatedAt": "2026-11-07T11:49:57Z",
       "visibility": "PUBLIC"
     },
     {
-      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "telegram-mcp",
-      "parent": {
-        "id": "R_kgDOOL27Bw",
-        "name": "telegram-mcp",
-        "owner": {
-          "id": "MDQ6VXNlcjM2MzkyNzUx",
-          "login": "chigwell"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-25T09:02:43Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
-      "homepageUrl": "https://omid-io.github.io",
+      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
+      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
       "isFork": false,
-      "name": "omid-io.github.io",
+      "name": "vibe-ui-suite",
       "parent": null,
       "repositoryTopics": [
         {
-          "name": "ai-engineer"
+          "name": "accessibility"
         },
         {
-          "name": "developer-portfolio"
+          "name": "ai-agents"
         },
         {
-          "name": "full-stack"
+          "name": "claude-code"
         },
         {
-          "name": "github-pages"
+          "name": "cursor"
         },
         {
-          "name": "portfolio"
+          "name": "design-systems"
         },
         {
-          "name": "software-architect"
+          "name": "nextjs15"
+        },
+        {
+          "name": "oklch"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "shadcn-ui"
+        },
+        {
+          "name": "tailwind"
+        },
+        {
+          "name": "ui-ux"
+        },
+        {
+          "name": "vibe-coding"
         }
       ],
       "stargazerCount": 1,
-      "updatedAt": "2026-10-25T03:31:11Z",
+      "updatedAt": "2026-11-05T10:23:18Z",
       "visibility": "PUBLIC"
     },
     {
-      "description": "Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0.",
-      "homepageUrl": "https://futureagi.com",
+      "description": "",
+      "homepageUrl": "https://omid-io.github.io/FontWoW-2.0",
       "isFork": true,
-      "name": "future-agi",
+      "name": "FontWoW-2.0",
       "parent": {
-        "id": "R_kgDOSKnNaw",
-        "name": "future-agi",
+        "id": "R_kgDOTtlPqA",
+        "name": "FontWoW.github.io",
         "owner": {
-          "id": "O_kgDOCMkHbg",
-          "login": "future-agi"
+          "id": "O_kgDOEqdKSw",
+          "login": "FontWoW"
         }
       },
       "repositoryTopics": null,
       "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:09Z",
+      "updatedAt": "2026-10-13T12:36:12Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "awesome-claude-code",
+      "parent": {
+        "id": "R_kgDOOcZjGQ",
+        "name": "awesome-claude-code",
+        "owner": {
+          "id": "U_kgDOCkLO-g",
+          "login": "hesreallyhim"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-11-02T13:15:09Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The agent that grows with you",
+      "homepageUrl": "https://hermes-agent.nousresearch.com",
+      "isFork": true,
+      "name": "hermes-agent",
+      "parent": {
+        "id": "R_kgDOPRF1Gw",
+        "name": "hermes-agent",
+        "owner": {
+          "id": "O_kgDOB_9BPQ",
+          "login": "NousResearch"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:08Z",
       "visibility": "PUBLIC"
     },
     {
@@ -314,21 +282,68 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "The agent that grows with you",
-      "homepageUrl": "https://hermes-agent.nousresearch.com",
+      "description": ".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps.",
+      "homepageUrl": "https://docs.microsoft.com/dotnet/core/",
       "isFork": true,
-      "name": "hermes-agent",
+      "name": "runtime",
       "parent": {
-        "id": "R_kgDOPRF1Gw",
-        "name": "hermes-agent",
+        "id": "MDEwOlJlcG9zaXRvcnkyMTA3MTYwMDU=",
+        "name": "runtime",
         "owner": {
-          "id": "O_kgDOB_9BPQ",
-          "login": "NousResearch"
+          "id": "MDEyOk9yZ2FuaXphdGlvbjkxNDE5NjE=",
+          "login": "dotnet"
         }
       },
       "repositoryTopics": null,
       "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:08Z",
+      "updatedAt": "2026-10-13T12:36:35Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "motion-studio",
+      "parent": null,
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-10-31T14:22:17Z",
+      "visibility": "PRIVATE"
+    },
+    {
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "homepageUrl": "https://docs.astral.sh/uv",
+      "isFork": true,
+      "name": "uv",
+      "parent": {
+        "id": "R_kgDOKbIFZQ",
+        "name": "uv",
+        "owner": {
+          "id": "O_kgDOBulz1w",
+          "login": "astral-sh"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-10-13T12:36:36Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Data validation using Python type hints",
+      "homepageUrl": "https://pydantic.dev/docs/validation",
+      "isFork": true,
+      "name": "pydantic",
+      "parent": {
+        "id": "MDEwOlJlcG9zaXRvcnk5MDE5NDYxNg==",
+        "name": "pydantic",
+        "owner": {
+          "id": "O_kgDOBpr0bw",
+          "login": "pydantic"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-10-31T09:25:12Z",
       "visibility": "PUBLIC"
     },
     {
@@ -392,22 +407,15 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "Drive Google Flow from the command line: Veo video and Imagen images, scripted, batched and pipeline-ready. Ships an MCP server so coding agents can drive it too, giving you and your agents full programmatic control over generation. Unofficial, alpha, not affiliated with Google.",
-      "homepageUrl": "https://ffroliva.github.io/gflow-cli/",
-      "isFork": true,
-      "name": "gflow-cli",
-      "parent": {
-        "id": "R_kgDOSYyvBQ",
-        "name": "gflow-cli",
-        "owner": {
-          "id": "MDQ6VXNlcjI1MDMzMzcx",
-          "login": "ffroliva"
-        }
-      },
+      "description": "",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "Gloria-Beauty",
+      "parent": null,
       "repositoryTopics": null,
       "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:11Z",
-      "visibility": "PUBLIC"
+      "updatedAt": "2026-10-13T12:36:24Z",
+      "visibility": "PRIVATE"
     },
     {
       "description": "🚀 Personal GitHub Profile & Open-Source Engineering Portfolio | Omid Zaferi",
@@ -440,42 +448,6 @@
       ],
       "stargazerCount": 1,
       "updatedAt": "2026-10-13T12:36:18Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "The open source coding agent.",
-      "homepageUrl": "https://opencode.ai",
-      "isFork": true,
-      "name": "opencode",
-      "parent": {
-        "id": "R_kgDOOiiGLw",
-        "name": "opencode",
-        "owner": {
-          "id": "MDEyOk9yZ2FuaXphdGlvbjY2NTcwOTE1",
-          "login": "anomalyco"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:20Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "LlamaIndex is the document processing platform for AI",
-      "homepageUrl": "https://developers.llamaindex.ai",
-      "isFork": true,
-      "name": "llama_index",
-      "parent": {
-        "id": "R_kgDOIWuq5w",
-        "name": "llama_index",
-        "owner": {
-          "id": "O_kgDOB8qsMg",
-          "login": "run-llama"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:37Z",
       "visibility": "PUBLIC"
     },
     {
@@ -548,24 +520,6 @@
       ],
       "stargazerCount": 3,
       "updatedAt": "2026-10-10T03:48:05Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "",
-      "homepageUrl": "https://omid-io.github.io/FontWoW-2.0",
-      "isFork": true,
-      "name": "FontWoW-2.0",
-      "parent": {
-        "id": "R_kgDOTtlPqA",
-        "name": "FontWoW.github.io",
-        "owner": {
-          "id": "O_kgDOEqdKSw",
-          "login": "FontWoW"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:12Z",
       "visibility": "PUBLIC"
     },
     {
