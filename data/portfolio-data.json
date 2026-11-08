@@ -28,7 +28,7 @@
         }
       ],
       "stargazerCount": 1,
-      "updatedAt": "2026-11-07T22:26:46Z",
+      "updatedAt": "2026-11-07T22:36:02Z",
       "visibility": "PUBLIC"
     },
     {
@@ -66,17 +66,6 @@
       "stargazerCount": 0,
       "updatedAt": "2026-11-07T18:19:47Z",
       "visibility": "PUBLIC"
-    },
-    {
-      "description": "Personal Intelligence & Automation Engine for Omid Zaferi",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "omid-core",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-11-07T16:07:03Z",
-      "visibility": "PRIVATE"
     },
     {
       "description": "The first native in-app Multi-Account & Live Quota Switcher for Google Antigravity 2.0",
@@ -300,17 +289,6 @@
       "visibility": "PUBLIC"
     },
     {
-      "description": "",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "motion-studio",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-10-31T14:22:17Z",
-      "visibility": "PRIVATE"
-    },
-    {
       "description": "An extremely fast Python package and project manager, written in Rust.",
       "homepageUrl": "https://docs.astral.sh/uv",
       "isFork": true,
@@ -405,17 +383,6 @@
       "stargazerCount": 3,
       "updatedAt": "2026-10-18T07:53:38Z",
       "visibility": "PUBLIC"
-    },
-    {
-      "description": "",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "Gloria-Beauty",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-10-13T12:36:24Z",
-      "visibility": "PRIVATE"
     },
     {
       "description": "🚀 Personal GitHub Profile & Open-Source Engineering Portfolio | Omid Zaferi",
