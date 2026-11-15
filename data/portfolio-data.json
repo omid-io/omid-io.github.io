@@ -2,51 +2,51 @@
   "updated_at": "2026-09-23",
   "repos": [
     {
-      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
-      "homepageUrl": "https://omid-io.github.io",
+      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
+      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
       "isFork": false,
-      "name": "omid-io.github.io",
+      "name": "vibe-ui-suite",
       "parent": null,
       "repositoryTopics": [
         {
-          "name": "ai-engineer"
+          "name": "accessibility"
         },
         {
-          "name": "developer-portfolio"
+          "name": "ai-agents"
         },
         {
-          "name": "full-stack"
+          "name": "claude-code"
         },
         {
-          "name": "github-pages"
+          "name": "cursor"
         },
         {
-          "name": "portfolio"
+          "name": "design-systems"
         },
         {
-          "name": "software-architect"
+          "name": "nextjs15"
+        },
+        {
+          "name": "oklch"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "shadcn-ui"
+        },
+        {
+          "name": "tailwind"
+        },
+        {
+          "name": "ui-ux"
+        },
+        {
+          "name": "vibe-coding"
         }
       ],
       "stargazerCount": 1,
-      "updatedAt": "2026-11-07T22:36:02Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "telegram-mcp",
-      "parent": {
-        "id": "R_kgDOOL27Bw",
-        "name": "telegram-mcp",
-        "owner": {
-          "id": "MDQ6VXNlcjM2MzkyNzUx",
-          "login": "chigwell"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 1,
-      "updatedAt": "2026-11-07T22:07:21Z",
+      "updatedAt": "2026-11-09T18:01:31Z",
       "visibility": "PUBLIC"
     },
     {
@@ -64,18 +64,7 @@
       },
       "repositoryTopics": null,
       "stargazerCount": 0,
-      "updatedAt": "2026-11-07T18:19:47Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "The first native in-app Multi-Account & Live Quota Switcher for Google Antigravity 2.0",
-      "homepageUrl": "",
-      "isFork": false,
-      "name": "antigravity-account-switcher",
-      "parent": null,
-      "repositoryTopics": null,
-      "stargazerCount": 4,
-      "updatedAt": "2026-11-07T22:32:22Z",
+      "updatedAt": "2026-11-09T12:56:45Z",
       "visibility": "PUBLIC"
     },
     {
@@ -147,55 +136,66 @@
         }
       ],
       "stargazerCount": 2,
-      "updatedAt": "2026-11-07T11:49:57Z",
+      "updatedAt": "2026-11-09T12:27:47Z",
       "visibility": "PUBLIC"
     },
     {
-      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
-      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
+      "description": "Personal portfolio & engineering hub of Omid Zaferi (omid-io)",
+      "homepageUrl": "https://omid-io.github.io",
       "isFork": false,
-      "name": "vibe-ui-suite",
+      "name": "omid-io.github.io",
       "parent": null,
       "repositoryTopics": [
         {
-          "name": "accessibility"
+          "name": "ai-engineer"
         },
         {
-          "name": "ai-agents"
+          "name": "developer-portfolio"
         },
         {
-          "name": "claude-code"
+          "name": "full-stack"
         },
         {
-          "name": "cursor"
+          "name": "github-pages"
         },
         {
-          "name": "design-systems"
+          "name": "portfolio"
         },
         {
-          "name": "nextjs15"
-        },
-        {
-          "name": "oklch"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "shadcn-ui"
-        },
-        {
-          "name": "tailwind"
-        },
-        {
-          "name": "ui-ux"
-        },
-        {
-          "name": "vibe-coding"
+          "name": "software-architect"
         }
       ],
       "stargazerCount": 1,
-      "updatedAt": "2026-11-05T10:23:18Z",
+      "updatedAt": "2026-11-08T04:48:49Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "telegram-mcp",
+      "parent": {
+        "id": "R_kgDOOL27Bw",
+        "name": "telegram-mcp",
+        "owner": {
+          "id": "MDQ6VXNlcjM2MzkyNzUx",
+          "login": "chigwell"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 1,
+      "updatedAt": "2026-11-07T22:07:21Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "The first native in-app Multi-Account & Live Quota Switcher for Google Antigravity 2.0",
+      "homepageUrl": "",
+      "isFork": false,
+      "name": "antigravity-account-switcher",
+      "parent": null,
+      "repositoryTopics": null,
+      "stargazerCount": 8,
+      "updatedAt": "2026-11-14T06:28:34Z",
       "visibility": "PUBLIC"
     },
     {
