@@ -2,72 +2,6 @@
   "updated_at": "2026-09-23",
   "repos": [
     {
-      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
-      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
-      "isFork": false,
-      "name": "vibe-ui-suite",
-      "parent": null,
-      "repositoryTopics": [
-        {
-          "name": "accessibility"
-        },
-        {
-          "name": "ai-agents"
-        },
-        {
-          "name": "claude-code"
-        },
-        {
-          "name": "cursor"
-        },
-        {
-          "name": "design-systems"
-        },
-        {
-          "name": "nextjs15"
-        },
-        {
-          "name": "oklch"
-        },
-        {
-          "name": "rtl"
-        },
-        {
-          "name": "shadcn-ui"
-        },
-        {
-          "name": "tailwind"
-        },
-        {
-          "name": "ui-ux"
-        },
-        {
-          "name": "vibe-coding"
-        }
-      ],
-      "stargazerCount": 1,
-      "updatedAt": "2026-11-09T18:01:31Z",
-      "visibility": "PUBLIC"
-    },
-    {
-      "description": "به سادگی یک کلیک وصل بشید",
-      "homepageUrl": "",
-      "isFork": true,
-      "name": "MEH-VPN",
-      "parent": {
-        "id": "R_kgDOVdGnSQ",
-        "name": "MEH-VPN",
-        "owner": {
-          "id": "O_kgDOFOFikA",
-          "login": "MEH-VPN"
-        }
-      },
-      "repositoryTopics": null,
-      "stargazerCount": 0,
-      "updatedAt": "2026-11-09T12:56:45Z",
-      "visibility": "PUBLIC"
-    },
-    {
       "description": "The complete UI enhancement, RTL & Persian/Arabic راست چین studio, workspace ergonomics, and BiDi typography for Google Antigravity & Antigravity IDE.",
       "homepageUrl": "https://www.npmjs.com/package/antigravity-ui",
       "isFork": false,
@@ -170,6 +104,72 @@
       "visibility": "PUBLIC"
     },
     {
+      "description": "Deterministic design contracts, component recipes, and WCAG AA evaluation gates for AI coding agents (Cursor, Claude Code, Windsurf, Antigravity).",
+      "homepageUrl": "https://omid-io.github.io/vibe-ui-suite/",
+      "isFork": false,
+      "name": "vibe-ui-suite",
+      "parent": null,
+      "repositoryTopics": [
+        {
+          "name": "accessibility"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "claude-code"
+        },
+        {
+          "name": "cursor"
+        },
+        {
+          "name": "design-systems"
+        },
+        {
+          "name": "nextjs15"
+        },
+        {
+          "name": "oklch"
+        },
+        {
+          "name": "rtl"
+        },
+        {
+          "name": "shadcn-ui"
+        },
+        {
+          "name": "tailwind"
+        },
+        {
+          "name": "ui-ux"
+        },
+        {
+          "name": "vibe-coding"
+        }
+      ],
+      "stargazerCount": 1,
+      "updatedAt": "2026-11-09T18:01:31Z",
+      "visibility": "PUBLIC"
+    },
+    {
+      "description": "به سادگی یک کلیک وصل بشید",
+      "homepageUrl": "",
+      "isFork": true,
+      "name": "MEH-VPN",
+      "parent": {
+        "id": "R_kgDOVdGnSQ",
+        "name": "MEH-VPN",
+        "owner": {
+          "id": "O_kgDOFOFikA",
+          "login": "MEH-VPN"
+        }
+      },
+      "repositoryTopics": null,
+      "stargazerCount": 0,
+      "updatedAt": "2026-11-09T12:56:45Z",
+      "visibility": "PUBLIC"
+    },
+    {
       "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
       "homepageUrl": "",
       "isFork": true,
@@ -194,8 +194,8 @@
       "name": "antigravity-account-switcher",
       "parent": null,
       "repositoryTopics": null,
-      "stargazerCount": 8,
-      "updatedAt": "2026-11-14T06:28:34Z",
+      "stargazerCount": 9,
+      "updatedAt": "2026-11-17T12:16:45Z",
       "visibility": "PUBLIC"
     },
     {
